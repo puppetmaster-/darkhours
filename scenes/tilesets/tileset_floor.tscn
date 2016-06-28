@@ -1,0 +1,614 @@
+[gd_scene load_steps=77 format=1]
+
+[ext_resource path="res://resources/tiles/floor/grass_01.png" type="Texture" id=1]
+[ext_resource path="res://resources/tiles/floor/grass_02.png" type="Texture" id=2]
+[ext_resource path="res://resources/tiles/floor/grass_03.png" type="Texture" id=3]
+[ext_resource path="res://resources/tiles/floor/grass_04.png" type="Texture" id=4]
+[ext_resource path="res://resources/tiles/floor/grass_05.png" type="Texture" id=5]
+[ext_resource path="res://resources/tiles/floor/grass_06.png" type="Texture" id=6]
+[ext_resource path="res://resources/tiles/floor/mud04.png" type="Texture" id=7]
+[ext_resource path="res://resources/tiles/floor/mud_01.png" type="Texture" id=8]
+[ext_resource path="res://resources/tiles/floor/mud_02.png" type="Texture" id=9]
+[ext_resource path="res://resources/tiles/floor/mud_03.png" type="Texture" id=10]
+[ext_resource path="res://resources/tiles/floor/snow_01.png" type="Texture" id=11]
+[ext_resource path="res://resources/tiles/floor/stone_01.png" type="Texture" id=12]
+[ext_resource path="res://resources/tiles/floor/stone_02.png" type="Texture" id=13]
+[ext_resource path="res://resources/tiles/floor/stone_03.png" type="Texture" id=14]
+[ext_resource path="res://resources/tiles/floor/stone_04.png" type="Texture" id=15]
+[ext_resource path="res://resources/tiles/floor/tile_01.png" type="Texture" id=16]
+[ext_resource path="res://resources/tiles/floor/tile_02.png" type="Texture" id=17]
+[ext_resource path="res://resources/tiles/floor/tile_03.png" type="Texture" id=18]
+[ext_resource path="res://resources/tiles/floor/water_01.png" type="Texture" id=19]
+[ext_resource path="res://resources/tiles/floor/water_02.png" type="Texture" id=20]
+[ext_resource path="res://resources/tiles/floor/wood_01.png" type="Texture" id=21]
+[ext_resource path="res://resources/tiles/floor/wood_02.png" type="Texture" id=22]
+[ext_resource path="res://resources/tiles/floor/wood_03.png" type="Texture" id=23]
+[ext_resource path="res://resources/tiles/floor/wood_04.png" type="Texture" id=24]
+[ext_resource path="res://resources/tiles/floor/wood_05.png" type="Texture" id=25]
+[ext_resource path="res://resources/tiles/floor/wood_06.png" type="Texture" id=26]
+[ext_resource path="res://resources/tiles/floor/wood_07.png" type="Texture" id=27]
+[ext_resource path="res://resources/tiles/floor/wood_08.png" type="Texture" id=28]
+[ext_resource path="res://resources/tiles/floor/wood_09.png" type="Texture" id=29]
+[ext_resource path="res://resources/tiles/floor/wood_10.png" type="Texture" id=30]
+[ext_resource path="res://resources/tiles/floor/wood_11.png" type="Texture" id=31]
+[ext_resource path="res://resources/tiles/floor/wood_12.png" type="Texture" id=32]
+[ext_resource path="res://resources/tiles/floor/wood_13.png" type="Texture" id=33]
+[ext_resource path="res://resources/tiles/floor/wood_14.png" type="Texture" id=34]
+[ext_resource path="res://resources/tiles/floor/wood_15.png" type="Texture" id=35]
+[ext_resource path="res://resources/tiles/floor/wood_16.png" type="Texture" id=36]
+[ext_resource path="res://resources/tiles/floor/wood_17.png" type="Texture" id=37]
+[ext_resource path="res://resources/tiles/floor/wood_18.png" type="Texture" id=38]
+
+[sub_resource type="NavigationPolygon" id=1]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=2]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=4]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=5]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=6]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=7]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=8]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=9]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=10]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=11]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=12]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=13]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=14]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=15]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=16]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=17]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=18]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=19]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=20]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=21]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=22]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=23]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=24]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=25]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=26]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=27]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=28]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=29]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=30]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=31]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=32]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=33]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=34]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=35]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=36]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=37]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=38]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[node name="floor" type="Node2D"]
+
+[node name="floor1" type="Sprite" parent="."]
+
+texture = ExtResource( 1 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor1"]
+
+navpoly = SubResource( 1 )
+enabled = true
+
+[node name="floor2" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor2"]
+
+navpoly = SubResource( 2 )
+enabled = true
+
+[node name="floor3" type="Sprite" parent="."]
+
+texture = ExtResource( 3 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor3"]
+
+navpoly = SubResource( 3 )
+enabled = true
+
+[node name="floor4" type="Sprite" parent="."]
+
+texture = ExtResource( 4 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor4"]
+
+navpoly = SubResource( 4 )
+enabled = true
+
+[node name="floor5" type="Sprite" parent="."]
+
+texture = ExtResource( 5 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor5"]
+
+navpoly = SubResource( 5 )
+enabled = true
+
+[node name="floor6" type="Sprite" parent="."]
+
+texture = ExtResource( 6 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor6"]
+
+navpoly = SubResource( 6 )
+enabled = true
+
+[node name="floor7" type="Sprite" parent="."]
+
+texture = ExtResource( 7 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor7"]
+
+navpoly = SubResource( 7 )
+enabled = true
+
+[node name="floor8" type="Sprite" parent="."]
+
+texture = ExtResource( 8 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor8"]
+
+navpoly = SubResource( 8 )
+enabled = true
+
+[node name="floor9" type="Sprite" parent="."]
+
+texture = ExtResource( 9 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor9"]
+
+navpoly = SubResource( 9 )
+enabled = true
+
+[node name="floor10" type="Sprite" parent="."]
+
+texture = ExtResource( 10 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor10"]
+
+navpoly = SubResource( 10 )
+enabled = true
+
+[node name="floor11" type="Sprite" parent="."]
+
+texture = ExtResource( 11 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor11"]
+
+navpoly = SubResource( 11 )
+enabled = true
+
+[node name="floor12" type="Sprite" parent="."]
+
+texture = ExtResource( 12 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor12"]
+
+navpoly = SubResource( 12 )
+enabled = true
+
+[node name="floor13" type="Sprite" parent="."]
+
+texture = ExtResource( 13 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor13"]
+
+navpoly = SubResource( 13 )
+enabled = true
+
+[node name="floor14" type="Sprite" parent="."]
+
+texture = ExtResource( 14 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor14"]
+
+navpoly = SubResource( 14 )
+enabled = true
+
+[node name="floor15" type="Sprite" parent="."]
+
+texture = ExtResource( 15 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor15"]
+
+navpoly = SubResource( 15 )
+enabled = true
+
+[node name="floor16" type="Sprite" parent="."]
+
+texture = ExtResource( 16 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor16"]
+
+navpoly = SubResource( 16 )
+enabled = true
+
+[node name="floor17" type="Sprite" parent="."]
+
+texture = ExtResource( 17 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor17"]
+
+navpoly = SubResource( 17 )
+enabled = true
+
+[node name="floor18" type="Sprite" parent="."]
+
+texture = ExtResource( 18 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor18"]
+
+navpoly = SubResource( 18 )
+enabled = true
+
+[node name="floor19" type="Sprite" parent="."]
+
+texture = ExtResource( 19 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor19"]
+
+navpoly = SubResource( 19 )
+enabled = true
+
+[node name="floor20" type="Sprite" parent="."]
+
+texture = ExtResource( 20 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor20"]
+
+navpoly = SubResource( 20 )
+enabled = true
+
+[node name="floor21" type="Sprite" parent="."]
+
+texture = ExtResource( 21 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor21"]
+
+navpoly = SubResource( 21 )
+enabled = true
+
+[node name="floor22" type="Sprite" parent="."]
+
+texture = ExtResource( 22 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor22"]
+
+navpoly = SubResource( 22 )
+enabled = true
+
+[node name="floor23" type="Sprite" parent="."]
+
+texture = ExtResource( 23 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor23"]
+
+navpoly = SubResource( 23 )
+enabled = true
+
+[node name="floor24" type="Sprite" parent="."]
+
+texture = ExtResource( 24 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor24"]
+
+navpoly = SubResource( 24 )
+enabled = true
+
+[node name="floor25" type="Sprite" parent="."]
+
+texture = ExtResource( 25 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor25"]
+
+navpoly = SubResource( 25 )
+enabled = true
+
+[node name="floor26" type="Sprite" parent="."]
+
+texture = ExtResource( 26 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor26"]
+
+navpoly = SubResource( 26 )
+enabled = true
+
+[node name="floor27" type="Sprite" parent="."]
+
+texture = ExtResource( 27 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor27"]
+
+navpoly = SubResource( 27 )
+enabled = true
+
+[node name="floor28" type="Sprite" parent="."]
+
+texture = ExtResource( 28 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor28"]
+
+navpoly = SubResource( 28 )
+enabled = true
+
+[node name="floor29" type="Sprite" parent="."]
+
+texture = ExtResource( 29 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor29"]
+
+navpoly = SubResource( 29 )
+enabled = true
+
+[node name="floor30" type="Sprite" parent="."]
+
+texture = ExtResource( 30 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor30"]
+
+navpoly = SubResource( 30 )
+enabled = true
+
+[node name="floor31" type="Sprite" parent="."]
+
+texture = ExtResource( 31 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor31"]
+
+navpoly = SubResource( 31 )
+enabled = true
+
+[node name="floor32" type="Sprite" parent="."]
+
+texture = ExtResource( 32 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor32"]
+
+navpoly = SubResource( 32 )
+enabled = true
+
+[node name="floor33" type="Sprite" parent="."]
+
+texture = ExtResource( 33 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor33"]
+
+navpoly = SubResource( 33 )
+enabled = true
+
+[node name="floor34" type="Sprite" parent="."]
+
+texture = ExtResource( 34 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor34"]
+
+navpoly = SubResource( 34 )
+enabled = true
+
+[node name="floor35" type="Sprite" parent="."]
+
+texture = ExtResource( 35 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor35"]
+
+navpoly = SubResource( 35 )
+enabled = true
+
+[node name="floor36" type="Sprite" parent="."]
+
+texture = ExtResource( 36 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor36"]
+
+navpoly = SubResource( 36 )
+enabled = true
+
+[node name="floor37" type="Sprite" parent="."]
+
+texture = ExtResource( 37 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor37"]
+
+navpoly = SubResource( 37 )
+enabled = true
+
+[node name="floor38" type="Sprite" parent="."]
+
+texture = ExtResource( 38 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="floor38"]
+
+navpoly = SubResource( 38 )
+enabled = true
+
+

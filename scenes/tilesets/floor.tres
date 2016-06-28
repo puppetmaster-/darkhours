@@ -1,0 +1,614 @@
+[gd_resource type="TileSet" load_steps=77 format=1]
+
+[ext_resource path="res://resources/tiles/floor/grass_01.png" type="Texture" id=1]
+[ext_resource path="res://resources/tiles/floor/grass_02.png" type="Texture" id=2]
+[ext_resource path="res://resources/tiles/floor/snow_01.png" type="Texture" id=3]
+[ext_resource path="res://resources/tiles/floor/stone_01.png" type="Texture" id=4]
+[ext_resource path="res://resources/tiles/floor/stone_02.png" type="Texture" id=5]
+[ext_resource path="res://resources/tiles/floor/stone_03.png" type="Texture" id=6]
+[ext_resource path="res://resources/tiles/floor/stone_04.png" type="Texture" id=7]
+[ext_resource path="res://resources/tiles/floor/tile_01.png" type="Texture" id=8]
+[ext_resource path="res://resources/tiles/floor/tile_02.png" type="Texture" id=9]
+[ext_resource path="res://resources/tiles/floor/tile_03.png" type="Texture" id=10]
+[ext_resource path="res://resources/tiles/floor/water_01.png" type="Texture" id=11]
+[ext_resource path="res://resources/tiles/floor/water_02.png" type="Texture" id=12]
+[ext_resource path="res://resources/tiles/floor/grass_03.png" type="Texture" id=13]
+[ext_resource path="res://resources/tiles/floor/wood_01.png" type="Texture" id=14]
+[ext_resource path="res://resources/tiles/floor/wood_02.png" type="Texture" id=15]
+[ext_resource path="res://resources/tiles/floor/wood_03.png" type="Texture" id=16]
+[ext_resource path="res://resources/tiles/floor/wood_04.png" type="Texture" id=17]
+[ext_resource path="res://resources/tiles/floor/wood_05.png" type="Texture" id=18]
+[ext_resource path="res://resources/tiles/floor/wood_06.png" type="Texture" id=19]
+[ext_resource path="res://resources/tiles/floor/wood_07.png" type="Texture" id=20]
+[ext_resource path="res://resources/tiles/floor/wood_08.png" type="Texture" id=21]
+[ext_resource path="res://resources/tiles/floor/wood_09.png" type="Texture" id=22]
+[ext_resource path="res://resources/tiles/floor/wood_10.png" type="Texture" id=23]
+[ext_resource path="res://resources/tiles/floor/grass_04.png" type="Texture" id=24]
+[ext_resource path="res://resources/tiles/floor/wood_11.png" type="Texture" id=25]
+[ext_resource path="res://resources/tiles/floor/wood_12.png" type="Texture" id=26]
+[ext_resource path="res://resources/tiles/floor/wood_13.png" type="Texture" id=27]
+[ext_resource path="res://resources/tiles/floor/wood_14.png" type="Texture" id=28]
+[ext_resource path="res://resources/tiles/floor/wood_15.png" type="Texture" id=29]
+[ext_resource path="res://resources/tiles/floor/wood_16.png" type="Texture" id=30]
+[ext_resource path="res://resources/tiles/floor/wood_17.png" type="Texture" id=31]
+[ext_resource path="res://resources/tiles/floor/wood_18.png" type="Texture" id=32]
+[ext_resource path="res://resources/tiles/floor/grass_05.png" type="Texture" id=33]
+[ext_resource path="res://resources/tiles/floor/grass_06.png" type="Texture" id=34]
+[ext_resource path="res://resources/tiles/floor/mud04.png" type="Texture" id=35]
+[ext_resource path="res://resources/tiles/floor/mud_01.png" type="Texture" id=36]
+[ext_resource path="res://resources/tiles/floor/mud_02.png" type="Texture" id=37]
+[ext_resource path="res://resources/tiles/floor/mud_03.png" type="Texture" id=38]
+
+[sub_resource type="NavigationPolygon" id=1]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=2]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=3]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=4]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=5]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=6]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=7]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=8]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=9]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=10]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=11]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=12]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=13]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=14]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=15]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=16]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=17]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=18]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=19]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=20]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=21]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=22]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=23]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=24]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=25]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=26]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=27]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=28]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=29]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=30]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=31]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=32]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=33]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=34]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=35]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=36]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=37]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=38]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[resource]
+
+0/name = "floor1"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/region = Rect2( 0, 0, 0, 0 )
+0/occluder_offset = Vector2( 32, 32 )
+0/navigation_offset = Vector2( 32, 32 )
+0/navigation = SubResource( 1 )
+0/shape_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+1/name = "floor2"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/region = Rect2( 0, 0, 0, 0 )
+1/occluder_offset = Vector2( 32, 32 )
+1/navigation_offset = Vector2( 32, 32 )
+1/navigation = SubResource( 2 )
+1/shape_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+2/name = "floor3"
+2/texture = ExtResource( 13 )
+2/tex_offset = Vector2( 0, 0 )
+2/region = Rect2( 0, 0, 0, 0 )
+2/occluder_offset = Vector2( 32, 32 )
+2/navigation_offset = Vector2( 32, 32 )
+2/navigation = SubResource( 13 )
+2/shape_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+3/name = "floor4"
+3/texture = ExtResource( 24 )
+3/tex_offset = Vector2( 0, 0 )
+3/region = Rect2( 0, 0, 0, 0 )
+3/occluder_offset = Vector2( 32, 32 )
+3/navigation_offset = Vector2( 32, 32 )
+3/navigation = SubResource( 24 )
+3/shape_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+4/name = "floor5"
+4/texture = ExtResource( 33 )
+4/tex_offset = Vector2( 0, 0 )
+4/region = Rect2( 0, 0, 0, 0 )
+4/occluder_offset = Vector2( 32, 32 )
+4/navigation_offset = Vector2( 32, 32 )
+4/navigation = SubResource( 33 )
+4/shape_offset = Vector2( 0, 0 )
+4/shapes = [  ]
+5/name = "floor6"
+5/texture = ExtResource( 34 )
+5/tex_offset = Vector2( 0, 0 )
+5/region = Rect2( 0, 0, 0, 0 )
+5/occluder_offset = Vector2( 32, 32 )
+5/navigation_offset = Vector2( 32, 32 )
+5/navigation = SubResource( 34 )
+5/shape_offset = Vector2( 0, 0 )
+5/shapes = [  ]
+6/name = "floor7"
+6/texture = ExtResource( 35 )
+6/tex_offset = Vector2( 0, 0 )
+6/region = Rect2( 0, 0, 0, 0 )
+6/occluder_offset = Vector2( 32, 32 )
+6/navigation_offset = Vector2( 32, 32 )
+6/navigation = SubResource( 35 )
+6/shape_offset = Vector2( 0, 0 )
+6/shapes = [  ]
+7/name = "floor8"
+7/texture = ExtResource( 36 )
+7/tex_offset = Vector2( 0, 0 )
+7/region = Rect2( 0, 0, 0, 0 )
+7/occluder_offset = Vector2( 32, 32 )
+7/navigation_offset = Vector2( 32, 32 )
+7/navigation = SubResource( 36 )
+7/shape_offset = Vector2( 0, 0 )
+7/shapes = [  ]
+8/name = "floor9"
+8/texture = ExtResource( 37 )
+8/tex_offset = Vector2( 0, 0 )
+8/region = Rect2( 0, 0, 0, 0 )
+8/occluder_offset = Vector2( 32, 32 )
+8/navigation_offset = Vector2( 32, 32 )
+8/navigation = SubResource( 37 )
+8/shape_offset = Vector2( 0, 0 )
+8/shapes = [  ]
+9/name = "floor10"
+9/texture = ExtResource( 38 )
+9/tex_offset = Vector2( 0, 0 )
+9/region = Rect2( 0, 0, 0, 0 )
+9/occluder_offset = Vector2( 32, 32 )
+9/navigation_offset = Vector2( 32, 32 )
+9/navigation = SubResource( 38 )
+9/shape_offset = Vector2( 0, 0 )
+9/shapes = [  ]
+10/name = "floor11"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/region = Rect2( 0, 0, 0, 0 )
+10/occluder_offset = Vector2( 32, 32 )
+10/navigation_offset = Vector2( 32, 32 )
+10/navigation = SubResource( 3 )
+10/shape_offset = Vector2( 0, 0 )
+10/shapes = [  ]
+11/name = "floor12"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/region = Rect2( 0, 0, 0, 0 )
+11/occluder_offset = Vector2( 32, 32 )
+11/navigation_offset = Vector2( 32, 32 )
+11/navigation = SubResource( 4 )
+11/shape_offset = Vector2( 0, 0 )
+11/shapes = [  ]
+12/name = "floor13"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/region = Rect2( 0, 0, 0, 0 )
+12/occluder_offset = Vector2( 32, 32 )
+12/navigation_offset = Vector2( 32, 32 )
+12/navigation = SubResource( 5 )
+12/shape_offset = Vector2( 0, 0 )
+12/shapes = [  ]
+13/name = "floor14"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/region = Rect2( 0, 0, 0, 0 )
+13/occluder_offset = Vector2( 32, 32 )
+13/navigation_offset = Vector2( 32, 32 )
+13/navigation = SubResource( 6 )
+13/shape_offset = Vector2( 0, 0 )
+13/shapes = [  ]
+14/name = "floor15"
+14/texture = ExtResource( 7 )
+14/tex_offset = Vector2( 0, 0 )
+14/region = Rect2( 0, 0, 0, 0 )
+14/occluder_offset = Vector2( 32, 32 )
+14/navigation_offset = Vector2( 32, 32 )
+14/navigation = SubResource( 7 )
+14/shape_offset = Vector2( 0, 0 )
+14/shapes = [  ]
+15/name = "floor16"
+15/texture = ExtResource( 8 )
+15/tex_offset = Vector2( 0, 0 )
+15/region = Rect2( 0, 0, 0, 0 )
+15/occluder_offset = Vector2( 32, 32 )
+15/navigation_offset = Vector2( 32, 32 )
+15/navigation = SubResource( 8 )
+15/shape_offset = Vector2( 0, 0 )
+15/shapes = [  ]
+16/name = "floor17"
+16/texture = ExtResource( 9 )
+16/tex_offset = Vector2( 0, 0 )
+16/region = Rect2( 0, 0, 0, 0 )
+16/occluder_offset = Vector2( 32, 32 )
+16/navigation_offset = Vector2( 32, 32 )
+16/navigation = SubResource( 9 )
+16/shape_offset = Vector2( 0, 0 )
+16/shapes = [  ]
+17/name = "floor18"
+17/texture = ExtResource( 10 )
+17/tex_offset = Vector2( 0, 0 )
+17/region = Rect2( 0, 0, 0, 0 )
+17/occluder_offset = Vector2( 32, 32 )
+17/navigation_offset = Vector2( 32, 32 )
+17/navigation = SubResource( 10 )
+17/shape_offset = Vector2( 0, 0 )
+17/shapes = [  ]
+18/name = "floor19"
+18/texture = ExtResource( 11 )
+18/tex_offset = Vector2( 0, 0 )
+18/region = Rect2( 0, 0, 0, 0 )
+18/occluder_offset = Vector2( 32, 32 )
+18/navigation_offset = Vector2( 32, 32 )
+18/navigation = SubResource( 11 )
+18/shape_offset = Vector2( 0, 0 )
+18/shapes = [  ]
+19/name = "floor20"
+19/texture = ExtResource( 12 )
+19/tex_offset = Vector2( 0, 0 )
+19/region = Rect2( 0, 0, 0, 0 )
+19/occluder_offset = Vector2( 32, 32 )
+19/navigation_offset = Vector2( 32, 32 )
+19/navigation = SubResource( 12 )
+19/shape_offset = Vector2( 0, 0 )
+19/shapes = [  ]
+20/name = "floor21"
+20/texture = ExtResource( 14 )
+20/tex_offset = Vector2( 0, 0 )
+20/region = Rect2( 0, 0, 0, 0 )
+20/occluder_offset = Vector2( 32, 32 )
+20/navigation_offset = Vector2( 32, 32 )
+20/navigation = SubResource( 14 )
+20/shape_offset = Vector2( 0, 0 )
+20/shapes = [  ]
+21/name = "floor22"
+21/texture = ExtResource( 15 )
+21/tex_offset = Vector2( 0, 0 )
+21/region = Rect2( 0, 0, 0, 0 )
+21/occluder_offset = Vector2( 32, 32 )
+21/navigation_offset = Vector2( 32, 32 )
+21/navigation = SubResource( 15 )
+21/shape_offset = Vector2( 0, 0 )
+21/shapes = [  ]
+22/name = "floor23"
+22/texture = ExtResource( 16 )
+22/tex_offset = Vector2( 0, 0 )
+22/region = Rect2( 0, 0, 0, 0 )
+22/occluder_offset = Vector2( 32, 32 )
+22/navigation_offset = Vector2( 32, 32 )
+22/navigation = SubResource( 16 )
+22/shape_offset = Vector2( 0, 0 )
+22/shapes = [  ]
+23/name = "floor24"
+23/texture = ExtResource( 17 )
+23/tex_offset = Vector2( 0, 0 )
+23/region = Rect2( 0, 0, 0, 0 )
+23/occluder_offset = Vector2( 32, 32 )
+23/navigation_offset = Vector2( 32, 32 )
+23/navigation = SubResource( 17 )
+23/shape_offset = Vector2( 0, 0 )
+23/shapes = [  ]
+24/name = "floor25"
+24/texture = ExtResource( 18 )
+24/tex_offset = Vector2( 0, 0 )
+24/region = Rect2( 0, 0, 0, 0 )
+24/occluder_offset = Vector2( 32, 32 )
+24/navigation_offset = Vector2( 32, 32 )
+24/navigation = SubResource( 18 )
+24/shape_offset = Vector2( 0, 0 )
+24/shapes = [  ]
+25/name = "floor26"
+25/texture = ExtResource( 19 )
+25/tex_offset = Vector2( 0, 0 )
+25/region = Rect2( 0, 0, 0, 0 )
+25/occluder_offset = Vector2( 32, 32 )
+25/navigation_offset = Vector2( 32, 32 )
+25/navigation = SubResource( 19 )
+25/shape_offset = Vector2( 0, 0 )
+25/shapes = [  ]
+26/name = "floor27"
+26/texture = ExtResource( 20 )
+26/tex_offset = Vector2( 0, 0 )
+26/region = Rect2( 0, 0, 0, 0 )
+26/occluder_offset = Vector2( 32, 32 )
+26/navigation_offset = Vector2( 32, 32 )
+26/navigation = SubResource( 20 )
+26/shape_offset = Vector2( 0, 0 )
+26/shapes = [  ]
+27/name = "floor28"
+27/texture = ExtResource( 21 )
+27/tex_offset = Vector2( 0, 0 )
+27/region = Rect2( 0, 0, 0, 0 )
+27/occluder_offset = Vector2( 32, 32 )
+27/navigation_offset = Vector2( 32, 32 )
+27/navigation = SubResource( 21 )
+27/shape_offset = Vector2( 0, 0 )
+27/shapes = [  ]
+28/name = "floor29"
+28/texture = ExtResource( 22 )
+28/tex_offset = Vector2( 0, 0 )
+28/region = Rect2( 0, 0, 0, 0 )
+28/occluder_offset = Vector2( 32, 32 )
+28/navigation_offset = Vector2( 32, 32 )
+28/navigation = SubResource( 22 )
+28/shape_offset = Vector2( 0, 0 )
+28/shapes = [  ]
+29/name = "floor30"
+29/texture = ExtResource( 23 )
+29/tex_offset = Vector2( 0, 0 )
+29/region = Rect2( 0, 0, 0, 0 )
+29/occluder_offset = Vector2( 32, 32 )
+29/navigation_offset = Vector2( 32, 32 )
+29/navigation = SubResource( 23 )
+29/shape_offset = Vector2( 0, 0 )
+29/shapes = [  ]
+30/name = "floor31"
+30/texture = ExtResource( 25 )
+30/tex_offset = Vector2( 0, 0 )
+30/region = Rect2( 0, 0, 0, 0 )
+30/occluder_offset = Vector2( 32, 32 )
+30/navigation_offset = Vector2( 32, 32 )
+30/navigation = SubResource( 25 )
+30/shape_offset = Vector2( 0, 0 )
+30/shapes = [  ]
+31/name = "floor32"
+31/texture = ExtResource( 26 )
+31/tex_offset = Vector2( 0, 0 )
+31/region = Rect2( 0, 0, 0, 0 )
+31/occluder_offset = Vector2( 32, 32 )
+31/navigation_offset = Vector2( 32, 32 )
+31/navigation = SubResource( 26 )
+31/shape_offset = Vector2( 0, 0 )
+31/shapes = [  ]
+32/name = "floor33"
+32/texture = ExtResource( 27 )
+32/tex_offset = Vector2( 0, 0 )
+32/region = Rect2( 0, 0, 0, 0 )
+32/occluder_offset = Vector2( 32, 32 )
+32/navigation_offset = Vector2( 32, 32 )
+32/navigation = SubResource( 27 )
+32/shape_offset = Vector2( 0, 0 )
+32/shapes = [  ]
+33/name = "floor34"
+33/texture = ExtResource( 28 )
+33/tex_offset = Vector2( 0, 0 )
+33/region = Rect2( 0, 0, 0, 0 )
+33/occluder_offset = Vector2( 32, 32 )
+33/navigation_offset = Vector2( 32, 32 )
+33/navigation = SubResource( 28 )
+33/shape_offset = Vector2( 0, 0 )
+33/shapes = [  ]
+34/name = "floor35"
+34/texture = ExtResource( 29 )
+34/tex_offset = Vector2( 0, 0 )
+34/region = Rect2( 0, 0, 0, 0 )
+34/occluder_offset = Vector2( 32, 32 )
+34/navigation_offset = Vector2( 32, 32 )
+34/navigation = SubResource( 29 )
+34/shape_offset = Vector2( 0, 0 )
+34/shapes = [  ]
+35/name = "floor36"
+35/texture = ExtResource( 30 )
+35/tex_offset = Vector2( 0, 0 )
+35/region = Rect2( 0, 0, 0, 0 )
+35/occluder_offset = Vector2( 32, 32 )
+35/navigation_offset = Vector2( 32, 32 )
+35/navigation = SubResource( 30 )
+35/shape_offset = Vector2( 0, 0 )
+35/shapes = [  ]
+36/name = "floor37"
+36/texture = ExtResource( 31 )
+36/tex_offset = Vector2( 0, 0 )
+36/region = Rect2( 0, 0, 0, 0 )
+36/occluder_offset = Vector2( 32, 32 )
+36/navigation_offset = Vector2( 32, 32 )
+36/navigation = SubResource( 31 )
+36/shape_offset = Vector2( 0, 0 )
+36/shapes = [  ]
+37/name = "floor38"
+37/texture = ExtResource( 32 )
+37/tex_offset = Vector2( 0, 0 )
+37/region = Rect2( 0, 0, 0, 0 )
+37/occluder_offset = Vector2( 32, 32 )
+37/navigation_offset = Vector2( 32, 32 )
+37/navigation = SubResource( 32 )
+37/shape_offset = Vector2( 0, 0 )
+37/shapes = [  ]
+

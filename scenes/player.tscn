@@ -1,0 +1,170 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://scenes/player.gd" type="Script" id=1]
+[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=2]
+[ext_resource path="res://resources/player/hitman1_hold.png" type="Texture" id=3]
+[ext_resource path="res://resources/player/hitman1_silencer.png" type="Texture" id=4]
+[ext_resource path="res://resources/player/hitman1_reload.png" type="Texture" id=5]
+[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=6]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 20.0
+height = 22.0
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "hit"
+length = 0.4
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("gfx/stand:modulate")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("gfx/hold:modulate")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("gfx/shoot:modulate")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.3125, 0.3125, 1 ), Color( 1, 1, 1, 1 ) ] }
+
+[sub_resource type="Animation" id=3]
+
+resource/name = "jump"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/scale")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 0.25 ), "values":[ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
+
+[node name="player" type="KinematicBody2D" groups=[ "player" ]]
+
+z/z = 1
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 5, 0 )
+shapes/0/trigger = false
+collision/layers = 3
+collision/mask = 3
+collision/margin = 0.5
+script/script = ExtResource( 1 )
+ai = false
+menu = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/hit = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="gfx" type="Node2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="gfx"]
+
+transform/pos = Vector2( 16, -15 )
+polygon = Vector2Array( 0, -3, 10, -4, 13, -6, 13, 6, 10, 4, 0, 3, -1, 0.999998, -1, -1 )
+uv = Vector2Array(  )
+color = Color( 0.132813, 0.132813, 0.132813, 1 )
+offset = Vector2( 0, 0 )
+texture/texture = null
+texture/offset = Vector2( 0, 0 )
+texture/scale = Vector2( 1, 1 )
+texture/rotation = 0.0
+invert/enable = false
+invert/border = 100.0
+
+[node name="stand" type="Sprite" parent="gfx"]
+
+transform/pos = Vector2( 3, 0 )
+transform/scale = Vector2( 1, -1 )
+texture = ExtResource( 2 )
+
+[node name="hold" type="Sprite" parent="gfx"]
+
+visibility/visible = false
+transform/pos = Vector2( 5, 0 )
+texture = ExtResource( 3 )
+
+[node name="shoot" type="Sprite" parent="gfx"]
+
+visibility/visible = false
+transform/pos = Vector2( 20, 0 )
+texture = ExtResource( 4 )
+__meta__ = { "_editor_collapsed":true }
+
+[node name="Position2D" type="Position2D" parent="gfx/shoot"]
+
+transform/pos = Vector2( 32, 14 )
+
+[node name="reload" type="Sprite" parent="gfx"]
+
+visibility/visible = false
+transform/pos = Vector2( 8, 0 )
+texture = ExtResource( 5 )
+
+[node name="Light2D" type="Light2D" parent="gfx"]
+
+transform/pos = Vector2( 23, -14 )
+enabled = true
+texture = ExtResource( 6 )
+offset = Vector2( 159, 3 )
+scale = 1.0
+color = Color( 0.921001, 0.933594, 0.809601, 1 )
+energy = 1.0
+mode = 0
+range/height = 100.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 1
+shadow/enabled = true
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 1
+
+[node name="jump" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/jump = SubResource( 3 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="shootTimer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
+
+[node name="reloadTimer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 2.0
+one_shot = false
+autostart = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 5, 0 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+

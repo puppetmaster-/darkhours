@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scenes/game.gd" type="Script" id=1]
+[ext_resource path="res://scenes/camera.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/gui/gui.tscn" type="PackedScene" id=4]
+
+[node name="game" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Camera2D" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 512, 608 )
+offset = Vector2( 0, -128 )
+current = true
+drag_margin/h_enabled = false
+drag_margin/v_enabled = false
+smoothing/enable = true
+drag_margin/left = 0.0
+drag_margin/top = 0.0
+drag_margin/right = 0.0
+drag_margin/bottom = 0.0
+
+[node name="nav" type="Navigation2D" parent="."]
+
+transform/pos = Vector2( 512, 608 )
+
+[node name="player" parent="nav" instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 0, 229 )
+
+[node name="roomes" type="Node2D" parent="nav"]
+
+[node name="gui" parent="." instance=ExtResource( 4 )]
+
+[node name="objects" type="Node2D" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+
+color = Color( 0.0367432, 0.0865107, 0.21875, 1 )
+
+

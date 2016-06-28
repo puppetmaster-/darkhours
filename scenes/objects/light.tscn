@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://scenes/objects/light.gd" type="Script" id=1]
+[ext_resource path="res://resources/light2.png" type="Texture" id=2]
+[ext_resource path="res://resources/tiles/wall/deko (41).png" type="Texture" id=3]
+[ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=4]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[node name="light" type="StaticBody2D" groups=[ "object" ]]
+
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+script/script = ExtResource( 1 )
+lightSwitch = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Light2D" type="Light2D" parent="."]
+
+enabled = true
+texture = ExtResource( 2 )
+offset = Vector2( 0, 0 )
+scale = 1.0
+color = Color( 0.792969, 0.675262, 0.675262, 1 )
+energy = 1.0
+mode = 0
+range/height = 0.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 1
+shadow/enabled = true
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 1
+
+[node name="Sprite1" type="Sprite" parent="."]
+
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 4 )
+
+
