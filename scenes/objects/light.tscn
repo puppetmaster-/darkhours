@@ -1,14 +1,50 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://scenes/objects/light.gd" type="Script" id=1]
 [ext_resource path="res://resources/light2.png" type="Texture" id=2]
 [ext_resource path="res://resources/tiles/wall/deko (41).png" type="Texture" id=3]
 [ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=4]
+[ext_resource path="res://resources/tiles/deko/tile_264.png" type="Texture" id=5]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "hit"
+length = 0.5
+loop = false
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light2D:enabled")
+tracks/0/interp = 1
+tracks/0/keys = { "cont":false, "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("lamp:visibility/visible")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":false, "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("hit:visibility/visible")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":false, "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/3/type = "value"
+tracks/3/path = NodePath("hit/Sprite2:transform/pos")
+tracks/3/interp = 1
+tracks/3/keys = { "cont":true, "times":FloatArray( 0.1, 0.4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 2.7972, 3.32167 ), Vector2( 2.27273, 9.61536 ) ] }
+tracks/4/type = "value"
+tracks/4/path = NodePath("hit/Sprite2:transform/rot")
+tracks/4/interp = 1
+tracks/4/keys = { "cont":true, "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "values":[ -16.2909, -8.20296 ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("hit/Sprite3:transform/pos")
+tracks/5/interp = 1
+tracks/5/keys = { "cont":true, "times":FloatArray( 0.1, 0.35 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -3.14684, -6.99299 ), Vector2( -5.41956, -12.0629 ) ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("hit/Sprite3:transform/rot")
+tracks/6/interp = 1
+tracks/6/keys = { "cont":true, "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "values":[ 80.1236, 102.881 ] }
 
 [node name="light" type="StaticBody2D" groups=[ "object" ]]
 
@@ -53,12 +89,43 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 80.0
 shadow/item_mask = 1
 
-[node name="Sprite1" type="Sprite" parent="."]
+[node name="table" type="Sprite" parent="."]
 
 texture = ExtResource( 3 )
 
-[node name="Sprite" type="Sprite" parent="."]
+[node name="lamp" type="Sprite" parent="."]
 
 texture = ExtResource( 4 )
+
+[node name="hit" type="Node2D" parent="."]
+
+visibility/visible = false
+
+[node name="Sprite2" type="Sprite" parent="hit"]
+
+transform/pos = Vector2( 2.7972, 3.32167 )
+transform/rot = -16.2909
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+modulate = Color( 0.990112, 1, 0.683594, 1 )
+
+[node name="Sprite3" type="Sprite" parent="hit"]
+
+transform/pos = Vector2( -3.14684, -6.99299 )
+transform/rot = 80.1236
+transform/scale = Vector2( -0.3, 0.3 )
+texture = ExtResource( 5 )
+modulate = Color( 0.990112, 1, 0.683594, 1 )
+
+[node name="ani" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/hit = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
 
 

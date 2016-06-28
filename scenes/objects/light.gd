@@ -6,6 +6,8 @@ export(bool) var lightSwitch = false setget switchLight
 
 func _ready():
 	switchLight(lightSwitch)
+	randomize()
+	get_node("hit").set_rot(randf())
 
 func switchLight(newValue):
 	lightSwitch = newValue
