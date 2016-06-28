@@ -54,3 +54,10 @@ func onBodyEnter(body):
 		set_collision_mask(0)
 		set_layer_mask(0)
 		get_node("Particles2D").set_emitting(false)
+	if(body.is_in_group("furniture")):
+		velocity = Vector2(0,0)
+		speed = 0
+		get_node("Particles2D").set_emitting(false)
+		set_collision_mask(0)
+		set_layer_mask(0)
+		hide()

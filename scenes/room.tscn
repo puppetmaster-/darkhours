@@ -1,12 +1,13 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://scenes/room.gd" type="Script" id=1]
 [ext_resource path="res://scenes/tilesets/floor.tres" type="TileSet" id=2]
-[ext_resource path="res://scenes/tilesets/wall_0.tres" type="TileSet" id=3]
-[ext_resource path="res://scenes/objects/light.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/objects/box.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/tilesets/wall_pattern.tres" type="TileSet" id=6]
-[ext_resource path="res://scenes/tilesets/tileset_editor.tres" type="TileSet" id=7]
+[ext_resource path="res://scenes/tilesets/furnitures.tres" type="TileSet" id=3]
+[ext_resource path="res://scenes/tilesets/wall_0.tres" type="TileSet" id=4]
+[ext_resource path="res://scenes/objects/light.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/objects/box.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/tilesets/wall_pattern.tres" type="TileSet" id=7]
+[ext_resource path="res://scenes/tilesets/tileset_editor.tres" type="TileSet" id=8]
 
 [node name="room" type="Node2D"]
 
@@ -35,7 +36,7 @@ collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray(  )
 
-[node name="wall" type="TileMap" parent="tiles" groups=[ "wall" ]]
+[node name="furniture" type="TileMap" parent="tiles" groups=[ "furniture" ]]
 
 mode = 0
 tile_set = ExtResource( 3 )
@@ -53,13 +54,31 @@ collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray(  )
 
+[node name="wall" type="TileMap" parent="tiles" groups=[ "wall" ]]
+
+mode = 0
+tile_set = ExtResource( 4 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray(  )
+
 [node name="objects" type="Node2D" parent="tiles"]
 
-[node name="light" parent="tiles/objects" instance=ExtResource( 4 )]
+[node name="light" parent="tiles/objects" instance=ExtResource( 5 )]
 
-transform/pos = Vector2( 96, 480 )
+transform/pos = Vector2( 160, 544 )
 
-[node name="box" parent="tiles/objects" instance=ExtResource( 5 )]
+[node name="box" parent="tiles/objects" instance=ExtResource( 6 )]
 
 transform/pos = Vector2( 512, 544 )
 
@@ -72,8 +91,9 @@ transform/pos = Vector2( -512, -352 )
 
 [node name="0" type="TileMap" parent="pattern/wall"]
 
+visibility/visible = false
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -86,13 +106,13 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 2, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65537, -1073741790, 65538, -1073741790, 65539, -1073741790, 65540, -1073741790, 65541, -1073741790, 65551, 9, 131072, 9, 131087, 9, 196608, 9, 196623, 9, 262144, 20, 262159, 20, 393216, 21, 393231, 21, 458752, 9, 458766, -1073741790, 458767, 9, 524288, 9, 524302, -1073741790, 524303, 9, 589824, 9, 589838, -1073741790, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 2, 655366, 19, 655369, 22, 655370, 2, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
+tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 2, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65551, 9, 131072, 9, 131087, 9, 196608, 9, 196623, 9, 262144, 20, 262159, 20, 393216, 21, 393231, 21, 458752, 9, 458767, 9, 524288, 9, 524303, 9, 589824, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 2, 655366, 19, 655369, 22, 655370, 2, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
 
 [node name="1" type="TileMap" parent="pattern/wall"]
 
 visibility/visible = false
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -105,13 +125,13 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 3, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65546, 9, 65551, 9, 131072, 9, 131082, 9, 131087, 9, 196608, 9, 196618, 9, 196623, 9, 262144, 20, 262154, 9, 262159, 20, 327684, 13, 327685, 2, 327686, 2, 327687, 2, 327688, 2, 327689, 2, 327690, 8, 393216, 21, 393231, 21, 458752, 9, 458767, 9, 524288, 9, 524293, 21, 524298, 21, 524303, 9, 589824, 9, 589825, -1610612705, 589826, -1610612702, 589827, -1073741793, 589829, 9, 589834, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 4, 655366, 19, 655369, 22, 655370, 4, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
+tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 3, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65546, 9, 65551, 9, 131072, 9, 131082, 9, 131087, 9, 196608, 9, 196618, 9, 196623, 9, 262144, 20, 262154, 9, 262159, 20, 327684, 13, 327685, 2, 327686, 2, 327687, 2, 327688, 2, 327689, 2, 327690, 8, 393216, 21, 393231, 21, 458752, 9, 458767, 9, 524288, 9, 524293, 21, 524298, 21, 524303, 9, 589824, 9, 589829, 9, 589834, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 4, 655366, 19, 655369, 22, 655370, 4, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
 
 [node name="2" type="TileMap" parent="pattern/wall"]
 
 visibility/visible = false
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -130,7 +150,7 @@ tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 2, 1
 
 visibility/visible = false
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -149,7 +169,7 @@ tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 2, 1
 
 visibility/visible = false
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -168,7 +188,7 @@ tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 3, 6, 19, 9, 22, 10, 2, 1
 
 visibility/visible = false
 mode = 0
-tile_set = ExtResource( 6 )
+tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -181,31 +201,10 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 3, 6, 19, 9, 22, 10, 3, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65546, 9, 65551, 9, 131072, 9, 131082, 9, 131087, 9, 196608, 9, 196612, 1610612767, 196613, 1610612767, 196614, 1610612767, 196618, 6, 196623, 9, 262144, 20, 262147, -1610612705, 262148, 34, 262149, 34, 262150, 34, 262151, -1073741793, 262154, -1610612712, 262159, 20, 327683, -1610612705, 327684, 34, 327686, -1610612702, 327687, -1073741793, 327690, -1610612712, 393216, 21, 393219, -1610612705, 393220, 34, 393221, 34, 393222, 34, 393223, -1073741793, 393226, -1610612712, 393231, 21, 458752, 9, 458756, 31, 458757, 31, 458758, 31, 458762, 12, 458767, 9, 524288, 9, 524298, 9, 524303, 9, 589824, 9, 589834, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 4, 655366, 19, 655369, 22, 655370, 4, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
+tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 2, 6, 19, 9, 22, 10, 3, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65546, 9, 65551, 9, 131072, 9, 131082, 9, 131087, 9, 196608, 9, 196618, 6, 196623, 9, 262144, 20, 262154, -1610612712, 262159, 20, 327690, -1610612712, 393216, 21, 393226, -1610612712, 393231, 21, 458752, 9, 458762, 12, 458767, 9, 524288, 9, 524298, 9, 524303, 9, 589824, 9, 589834, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 2, 655366, 19, 655369, 22, 655370, 4, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
 
 [node name="6" type="TileMap" parent="pattern/wall"]
 
-visibility/visible = false
-mode = 0
-tile_set = ExtResource( 6 )
-cell/size = Vector2( 64, 64 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 1.0
-collision/bounce = 0.0
-collision/layers = 1
-collision/mask = 1
-occluder/light_mask = 1
-tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 3, 6, 19, 9, 22, 10, 2, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65537, 1610612770, 65538, 1610612770, 65539, 1610612770, 65540, 1610612770, 65541, 9, 65551, 9, 131072, 9, 131077, 9, 131087, 9, 196608, 9, 196613, 9, 196623, 9, 262144, 20, 262149, 7, 262150, 2, 262151, 2, 262152, 2, 262153, 2, 262154, 2, 262155, 1, 262159, 20, 327690, 34, 327691, 9, 393216, 21, 393226, 34, 393227, 9, 393231, 21, 458752, 9, 458762, 34, 458763, 7, 458764, 2, 458765, 2, 458766, 2, 458767, 9, 524288, 9, 524298, 34, 524299, 34, 524300, 34, 524301, 34, 524302, 34, 524303, 9, 589824, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 4, 655366, 19, 655369, 22, 655370, 2, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
-
-[node name="deko" type="Node2D" parent="pattern"]
-
-[node name="0" type="TileMap" parent="pattern/deko"]
-
 mode = 0
 tile_set = ExtResource( 7 )
 cell/size = Vector2( 64, 64 )
@@ -220,13 +219,16 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 65537, 2, 65538, 2, 65539, 2, 65540, 2, 65546, 2, 65547, 2, 65548, 2, 65549, 2, 65550, 2, 589825, 2, 589826, 2, 589827, 2, 589828, 2, 589829, 2, 589834, 2, 589835, 2, 589836, 2, 589837, 2, 589838, 2 )
+tile_data = IntArray( 0, 0, 1, 2, 2, 2, 3, 2, 4, 2, 5, 3, 6, 19, 9, 22, 10, 2, 11, 2, 12, 2, 13, 2, 14, 2, 15, 1, 65536, 9, 65541, 9, 65551, 9, 131072, 9, 131077, 9, 131087, 9, 196608, 9, 196613, 9, 196623, 9, 262144, 20, 262149, 7, 262150, 2, 262151, 2, 262152, 2, 262153, 2, 262154, 2, 262155, 1, 262159, 20, 327691, 9, 393216, 21, 393227, 9, 393231, 21, 458752, 9, 458763, 7, 458764, 2, 458765, 2, 458766, 2, 458767, 11, 524288, 9, 524303, 9, 589824, 9, 589839, 9, 655360, 7, 655361, 2, 655362, 2, 655363, 2, 655364, 2, 655365, 2, 655366, 19, 655369, 22, 655370, 2, 655371, 2, 655372, 2, 655373, 2, 655374, 2, 655375, 8 )
 
-[node name="1" type="TileMap" parent="pattern/deko"]
+[node name="furnitur" type="Node2D" parent="pattern"]
 
 visibility/visible = false
+
+[node name="0" type="TileMap" parent="pattern/furnitur"]
+
 mode = 0
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 8 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -239,13 +241,13 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 65537, 2, 65550, 2, 131073, 2, 131086, 2, 196613, 2, 196618, 2, 262149, 1, 262154, 1, 327685, 1, 327690, 1, 393221, 1, 393226, 1, 458757, 2, 458762, 2, 524289, 2, 524302, 2, 589825, 2, 589838, 2 )
+tile_data = IntArray( 65538, 2, 65539, 2, 65540, 2, 65541, 2, 65546, 2, 65547, 2, 65548, 2, 65549, 2, 131073, -1073741822, 131086, -1610612734, 262150, -1610612734, 262151, 1610612738, 262152, 1610612738, 262153, -1073741822, 327686, -1610612734, 327689, -1073741822, 393222, -1610612734, 393223, 2, 393224, 2, 393225, -1073741822, 524289, -1073741822, 524302, -1610612734, 589826, 1610612738, 589827, 1610612738, 589828, 1610612738, 589829, 1610612738, 589834, 1610612738, 589835, 1610612738, 589836, 1610612738, 589837, 1610612738 )
 
-[node name="2" type="TileMap" parent="pattern/deko"]
+[node name="1" type="TileMap" parent="pattern/furnitur"]
 
 visibility/visible = false
 mode = 0
-tile_set = ExtResource( 7 )
+tile_set = ExtResource( 8 )
 cell/size = Vector2( 64, 64 )
 cell/quadrant_size = 16
 cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -258,6 +260,101 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( 65540, 2, 65549, 2, 131073, 2, 196622, 2, 327684, 1, 327685, 1, 327686, 1, 327687, 2, 327688, 2, 327689, 1, 327690, 1, 327691, 1, 393220, 1, 393221, 2, 393222, 2, 393223, 1, 393224, 1, 393225, 2, 393226, 2, 393227, 1, 458753, 2, 524302, 2, 589829, 2, 589836, 2 )
+tile_data = IntArray( 65537, 5, 65538, 5, 65539, 2, 65540, 2, 65547, 5, 65548, 5, 65549, 5, 65550, 5, 262148, 1610612738, 262149, 1610612738, 262150, 1610612738, 262151, 1610612738, 262152, 1610612741, 262153, 1610612741, 524299, -1073741815, 524300, 1610612742, 524301, 1610612742, 524302, -1610612727, 589825, -1073741817, 589826, 1610612742, 589827, -1610612729, 589835, -1073741815, 589836, 1610612742, 589837, 1610612742, 589838, -1610612727 )
+
+[node name="2" type="TileMap" parent="pattern/furnitur"]
+
+visibility/visible = false
+mode = 0
+tile_set = ExtResource( 8 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65547, -1610612729, 65549, 2, 65550, 2, 131083, -1610612729, 262148, -1073741822, 262150, 7, 262151, 7, 262152, 7, 262153, 7, 262155, -1610612734, 327684, -1073741822, 327691, -1610612734, 393220, -1073741822, 393227, -1610612734 )
+
+[node name="3" type="TileMap" parent="pattern/furnitur"]
+
+visibility/visible = false
+mode = 0
+tile_set = ExtResource( 8 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, -1073741817, 65550, -1610612729, 131073, -1073741817, 131086, -1610612729, 262150, 2, 262151, 2, 262152, 2, 262153, 2, 262154, 2, 262155, 2, 262156, 2, 524291, 1610612742, 524300, 1610612742, 589826, -1073741815, 589827, 1610612742, 589836, 1610612742, 589837, -1610612727 )
+
+[node name="4" type="TileMap" parent="pattern/furnitur"]
+
+visibility/visible = false
+mode = 0
+tile_set = ExtResource( 8 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, 7, 65538, 7, 65539, 7, 65540, 7, 65546, 2, 65547, 2, 65548, 2, 65549, 2, 131086, -1610612734, 196614, -1073741817, 196622, -1610612734, 262150, -1073741822, 327686, -1073741822, 393222, -1073741822, 458758, -1073741817, 458766, -1610612734, 524302, -1610612734, 589825, 1610612743, 589826, 1610612743, 589827, 1610612743, 589828, 1610612743, 589836, 1610612738, 589837, 1610612738 )
+
+[node name="5" type="TileMap" parent="pattern/furnitur"]
+
+visibility/visible = false
+mode = 0
+tile_set = ExtResource( 8 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, 2, 65538, 2, 65547, 2, 65548, 2, 65549, 2, 65550, 2, 196612, 9, 196613, 9, 196614, 9, 262147, -1073741815, 262148, 1610612742, 262149, 1610612742, 262150, 1610612742, 262151, -1610612727, 327683, -1073741815, 327684, 1610612742, 327686, 1610612742, 327687, -1610612727, 393219, -1073741815, 393220, 1610612742, 393221, 1610612742, 393222, 1610612742, 393223, -1610612727, 458756, 1610612745, 458757, 1610612745, 458758, 1610612745, 589825, 1610612738, 589826, 1610612738, 589835, 1610612738, 589836, 1610612738, 589837, 1610612738, 589838, 1610612738 )
+
+[node name="6" type="TileMap" parent="pattern/furnitur"]
+
+visibility/visible = false
+mode = 0
+tile_set = ExtResource( 8 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( 65537, 4, 65538, 2, 65539, 2, 65540, 4, 65548, 2, 65549, 2, 65550, 4, 327686, -1073741817, 327687, 6, 327688, 6, 327689, 6, 327690, -1610612729, 393223, 1610612743, 393224, 1610612743, 393225, 1610612743, 589825, 1610612741, 589826, 1610612740, 589827, 1610612740, 589828, 1610612740, 589829, 1610612740, 589835, 1610612740, 589836, 1610612740, 589837, 1610612740, 589838, 1610612740 )
 
 

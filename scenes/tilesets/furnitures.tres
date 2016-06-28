@@ -1,0 +1,284 @@
+[gd_resource type="TileSet" load_steps=39 format=1]
+
+[ext_resource path="res://resources/tiles/wall/nature (20).png" type="Texture" id=1]
+[ext_resource path="res://resources/tiles/wall/nature (21).png" type="Texture" id=2]
+[ext_resource path="res://resources/tiles/deko/chair (1).png" type="Texture" id=3]
+[ext_resource path="res://resources/tiles/deko/chair (7).png" type="Texture" id=4]
+[ext_resource path="res://resources/tiles/deko/chair (8).png" type="Texture" id=5]
+[ext_resource path="res://resources/tiles/deko/chair (9).png" type="Texture" id=6]
+[ext_resource path="res://resources/tiles/deko/chair (2).png" type="Texture" id=7]
+[ext_resource path="res://resources/tiles/deko/chair (3).png" type="Texture" id=8]
+[ext_resource path="res://resources/tiles/deko/chair (4).png" type="Texture" id=9]
+[ext_resource path="res://resources/tiles/deko/chair (5).png" type="Texture" id=10]
+[ext_resource path="res://resources/tiles/deko/chair (6).png" type="Texture" id=11]
+[ext_resource path="res://resources/tiles/deko/deko (27).png" type="Texture" id=12]
+[ext_resource path="res://resources/tiles/wall/nature (19).png" type="Texture" id=13]
+[ext_resource path="res://resources/tiles/wall/deko (15).png" type="Texture" id=14]
+[ext_resource path="res://resources/tiles/wall/deko (16).png" type="Texture" id=15]
+[ext_resource path="res://resources/tiles/wall/deko (17).png" type="Texture" id=16]
+[ext_resource path="res://resources/tiles/deko/tile_134.png" type="Texture" id=17]
+[ext_resource path="res://resources/tiles/deko/tile_510.png" type="Texture" id=18]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[resource]
+
+0/name = "box"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/region = Rect2( 0, 0, 0, 0 )
+0/occluder_offset = Vector2( 32, 32 )
+0/navigation_offset = Vector2( 32, 32 )
+0/shape_offset = Vector2( 32, 32 )
+0/shapes = [ SubResource( 1 ) ]
+1/name = "box1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/region = Rect2( 0, 0, 0, 0 )
+1/occluder_offset = Vector2( 32, 32 )
+1/navigation_offset = Vector2( 32, 32 )
+1/shape_offset = Vector2( 32, 32 )
+1/shapes = [ SubResource( 2 ) ]
+2/name = "box2"
+2/texture = ExtResource( 13 )
+2/tex_offset = Vector2( 0, 0 )
+2/region = Rect2( 0, 0, 0, 0 )
+2/occluder_offset = Vector2( 32, 32 )
+2/navigation_offset = Vector2( 32, 32 )
+2/shape_offset = Vector2( 32, 32 )
+2/shapes = [ SubResource( 13 ) ]
+3/name = "box3"
+3/texture = ExtResource( 14 )
+3/tex_offset = Vector2( 0, 0 )
+3/region = Rect2( 0, 0, 0, 0 )
+3/occluder_offset = Vector2( 32, 32 )
+3/navigation_offset = Vector2( 32, 32 )
+3/shape_offset = Vector2( 32, 32 )
+3/shapes = [ SubResource( 14 ) ]
+4/name = "box4"
+4/texture = ExtResource( 15 )
+4/tex_offset = Vector2( 0, 0 )
+4/region = Rect2( 0, 0, 0, 0 )
+4/occluder_offset = Vector2( 32, 32 )
+4/navigation_offset = Vector2( 32, 32 )
+4/shape_offset = Vector2( 32, 32 )
+4/shapes = [ SubResource( 15 ) ]
+5/name = "box5"
+5/texture = ExtResource( 16 )
+5/tex_offset = Vector2( 0, 0 )
+5/region = Rect2( 0, 0, 0, 0 )
+5/occluder_offset = Vector2( 32, 32 )
+5/navigation_offset = Vector2( 32, 32 )
+5/shape_offset = Vector2( 32, 32 )
+5/shapes = [ SubResource( 16 ) ]
+6/name = "box6"
+6/texture = ExtResource( 17 )
+6/tex_offset = Vector2( 0, 0 )
+6/region = Rect2( 0, 0, 0, 0 )
+6/occluder_offset = Vector2( 32, 32 )
+6/navigation_offset = Vector2( 32, 32 )
+6/shape_offset = Vector2( 32, 32 )
+6/shapes = [ SubResource( 17 ) ]
+7/name = "box7"
+7/texture = ExtResource( 18 )
+7/tex_offset = Vector2( 0, 0 )
+7/region = Rect2( 0, 0, 0, 0 )
+7/occluder_offset = Vector2( 32, 32 )
+7/navigation_offset = Vector2( 32, 32 )
+7/shape_offset = Vector2( 32, 32 )
+7/shapes = [ SubResource( 18 ) ]
+8/name = "box8"
+8/texture = ExtResource( 18 )
+8/tex_offset = Vector2( 0, 0 )
+8/region = Rect2( 0, 0, 0, 0 )
+8/occluder_offset = Vector2( 32, 32 )
+8/navigation_offset = Vector2( 32, 32 )
+8/shape_offset = Vector2( 32, 32 )
+8/shapes = [ SubResource( 19 ) ]
+9/name = "box9"
+9/texture = ExtResource( 18 )
+9/tex_offset = Vector2( 0, 0 )
+9/region = Rect2( 0, 0, 0, 0 )
+9/occluder_offset = Vector2( 32, 32 )
+9/navigation_offset = Vector2( 32, 32 )
+9/shape_offset = Vector2( 32, 32 )
+9/shapes = [ SubResource( 20 ) ]
+10/name = "chair"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/region = Rect2( 0, 0, 0, 0 )
+10/occluder_offset = Vector2( 32, 32 )
+10/navigation_offset = Vector2( 32, 32 )
+10/shape_offset = Vector2( 32, 32 )
+10/shapes = [ SubResource( 3 ) ]
+11/name = "chair1"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/region = Rect2( 0, 0, 0, 0 )
+11/occluder_offset = Vector2( 32, 32 )
+11/navigation_offset = Vector2( 32, 32 )
+11/shape_offset = Vector2( 32, 32 )
+11/shapes = [ SubResource( 4 ) ]
+12/name = "chair2"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/region = Rect2( 0, 0, 0, 0 )
+12/occluder_offset = Vector2( 32, 32 )
+12/navigation_offset = Vector2( 32, 32 )
+12/shape_offset = Vector2( 32, 32 )
+12/shapes = [ SubResource( 5 ) ]
+13/name = "chair3"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/region = Rect2( 0, 0, 0, 0 )
+13/occluder_offset = Vector2( 32, 32 )
+13/navigation_offset = Vector2( 32, 32 )
+13/shape_offset = Vector2( 32, 32 )
+13/shapes = [ SubResource( 6 ) ]
+14/name = "chair4"
+14/texture = ExtResource( 7 )
+14/tex_offset = Vector2( 0, 0 )
+14/region = Rect2( 0, 0, 0, 0 )
+14/occluder_offset = Vector2( 32, 32 )
+14/navigation_offset = Vector2( 32, 32 )
+14/shape_offset = Vector2( 32, 32 )
+14/shapes = [ SubResource( 7 ) ]
+15/name = "chair5"
+15/texture = ExtResource( 8 )
+15/tex_offset = Vector2( 0, 0 )
+15/region = Rect2( 0, 0, 0, 0 )
+15/occluder_offset = Vector2( 32, 32 )
+15/navigation_offset = Vector2( 32, 32 )
+15/shape_offset = Vector2( 32, 32 )
+15/shapes = [ SubResource( 8 ) ]
+16/name = "chair6"
+16/texture = ExtResource( 9 )
+16/tex_offset = Vector2( 0, 0 )
+16/region = Rect2( 0, 0, 0, 0 )
+16/occluder_offset = Vector2( 32, 32 )
+16/navigation_offset = Vector2( 32, 32 )
+16/shape_offset = Vector2( 32, 32 )
+16/shapes = [ SubResource( 9 ) ]
+17/name = "chair7"
+17/texture = ExtResource( 10 )
+17/tex_offset = Vector2( 0, 0 )
+17/region = Rect2( 0, 0, 0, 0 )
+17/occluder_offset = Vector2( 32, 32 )
+17/navigation_offset = Vector2( 32, 32 )
+17/shape_offset = Vector2( 32, 32 )
+17/shapes = [ SubResource( 10 ) ]
+18/name = "chair8"
+18/texture = ExtResource( 11 )
+18/tex_offset = Vector2( 0, 0 )
+18/region = Rect2( 0, 0, 0, 0 )
+18/occluder_offset = Vector2( 32, 32 )
+18/navigation_offset = Vector2( 32, 32 )
+18/shape_offset = Vector2( 32, 32 )
+18/shapes = [ SubResource( 11 ) ]
+19/name = "table"
+19/texture = ExtResource( 12 )
+19/tex_offset = Vector2( 0, 0 )
+19/region = Rect2( 0, 0, 0, 0 )
+19/occluder_offset = Vector2( 32, 32 )
+19/navigation_offset = Vector2( 32, 32 )
+19/shape_offset = Vector2( 32, 32 )
+19/shapes = [ SubResource( 12 ) ]
+
