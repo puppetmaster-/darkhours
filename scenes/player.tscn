@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=1]
+[gd_scene load_steps=11 format=1]
 
 [ext_resource path="res://scenes/player.gd" type="Script" id=1]
-[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=2]
-[ext_resource path="res://resources/player/hitman1_hold.png" type="Texture" id=3]
-[ext_resource path="res://resources/player/hitman1_silencer.png" type="Texture" id=4]
-[ext_resource path="res://resources/player/hitman1_reload.png" type="Texture" id=5]
-[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=6]
+[ext_resource path="res://resources/tiles/wall/deko (24).png" type="Texture" id=2]
+[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=3]
+[ext_resource path="res://resources/player/hitman1_hold.png" type="Texture" id=4]
+[ext_resource path="res://resources/player/hitman1_silencer.png" type="Texture" id=5]
+[ext_resource path="res://resources/player/hitman1_reload.png" type="Texture" id=6]
+[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -42,6 +43,14 @@ tracks/0/type = "value"
 tracks/0/path = NodePath(".:transform/scale")
 tracks/0/interp = 1
 tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 0.25 ), "values":[ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
+tracks/1/type = "value"
+tracks/1/path = NodePath("gfx/Light2D:transform/scale")
+tracks/1/interp = 1
+tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.894943, 1 ), Vector2( 1, 1 ) ] }
+tracks/2/type = "value"
+tracks/2/path = NodePath("gfx/Light2D1:transform/scale")
+tracks/2/interp = 1
+tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "values":[ Vector2( 0.588385, 1.34922 ), Vector2( 0.530553, 1.34922 ), Vector2( 0.588385, 1.34922 ) ] }
 
 [node name="player" type="KinematicBody2D" groups=[ "player" ]]
 
@@ -56,6 +65,12 @@ collision/margin = 0.5
 script/script = ExtResource( 1 )
 ai = false
 menu = false
+
+[node name="Sprite" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/scale = Vector2( 10, 10 )
+texture = ExtResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
@@ -88,19 +103,19 @@ invert/border = 100.0
 
 transform/pos = Vector2( 3, 0 )
 transform/scale = Vector2( 1, -1 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="hold" type="Sprite" parent="gfx"]
 
 visibility/visible = false
 transform/pos = Vector2( 5, 0 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 
 [node name="shoot" type="Sprite" parent="gfx"]
 
 visibility/visible = false
 transform/pos = Vector2( 20, 0 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 __meta__ = { "_editor_collapsed":true }
 
 [node name="Position2D" type="Position2D" parent="gfx/shoot"]
@@ -111,19 +126,42 @@ transform/pos = Vector2( 32, 14 )
 
 visibility/visible = false
 transform/pos = Vector2( 8, 0 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="Light2D" type="Light2D" parent="gfx"]
 
 transform/pos = Vector2( 23, -14 )
 enabled = true
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 offset = Vector2( 159, 3 )
 scale = 1.0
 color = Color( 0.921001, 0.933594, 0.809601, 1 )
 energy = 1.0
 mode = 0
 range/height = 100.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 1
+shadow/enabled = true
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 1
+
+[node name="Light2D1" type="Light2D" parent="gfx"]
+
+transform/pos = Vector2( 21.091, -14.8422 )
+transform/scale = Vector2( 0.588385, 1.34922 )
+enabled = true
+texture = ExtResource( 7 )
+offset = Vector2( 238.279, 5.69445 )
+scale = 1.5
+color = Color( 0.921001, 0.933594, 0.809601, 0.373065 )
+energy = 0.5
+mode = 0
+range/height = 2000.0
 range/z_min = -1024
 range/z_max = 1024
 range/layer_min = 0

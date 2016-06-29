@@ -27,12 +27,13 @@ var path
 var old_mouse_pos
 
 func _ready():
-	world_coordinate = Vector2(0,0)
-	world_pos = Vector2(0,0)
-	
 	if !menu:
 		game = get_node("/root/game")
 		roomsize = get_node("/root/game").gamesize
+		
+		world_coordinate = Vector2(0,0)
+		world_pos = Vector2(0,0)
+	
 	
 	gfx_stand = get_node("gfx/stand")
 	gfx_hold = get_node("gfx/hold")

@@ -22,16 +22,16 @@ func _process(delta):
 		set_pos(get_pos()+(direction*speed)) #muss noch mit delta gemacht werden
 		diffx -= 1
 		if diffx == 0:
-			for o in get_tree().get_nodes_in_group("player"):
-				o.set_pos(o.get_pos()+(direction*64))
-				o.stop = false
+			for p in get_tree().get_nodes_in_group("player"):
+				p.set_pos(p.get_pos()+(direction*64))
+				p.stop = false
 	if diffy > 0:
 		set_pos(get_pos()+(direction*speed)) #muss noch mit delta gemacht werden
 		diffy -= 1
 		if diffy == 0:
-			for o in get_tree().get_nodes_in_group("player"):
-				o.set_pos(o.get_pos()+(direction*64))
-				o.stop = false
+			for p in get_tree().get_nodes_in_group("player"):
+				p.set_pos(p.get_pos()+(direction*64))
+				p.stop = false
 
 func moveTo(dir):
 	direction = dir
