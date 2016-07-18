@@ -94,7 +94,7 @@ range/item_mask = 1
 shadow/enabled = true
 shadow/color = Color( 0, 0, 0, 0 )
 shadow/buffer_size = 2048
-shadow/esm_multiplier = 80.0
+shadow/esm_multiplier = 100.0
 shadow/item_mask = 1
 
 [node name="table" type="Sprite" parent="."]
@@ -108,7 +108,7 @@ texture = ExtResource( 4 )
 [node name="hit" type="Node2D" parent="."]
 
 visibility/visible = false
-transform/rot = 14.1975
+transform/rot = 4.95003
 
 [node name="Sprite2" type="Sprite" parent="hit"]
 

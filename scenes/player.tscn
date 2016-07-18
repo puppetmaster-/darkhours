@@ -138,7 +138,7 @@ scale = 1.0
 color = Color( 0.921001, 0.933594, 0.809601, 1 )
 energy = 1.0
 mode = 0
-range/height = 100.0
+range/height = 0.0
 range/z_min = -1024
 range/z_max = 1024
 range/layer_min = 0
@@ -147,7 +147,7 @@ range/item_mask = 1
 shadow/enabled = true
 shadow/color = Color( 0, 0, 0, 0 )
 shadow/buffer_size = 2048
-shadow/esm_multiplier = 80.0
+shadow/esm_multiplier = 2000.0
 shadow/item_mask = 1
 
 [node name="Light2D1" type="Light2D" parent="gfx"]
@@ -161,7 +161,7 @@ scale = 1.5
 color = Color( 0.921001, 0.933594, 0.809601, 0.373065 )
 energy = 0.5
 mode = 0
-range/height = 2000.0
+range/height = 0.0
 range/z_min = -1024
 range/z_max = 1024
 range/layer_min = 0
@@ -170,7 +170,7 @@ range/item_mask = 1
 shadow/enabled = true
 shadow/color = Color( 0, 0, 0, 0 )
 shadow/buffer_size = 2048
-shadow/esm_multiplier = 80.0
+shadow/esm_multiplier = 2000.0
 shadow/item_mask = 1
 
 [node name="jump" type="AnimationPlayer" parent="."]
