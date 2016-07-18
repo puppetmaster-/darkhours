@@ -157,7 +157,7 @@ func init():
 		tm = load("res://scenes/tilesets/wall_"+str(randi()%2)+".tres")
 		biom = 3
 	
-	print("Room [",roomCoordinate,"] seed [",roomseed,"] biom_noise [",noise_value,"] biom [", biom,"] floorTileNr [",floorTileNr,"]")
+	#print("Room [",roomCoordinate,"] seed [",roomseed,"] biom_noise [",noise_value,"] biom [", biom,"] floorTileNr [",floorTileNr,"]")
 	
 	wall_map.set_tileset(tm)
 
