@@ -25,7 +25,6 @@ func noise(vec2,factor):
 	return noisValueToColorValue(val)
 
 func noisValueToColorValue(val):
-	print("noiseval was =",val)
 	#val from -1 to 1
 	if val < 0:
 		return (1-abs(val))/2
@@ -40,3 +39,36 @@ func gotoMenu():
 
 func goto_scene(path):
 	get_tree().change_scene(path)
+
+func moreNoise(vec2,inSeed,scale,octaves,persistance,lacunarity,offset):
+	var amplitude = 1
+	var frequency = 1
+	var noiseHeight = 0
+	
+	var minNoiseHeight = -1
+	var maxNoiseHeight = 1
+	
+	rand_seed(inSeed)
+	
+	var octaveOffsets = []
+	for i in range(octaves):
+		octaveOffsets.append(Vector2((randi()%1000+1000) + offset.x,(randi()%1000+1000) +offset.y))
+	
+	for oct in range(octaves):
+		var x = vec2.x / scale * frequency + octaveOffsets[oct].x
+		var y = vec2.y / scale * frequency + octaveOffsets[oct].y
+		var perlinValue = Simplex.simplex2(x,y)
+		noiseHeight += perlinValue * amplitude
+		amplitude *= persistance
+		frequency *= lacunarity
+		
+	if noiseHeight > maxNoiseHeight:
+		noiseHeight = maxNoiseHeight
+	elif noiseHeight < minNoiseHeight:
+		noiseHeight = minNoiseHeight
+		
+	return noiseHeight
+		
+		
+		
+	
