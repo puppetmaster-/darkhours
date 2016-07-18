@@ -45,9 +45,9 @@ patch_margin/bottom = 10
 
 anchor/right = 1
 anchor/bottom = 1
-margin/left = 640.0
+margin/left = 660.0
 margin/top = 32.0
-margin/right = 32.0
+margin/right = 34.0
 margin/bottom = 736.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -58,11 +58,10 @@ patch_margin/left = 10
 patch_margin/top = 10
 patch_margin/right = 10
 patch_margin/bottom = 10
-__meta__ = { "_editor_collapsed":true }
 
 [node name="TileMap" type="TileMap" parent="map"]
 
-transform/pos = Vector2( 176, 84 )
+transform/pos = Vector2( 158, 84 )
 mode = 0
 tile_set = ExtResource( 4 )
 cell/size = Vector2( 16, 16 )
@@ -81,7 +80,7 @@ tile_data = IntArray( 0, 0 )
 
 [node name="Sprite" type="Sprite" parent="map"]
 
-transform/pos = Vector2( 184.028, 92.0283 )
+transform/pos = Vector2( 165, 91 )
 transform/scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 5 )
 modulate = Color( 1, 0.716128, 0, 1 )

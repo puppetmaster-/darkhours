@@ -109,7 +109,7 @@ func set_world_coordinate(position_to_add):
 	world_pos.x = world_pos.x + (position_to_add.x*roomsize.x)
 	world_pos.y = world_pos.y + (position_to_add.y*roomsize.y)
 	var biom = get_node("/root/game/nav/roomes/"+str(world_coordinate.x)+"_"+str(world_coordinate.y)).biom
-	if biom >= 0 && biom < 5: 
+	if biom >= 0 && biom < 6: 
 		game.map.set_cell(world_coordinate.x,world_coordinate.y,biom,false,false,false)
 
 func shoot():

@@ -135,28 +135,27 @@ func updateMap(direction):
 	if direction == Vector2(-1,0):
 		#right
 		map.set_pos(map.get_pos()-Vector2(-16,0))
+		for y in range(7):
+			map.set_cell(player.get_world_coordinate().x+10,player.get_world_coordinate().y-y,-1,false,false,false)
+			map.set_cell(player.get_world_coordinate().x+10,player.get_world_coordinate().y+y,-1,false,false,false)
 	elif direction == Vector2(1,0):
 		#left
 		map.set_pos(map.get_pos()-Vector2(16,0))
+		for y in range(7):
+			map.set_cell(player.get_world_coordinate().x-10,player.get_world_coordinate().y-y,-1,false,false,false)
+			map.set_cell(player.get_world_coordinate().x-10,player.get_world_coordinate().y+y,-1,false,false,false)
 	elif direction == Vector2(0,-1):
 		#down
 		map.set_pos(map.get_pos()-Vector2(0,-16))
+		for x in range(11):
+			map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y+6,-1,false,false,false)
+			map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y+6,-1,false,false,false)
 	elif direction == Vector2(0,1):
 		#up
 		map.set_pos(map.get_pos()-Vector2(0,16))
-		
-	print("UpdateMap for pos =", player.get_world_coordinate())
-	# size 8+8 / 6+6
-	for x in range(8):
-		map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y-6,-1,false,false,false)
-		map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y-6,-1,false,false,false)
-		map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y+6,-1,false,false,false)
-		map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y+6,-1,false,false,false)
-	for y in range(6):
-		map.set_cell(player.get_world_coordinate().x-8,player.get_world_coordinate().y-y,-1,false,false,false)
-		map.set_cell(player.get_world_coordinate().x-8,player.get_world_coordinate().y-y,-1,false,false,false)
-		map.set_cell(player.get_world_coordinate().x+8,player.get_world_coordinate().y+y,-1,false,false,false)
-		map.set_cell(player.get_world_coordinate().x+8,player.get_world_coordinate().y+y,-1,false,false,false)
+		for x in range(11):
+			map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y-6,-1,false,false,false)
+			map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y-6,-1,false,false,false)
 
 
 
