@@ -14,6 +14,7 @@ var room_list = {}
 var gamesize = Vector2(1024,704)
 
 func _ready():
+	#no gravity
 	Physics2DServer.area_set_param(get_world_2d().get_space(), Physics2DServer.AREA_PARAM_GRAVITY_VECTOR, Vector2(0,0))
 	player = get_node("nav/player")
 	room_node = load("res://scenes/room.tscn")
@@ -76,6 +77,7 @@ func drawWorld():
 			tmp_room.set_pos(player.get_world_pos()+list2[i])
 			rooms.add_child(tmp_room)
 	#delete room
+	addRoomToList(player.get_world_coordinate())
 	deleteRooms(player.get_world_coordinate())
 
 func init_camera():
@@ -157,6 +159,7 @@ func updateMap(direction):
 			map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y-6,-1,false,false,false)
 			map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y-6,-1,false,false,false)
 
-
-
-	
+func addRoomToList(_room_coordinate):
+	if room_exist(_room_coordinate):
+		var tmpRoom= rooms.get_node(str(_room_coordinate.x)+"_"+str(_room_coordinate.y))
+		room_list[_room_coordinate] = tmpRoom.biom

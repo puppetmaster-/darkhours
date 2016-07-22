@@ -1,12 +1,12 @@
 [gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
-[ext_resource path="res://resources/font/120.fnt" type="Font" id=2]
-[ext_resource path="res://resources/font/40.fnt" type="Font" id=3]
+[ext_resource path="res://resources/font/120.fnt" type="BitmapFont" id=2]
+[ext_resource path="res://resources/font/40.fnt" type="BitmapFont" id=3]
 [ext_resource path="res://resources/tiles/deko/tile_346.png" type="Texture" id=4]
 [ext_resource path="res://resources/tiles/deko/tile_347.png" type="Texture" id=5]
 [ext_resource path="res://resources/tiles/deko/tile_348.png" type="Texture" id=6]
-[ext_resource path="res://resources/font/80.fnt" type="Font" id=7]
+[ext_resource path="res://resources/font/80.fnt" type="BitmapFont" id=7]
 [ext_resource path="res://scenes/tilesets/floor.tres" type="TileSet" id=8]
 [ext_resource path="res://scenes/tilesets/wall_1.tres" type="TileSet" id=9]
 [ext_resource path="res://scenes/objects/light.tscn" type="PackedScene" id=10]
@@ -25,7 +25,8 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:transform/rot")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ 0.0, 1.2, -1.2 ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 1.2, -1.2 ] }
 
 [sub_resource type="Animation" id=2]
 
@@ -35,23 +36,28 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("../CanvasModulate:color")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 15 ), "transitions":FloatArray( 1, 1 ), "values":[ Color( 0.429688, 0.429688, 0.429688, 1 ), Color( 0.0351563, 0.0351563, 0.0351563, 1 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 15 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Color( 0.429688, 0.429688, 0.429688, 1 ), Color( 0.0351563, 0.0351563, 0.0351563, 1 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("house/objects/light:lightSwitch")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":false, "times":FloatArray( 0, 7.2 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 7.2 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("house/objects/light1:lightSwitch")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":false, "times":FloatArray( 0, 6.7 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 6.7 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/3/type = "value"
 tracks/3/path = NodePath("house/objects/light2:lightSwitch")
 tracks/3/interp = 1
-tracks/3/keys = { "cont":false, "times":FloatArray( 0, 7.4 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0, 7.4 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("house/objects/light3:lightSwitch")
 tracks/4/interp = 1
-tracks/4/keys = { "cont":false, "times":FloatArray( 0, 7.5 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0, 7.5 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 
 [sub_resource type="Animation" id=3]
 
@@ -61,7 +67,8 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/lbl_center:transform/scale")
 tracks/0/interp = 2
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 2 ), "transitions":FloatArray( -2.54912, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 1.05, 1.05 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 2 ), "transitions":FloatArray( -2.54912, 1 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 1.05, 1.05 ) ] }
 
 [sub_resource type="Animation" id=4]
 
@@ -90,13 +97,14 @@ transform/pos = Vector2( 512, 224 )
 
 [node name="Label" type="Label" parent="CanvasLayer/lbl_center"]
 
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = -512.0
 margin/top = -32.0
 margin/right = 512.0
 margin/bottom = 96.0
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0.00231934, 0.59375, 0.538303, 1 )
 custom_colors/font_color_shadow = Color( 0.523438, 1, 0, 1 )
@@ -112,12 +120,14 @@ max_lines_visible = -1
 
 [node name="Label2" type="Label" parent="CanvasLayer"]
 
-margin/top = 320.0
-margin/right = 1024.0
-margin/bottom = 388.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 320.0
+margin/right = 1024.0
+margin/bottom = 388.0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0, 0.355469, 0.322144, 1 )
 custom_colors/font_color_shadow = Color( 0.523438, 1, 0, 1 )
@@ -133,12 +143,14 @@ max_lines_visible = -1
 
 [node name="Label1" type="Label" parent="CanvasLayer"]
 
-margin/top = 820.0
-margin/right = 1024.0
-margin/bottom = 880.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 820.0
+margin/right = 1024.0
+margin/bottom = 880.0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0, 0.352941, 0.321569, 1 )
 custom_colors/font_color_shadow = Color( 0.523438, 1, 0, 1 )
@@ -154,12 +166,14 @@ max_lines_visible = -1
 
 [node name="Label3" type="Label" parent="CanvasLayer"]
 
-margin/top = 878.0
-margin/right = 1024.0
-margin/bottom = 968.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 878.0
+margin/right = 1024.0
+margin/bottom = 968.0
 custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 0.224609, 0.25, 0, 1 )
 custom_colors/font_color_shadow = Color( 0.523438, 1, 0, 1 )
@@ -180,21 +194,23 @@ transform/scale = Vector2( 0.8, 0.8 )
 
 [node name="TextureButton" type="TextureButton" parent="CanvasLayer/start"]
 
-margin/left = -96.0
-margin/top = -32.0
-margin/right = 96.0
-margin/bottom = 32.0
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = -96.0
+margin/top = -32.0
+margin/right = 96.0
+margin/bottom = 32.0
 toggle_mode = false
 click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
 
 [node name="Node2D" type="Node2D" parent="CanvasLayer/start"]
 
+editor/display_folded = true
 transform/scale = Vector2( 2, 2 )
-__meta__ = { "_editor_collapsed":true }
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/start/Node2D"]
 
@@ -212,13 +228,14 @@ texture = ExtResource( 6 )
 
 [node name="Label4" type="Label" parent="CanvasLayer/start"]
 
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
 margin/left = -203.0
 margin/top = -43.0
 margin/right = 213.0
 margin/bottom = 47.0
-focus/ignore_mouse = true
-focus/stop_mouse = true
-size_flags/horizontal = 2
 custom_fonts/font = ExtResource( 7 )
 custom_colors/font_color = Color( 0, 0.352941, 0.321569, 1 )
 custom_colors/font_color_shadow = Color( 0.523438, 1, 0, 1 )

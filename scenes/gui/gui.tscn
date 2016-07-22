@@ -15,7 +15,8 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.5 ), "transitions":FloatArray( 1, 1 ), "values":[ Color( 1, 0, 0, 1 ), Color( 1, 0.960938, 0, 1 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.5 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Color( 1, 0, 0, 1 ), Color( 1, 0.960938, 0, 1 ) ] }
 
 [node name="gui" type="CanvasLayer"]
 
@@ -29,11 +30,14 @@ script/script = ExtResource( 1 )
 
 anchor/right = 1
 anchor/bottom = 1
-margin/bottom = 704.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 704.0
 texture = ExtResource( 2 )
 modulate = Color( 0.339844, 0.248245, 0.248245, 1 )
 patch_margin/left = 10
@@ -45,14 +49,14 @@ patch_margin/bottom = 10
 
 anchor/right = 1
 anchor/bottom = 1
-margin/left = 660.0
-margin/top = 32.0
-margin/right = 34.0
-margin/bottom = 736.0
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
+margin/left = 660.0
+margin/top = 32.0
+margin/right = 34.0
+margin/bottom = 736.0
 texture = ExtResource( 3 )
 patch_margin/left = 10
 patch_margin/top = 10
@@ -80,8 +84,8 @@ tile_data = IntArray( 0, 0 )
 
 [node name="Sprite" type="Sprite" parent="map"]
 
-transform/pos = Vector2( 165, 91 )
-transform/scale = Vector2( 0.2, 0.2 )
+transform/pos = Vector2( 166, 92 )
+transform/scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 5 )
 modulate = Color( 1, 0.716128, 0, 1 )
 
@@ -98,15 +102,15 @@ autoplay = "idle"
 
 [node name="lbl_fps1" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 30.0
-margin/top = 20.0
-margin/right = 55.0
-margin/bottom = 36.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 20.0
+margin/right = 55.0
+margin/bottom = 36.0
 text = "fps:"
 valign = 1
 percent_visible = 1.0
@@ -115,15 +119,15 @@ max_lines_visible = -1
 
 [node name="lbl_fps" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 130.0
-margin/top = 20.0
-margin/right = 160.0
-margin/bottom = 36.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 130.0
+margin/top = 20.0
+margin/right = 160.0
+margin/bottom = 36.0
 text = "90"
 valign = 1
 percent_visible = 1.0
@@ -132,15 +136,15 @@ max_lines_visible = -1
 
 [node name="lbl_obj" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 30.0
-margin/top = 50.0
-margin/right = 126.0
-margin/bottom = 66.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 50.0
+margin/right = 126.0
+margin/bottom = 66.0
 text = "90"
 valign = 1
 percent_visible = 1.0
@@ -149,15 +153,15 @@ max_lines_visible = -1
 
 [node name="lbl_player_pos" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 140.0
-margin/top = 120.0
-margin/right = 236.0
-margin/bottom = 136.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 140.0
+margin/top = 120.0
+margin/right = 236.0
+margin/bottom = 136.0
 text = "90"
 valign = 1
 percent_visible = 1.0
@@ -166,15 +170,15 @@ max_lines_visible = -1
 
 [node name="lbl_camera_pos" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 140.0
-margin/top = 150.0
-margin/right = 236.0
-margin/bottom = 166.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 140.0
+margin/top = 150.0
+margin/right = 236.0
+margin/bottom = 166.0
 text = "90"
 valign = 1
 percent_visible = 1.0
@@ -183,15 +187,15 @@ max_lines_visible = -1
 
 [node name="lbl_mouse_pos" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 140.0
-margin/top = 180.0
-margin/right = 236.0
-margin/bottom = 196.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 140.0
+margin/top = 180.0
+margin/right = 236.0
+margin/bottom = 196.0
 text = "90"
 valign = 1
 percent_visible = 1.0
@@ -200,15 +204,15 @@ max_lines_visible = -1
 
 [node name="lbl_camera" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 30.0
-margin/top = 150.0
-margin/right = 80.0
-margin/bottom = 166.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 150.0
+margin/right = 80.0
+margin/bottom = 166.0
 text = "camera:"
 valign = 1
 percent_visible = 1.0
@@ -217,15 +221,15 @@ max_lines_visible = -1
 
 [node name="lbl_player" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 30.0
-margin/top = 120.0
-margin/right = 70.0
-margin/bottom = 136.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 120.0
+margin/right = 70.0
+margin/bottom = 136.0
 text = "player:"
 valign = 1
 percent_visible = 1.0
@@ -234,16 +238,111 @@ max_lines_visible = -1
 
 [node name="lbl_mouse" type="Label" parent="."]
 
-visibility/visible = false
-margin/left = 30.0
-margin/top = 180.0
-margin/right = 70.0
-margin/bottom = 196.0
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 180.0
+margin/right = 70.0
+margin/bottom = 196.0
 text = "mouse:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Control" type="Control" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 270.0
+margin/top = 0.0
+margin/right = 310.0
+margin/bottom = 40.0
+
+[node name="lbl_room" type="Label" parent="Control"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 20.0
+margin/right = 72.0
+margin/bottom = 36.0
+text = "ROOM"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="lbl_wall" type="Label" parent="Control"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 80.0
+margin/right = 72.0
+margin/bottom = 96.0
+text = "Wall:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="text" type="Label" parent="Control/lbl_wall"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 45.0
+margin/top = 0.0
+margin/right = 87.0
+margin/bottom = 16.0
+text = "1"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="lbl_biom" type="Label" parent="Control"]
+
+rect/scale = Vector2( 2, 2 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 30.0
+margin/top = 50.0
+margin/right = 72.0
+margin/bottom = 66.0
+text = "Biom:"
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="text" type="Label" parent="Control/lbl_biom"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 45.0
+margin/top = 0.0
+margin/right = 87.0
+margin/bottom = 16.0
+text = "1"
 valign = 1
 percent_visible = 1.0
 lines_skipped = 0

@@ -33,7 +33,7 @@ func _ready():
 		
 		world_coordinate = Vector2(0,0)
 		world_pos = Vector2(0,0)
-	
+		old_mouse_pos = get_node("/root/game/Camera2D").get_global_mouse_pos()
 	
 	gfx_stand = get_node("gfx/stand")
 	gfx_hold = get_node("gfx/hold")
@@ -88,7 +88,10 @@ func _fixed_process(delta):
 				move(motion)
 			
 			if !menu:
-				if old_mouse_pos != get_node("/root/game/Camera2D").get_global_mouse_pos():
+				var isDistanceToPlayerOK = get_global_pos().distance_to(get_node("/root/game/Camera2D").get_global_mouse_pos()) > 30.0
+				var hasMouseNewPosition = old_mouse_pos.distance_to(get_node("/root/game/Camera2D").get_global_mouse_pos()) > 0.5
+				
+				if  isDistanceToPlayerOK && hasMouseNewPosition:
 					set_rot( get_global_pos().angle_to_point(get_node("/root/game/Camera2D").get_global_mouse_pos()) + deg2rad(90))
 				
 				old_mouse_pos = get_node("/root/game/Camera2D").get_global_mouse_pos()
@@ -108,9 +111,8 @@ func set_world_coordinate(position_to_add):
 	world_coordinate += position_to_add
 	world_pos.x = world_pos.x + (position_to_add.x*roomsize.x)
 	world_pos.y = world_pos.y + (position_to_add.y*roomsize.y)
-	var biom = get_node("/root/game/nav/roomes/"+str(world_coordinate.x)+"_"+str(world_coordinate.y)).biom
-	if biom >= 0 && biom < 6: 
-		game.map.set_cell(world_coordinate.x,world_coordinate.y,biom,false,false,false)
+	var mapiconNr = get_node("/root/game/nav/roomes/"+str(world_coordinate.x)+"_"+str(world_coordinate.y)).wall_pattern_nr
+	game.map.set_cell(world_coordinate.x,world_coordinate.y,mapiconNr,false,false,false)
 
 func shoot():
 	if !menu:

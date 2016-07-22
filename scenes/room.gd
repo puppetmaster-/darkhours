@@ -20,6 +20,7 @@ var roomseed = 0.0
 var roomsize = Vector2(1024,704)
 var roomCoordinate
 var biom
+var scaleVector
 var floorTileNr
 
 var tilesize = 64
@@ -90,7 +91,8 @@ func generate_room():
 					if randb():
 						placeLight(objects_pattern.map_to_world(Vector2(x,y)))
 	var flip = [Vector2(1,1),Vector2(-1,1),Vector2(-1,-1),Vector2(1,-1)]
-	scale(flip[randi()%4])
+	scaleVector = flip[randi()%4]
+	scale(scaleVector)
 
 func clearAllMap():
 	for x in range(roomsize.x/tilesize):
@@ -110,9 +112,9 @@ func init():
 	furniture_map = get_node("tiles/furniture")
 	
 	var count_wall_patterns = get_node("pattern/wall").get_child_count()
-	var count_furnitur_patterns = get_node("pattern/wall").get_child_count()
+	var count_furnitur_patterns = get_node("pattern/furnitur").get_child_count()
 	
-	var wall_pattern_nr = randi()%count_wall_patterns
+	wall_pattern_nr = randi()%count_wall_patterns
 	wall_pattern = get_node("pattern/wall/"+str(wall_pattern_nr))
 	objects_pattern = get_node("pattern/objects/"+str(wall_pattern_nr))
 	
