@@ -20,39 +20,38 @@ step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Light2D:enabled")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":false, "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("lamp:visibility/visible")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":false, "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "values":[ true, false ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ true, false ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("hit:visibility/visible")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":false, "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "values":[ false, true ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 0.1 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/3/type = "value"
 tracks/3/path = NodePath("hit/Sprite2:transform/pos")
 tracks/3/interp = 1
-tracks/3/keys = { "cont":true, "times":FloatArray( 0.1, 0.4 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( 2.7972, 3.32167 ), Vector2( 2.27273, 9.61536 ) ] }
+tracks/3/imported = false
+tracks/3/keys = { "times":FloatArray( 0.1, 0.4 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( 2.7972, 3.32167 ), Vector2( 2.27273, 9.61536 ) ] }
 tracks/4/type = "value"
 tracks/4/path = NodePath("hit/Sprite2:transform/rot")
 tracks/4/interp = 1
-tracks/4/keys = { "cont":true, "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "values":[ -16.2909, -8.20296 ] }
+tracks/4/imported = false
+tracks/4/keys = { "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ -16.2909, -8.20296 ] }
 tracks/5/type = "value"
 tracks/5/path = NodePath("hit/Sprite3:transform/pos")
 tracks/5/interp = 1
-tracks/5/keys = { "cont":true, "times":FloatArray( 0.1, 0.35 ), "transitions":FloatArray( 1, 1 ), "values":[ Vector2( -3.14684, -6.99299 ), Vector2( -5.41956, -12.0629 ) ] }
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0.1, 0.35 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Vector2( -3.14684, -6.99299 ), Vector2( -5.41956, -12.0629 ) ] }
 tracks/6/type = "value"
 tracks/6/path = NodePath("hit/Sprite3:transform/rot")
 tracks/6/interp = 1
-tracks/6/keys = { "cont":true, "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "values":[ 80.1236, 102.881 ] }
-tracks/7/type = "value"
-tracks/7/path = NodePath(".:collision/layers")
-tracks/7/interp = 1
-tracks/7/keys = { "cont":false, "times":FloatArray( 0, 0.05 ), "transitions":FloatArray( 1, 1 ), "values":[ 1, 0 ] }
-tracks/8/type = "value"
-tracks/8/path = NodePath(".:collision/mask")
-tracks/8/interp = 1
-tracks/8/keys = { "cont":false, "times":FloatArray( 0, 0.05 ), "transitions":FloatArray( 1, 1 ), "values":[ 1, 0 ] }
+tracks/6/imported = false
+tracks/6/keys = { "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 80.1236, 102.881 ] }
 
 [node name="light" type="StaticBody2D" groups=[ "object" ]]
 
@@ -108,7 +107,7 @@ texture = ExtResource( 4 )
 [node name="hit" type="Node2D" parent="."]
 
 visibility/visible = false
-transform/rot = 4.95003
+transform/rot = 2.69425
 
 [node name="Sprite2" type="Sprite" parent="hit"]
 

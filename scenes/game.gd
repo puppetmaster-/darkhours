@@ -2,25 +2,22 @@
 extends Node2D
 
 var camera
-var player
-var rooms
-var navigation
+onready var player = get_node("nav/player")
+onready var rooms = get_node("nav/roomes")
+onready var map = get_node("gui")
+onready var navigation = get_node("nav")
 
 var time = 0
 var room_node
-var map
+
 var coordinate = Vector2(0,0)
-var room_list = {}
+var roomlist = {}
 var gamesize = Vector2(1024,704)
 
 func _ready():
 	#no gravity
 	Physics2DServer.area_set_param(get_world_2d().get_space(), Physics2DServer.AREA_PARAM_GRAVITY_VECTOR, Vector2(0,0))
-	player = get_node("nav/player")
 	room_node = load("res://scenes/room.tscn")
-	rooms = get_node("nav/roomes")
-	map = get_node("gui/map/TileMap")
-	navigation = get_node("nav")
 	init_camera()
 	start()
 	drawWorld()
@@ -36,11 +33,13 @@ func _process(delta):
 			if diff.x > 0:
 				player.stop = true
 				player.set_world_coordinate(Vector2(-1,0))
+				addRoomToList(player.get_world_coordinate())
 				camera.moveTo(camera.RIGHT)
 				updateMap(Vector2(-1,0))
 			else:
 				player.stop = true
 				player.set_world_coordinate(Vector2(1,0))
+				addRoomToList(player.get_world_coordinate())
 				camera.moveTo(camera.LEFT)
 				updateMap(Vector2(1,0))
 			drawWorld()
@@ -48,11 +47,13 @@ func _process(delta):
 			if diff.y > 0:
 				player.stop = true
 				player.set_world_coordinate(Vector2(0,-1))
+				addRoomToList(player.get_world_coordinate())
 				camera.moveTo(camera.DOWN)
 				updateMap(Vector2(0,-1))
 			else:
 				player.stop = true
 				player.set_world_coordinate(Vector2(0,1))
+				addRoomToList(player.get_world_coordinate())
 				camera.moveTo(camera.UP)
 				updateMap(Vector2(0,1))
 			drawWorld()
@@ -73,11 +74,10 @@ func drawWorld():
 		Vector2(gamesize.x,-gamesize.y)]
 	for i in range(8):
 		if(!room_exist(player.get_world_coordinate()+list1[i])):
-			var tmp_room = get_room(player.get_world_coordinate()+list1[i])
-			tmp_room.set_pos(player.get_world_pos()+list2[i])
-			rooms.add_child(tmp_room)
+			var _room = get_room(player.get_world_coordinate()+list1[i])
+			_room.set_pos(player.get_world_pos()+list2[i])
+			rooms.add_child(_room)
 	#delete room
-	addRoomToList(player.get_world_coordinate())
 	deleteRooms(player.get_world_coordinate())
 
 func init_camera():
@@ -109,16 +109,16 @@ func deleteRooms(world_coordinate):
 	for i in range(14):
 		var _room_coordinate = world_coordinate+list1[i]
 		if room_exist(_room_coordinate):
-			var roomToDelete = rooms.get_node(str(_room_coordinate.x)+"_"+str(_room_coordinate.y))
-			rooms.remove_child(roomToDelete)
-			roomToDelete.free()
+			var _roomToDelete = rooms.get_node(str(_room_coordinate.x)+"_"+str(_room_coordinate.y))
+			rooms.remove_child(_roomToDelete)
+			_roomToDelete.free()
 			
 	
 	
 func start():
-	var tmp_room = get_room(player.get_world_coordinate())
-	tmp_room.set_pos(player.get_world_pos())
-	rooms.add_child(tmp_room)
+	var _room = get_room(player.get_world_coordinate())
+	_room.set_pos(player.get_world_pos())
+	rooms.add_child(_room)
 
 func _fixed_process(delta):
 	free_nodes()
@@ -134,32 +134,13 @@ func getNavigation(from, to):
 	return path
 
 func updateMap(direction):
-	if direction == Vector2(-1,0):
-		#right
-		map.set_pos(map.get_pos()-Vector2(-16,0))
-		for y in range(7):
-			map.set_cell(player.get_world_coordinate().x+10,player.get_world_coordinate().y-y,-1,false,false,false)
-			map.set_cell(player.get_world_coordinate().x+10,player.get_world_coordinate().y+y,-1,false,false,false)
-	elif direction == Vector2(1,0):
-		#left
-		map.set_pos(map.get_pos()-Vector2(16,0))
-		for y in range(7):
-			map.set_cell(player.get_world_coordinate().x-10,player.get_world_coordinate().y-y,-1,false,false,false)
-			map.set_cell(player.get_world_coordinate().x-10,player.get_world_coordinate().y+y,-1,false,false,false)
-	elif direction == Vector2(0,-1):
-		#down
-		map.set_pos(map.get_pos()-Vector2(0,-16))
-		for x in range(11):
-			map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y+6,-1,false,false,false)
-			map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y+6,-1,false,false,false)
-	elif direction == Vector2(0,1):
-		#up
-		map.set_pos(map.get_pos()-Vector2(0,16))
-		for x in range(11):
-			map.set_cell(player.get_world_coordinate().x-x,player.get_world_coordinate().y-6,-1,false,false,false)
-			map.set_cell(player.get_world_coordinate().x+x,player.get_world_coordinate().y-6,-1,false,false,false)
+	map.updateMap(direction)
 
 func addRoomToList(_room_coordinate):
 	if room_exist(_room_coordinate):
-		var tmpRoom= rooms.get_node(str(_room_coordinate.x)+"_"+str(_room_coordinate.y))
-		room_list[_room_coordinate] = tmpRoom.biom
+		var _room = rooms.get_node(str(_room_coordinate.x)+"_"+str(_room_coordinate.y))
+		roomlist[_room_coordinate] = _room.getProperties()
+		print(roomlist)
+
+func getRoomList():
+	return roomlist

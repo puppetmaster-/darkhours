@@ -1,12 +1,12 @@
-[gd_scene load_steps=11 format=1]
+[gd_scene load_steps=12 format=1]
 
 [ext_resource path="res://scenes/player.gd" type="Script" id=1]
 [ext_resource path="res://resources/tiles/wall/deko (24).png" type="Texture" id=2]
-[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=3]
-[ext_resource path="res://resources/player/hitman1_hold.png" type="Texture" id=4]
-[ext_resource path="res://resources/player/hitman1_silencer.png" type="Texture" id=5]
-[ext_resource path="res://resources/player/hitman1_reload.png" type="Texture" id=6]
-[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=7]
+[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=3]
+[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=4]
+[ext_resource path="res://resources/player/hitman1_hold.png" type="Texture" id=5]
+[ext_resource path="res://resources/player/hitman1_silencer.png" type="Texture" id=6]
+[ext_resource path="res://resources/player/hitman1_reload.png" type="Texture" id=7]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -23,34 +23,51 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("gfx/stand:modulate")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("gfx/hold:modulate")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("gfx/shoot:modulate")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.3125, 0.3125, 1 ), Color( 1, 1, 1, 1 ) ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.3125, 0.3125, 1 ), Color( 1, 1, 1, 1 ) ] }
 
 [sub_resource type="Animation" id=3]
 
-resource/name = "jump"
+resource/name = "idle"
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/rot")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.3, 0.8 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 1.4, -1.0 ] }
+
+[sub_resource type="Animation" id=4]
+
 length = 1.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:transform/scale")
 tracks/0/interp = 1
-tracks/0/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 0.25 ), "values":[ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 0.25 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
 tracks/1/type = "value"
-tracks/1/path = NodePath("gfx/Light2D:transform/scale")
+tracks/1/path = NodePath("gfx/lamp/Light2D:transform/scale")
 tracks/1/interp = 1
-tracks/1/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "values":[ Vector2( 1, 1 ), Vector2( 0.894943, 1 ), Vector2( 1, 1 ) ] }
+tracks/1/imported = false
+tracks/1/keys = { "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 0.894943, 1 ), Vector2( 1, 1 ) ] }
 tracks/2/type = "value"
-tracks/2/path = NodePath("gfx/Light2D1:transform/scale")
+tracks/2/path = NodePath("gfx/lamp/Light2D1:transform/scale")
 tracks/2/interp = 1
-tracks/2/keys = { "cont":true, "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "values":[ Vector2( 0.588385, 1.34922 ), Vector2( 0.530553, 1.34922 ), Vector2( 0.588385, 1.34922 ) ] }
+tracks/2/imported = false
+tracks/2/keys = { "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "update":0, "values":[ Vector2( 0.588385, 1.34922 ), Vector2( 0.530553, 1.34922 ), Vector2( 0.588385, 1.34922 ) ] }
 
 [node name="player" type="KinematicBody2D" groups=[ "player" ]]
 
@@ -85,12 +102,17 @@ autoplay = ""
 
 [node name="gfx" type="Node2D" parent="."]
 
-[node name="Polygon2D" type="Polygon2D" parent="gfx"]
+[node name="lamp" type="Node2D" parent="gfx"]
 
 transform/pos = Vector2( 16, -15 )
+transform/rot = -0.988074
+
+[node name="Polygon2D" type="Polygon2D" parent="gfx/lamp"]
+
 polygon = Vector2Array( 0, -3, 10, -4, 13, -6, 13, 6, 10, 4, 0, 3, -1, 0.999998, -1, -1 )
 uv = Vector2Array(  )
 color = Color( 0.132813, 0.132813, 0.132813, 1 )
+vertex_colors = ColorArray(  )
 offset = Vector2( 0, 0 )
 texture/texture = null
 texture/offset = Vector2( 0, 0 )
@@ -99,40 +121,11 @@ texture/rotation = 0.0
 invert/enable = false
 invert/border = 100.0
 
-[node name="stand" type="Sprite" parent="gfx"]
+[node name="Light2D" type="Light2D" parent="gfx/lamp"]
 
-transform/pos = Vector2( 3, 0 )
-transform/scale = Vector2( 1, -1 )
-texture = ExtResource( 3 )
-
-[node name="hold" type="Sprite" parent="gfx"]
-
-visibility/visible = false
-transform/pos = Vector2( 5, 0 )
-texture = ExtResource( 4 )
-
-[node name="shoot" type="Sprite" parent="gfx"]
-
-visibility/visible = false
-transform/pos = Vector2( 20, 0 )
-texture = ExtResource( 5 )
-__meta__ = { "_editor_collapsed":true }
-
-[node name="Position2D" type="Position2D" parent="gfx/shoot"]
-
-transform/pos = Vector2( 32, 14 )
-
-[node name="reload" type="Sprite" parent="gfx"]
-
-visibility/visible = false
-transform/pos = Vector2( 8, 0 )
-texture = ExtResource( 6 )
-
-[node name="Light2D" type="Light2D" parent="gfx"]
-
-transform/pos = Vector2( 23, -14 )
+transform/pos = Vector2( 5, 1 )
 enabled = true
-texture = ExtResource( 7 )
+texture = ExtResource( 3 )
 offset = Vector2( 159, 3 )
 scale = 1.0
 color = Color( 0.921001, 0.933594, 0.809601, 1 )
@@ -150,12 +143,12 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 2000.0
 shadow/item_mask = 1
 
-[node name="Light2D1" type="Light2D" parent="gfx"]
+[node name="Light2D1" type="Light2D" parent="gfx/lamp"]
 
-transform/pos = Vector2( 21.091, -14.8422 )
+transform/pos = Vector2( 5, 1 )
 transform/scale = Vector2( 0.588385, 1.34922 )
 enabled = true
-texture = ExtResource( 7 )
+texture = ExtResource( 3 )
 offset = Vector2( 238.279, 5.69445 )
 scale = 1.5
 color = Color( 0.921001, 0.933594, 0.809601, 0.373065 )
@@ -173,12 +166,52 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 2000.0
 shadow/item_mask = 1
 
+[node name="animation" type="AnimationPlayer" parent="gfx/lamp"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/idle = SubResource( 3 )
+playback/active = true
+playback/speed = 0.3
+blend_times = [  ]
+autoplay = "idle"
+
+[node name="stand" type="Sprite" parent="gfx"]
+
+transform/pos = Vector2( 3, 0 )
+transform/scale = Vector2( 1, -1 )
+texture = ExtResource( 4 )
+
+[node name="hold" type="Sprite" parent="gfx"]
+
+visibility/visible = false
+transform/pos = Vector2( 5, 0 )
+texture = ExtResource( 5 )
+
+[node name="shoot" type="Sprite" parent="gfx"]
+
+editor/display_folded = true
+visibility/visible = false
+transform/pos = Vector2( 20, 0 )
+texture = ExtResource( 6 )
+
+[node name="Position2D" type="Position2D" parent="gfx/shoot"]
+
+transform/pos = Vector2( 32, 14 )
+
+[node name="reload" type="Sprite" parent="gfx"]
+
+visibility/visible = false
+transform/pos = Vector2( 8, 0 )
+texture = ExtResource( 7 )
+
 [node name="jump" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/jump = SubResource( 3 )
+anims/jump = SubResource( 4 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]

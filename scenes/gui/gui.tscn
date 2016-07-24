@@ -3,8 +3,8 @@
 [ext_resource path="res://scenes/gui/gui.gd" type="Script" id=1]
 [ext_resource path="res://resources/ui/back.png" type="Texture" id=2]
 [ext_resource path="res://resources/ui/map.png" type="Texture" id=3]
-[ext_resource path="res://scenes/tilesets/tileset_map.tres" type="TileSet" id=4]
-[ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=5]
+[ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=4]
+[ext_resource path="res://scenes/tilesets/tileset_map.tres" type="TileSet" id=5]
 
 [sub_resource type="Animation" id=1]
 
@@ -63,30 +63,11 @@ patch_margin/top = 10
 patch_margin/right = 10
 patch_margin/bottom = 10
 
-[node name="TileMap" type="TileMap" parent="map"]
-
-transform/pos = Vector2( 158, 84 )
-mode = 0
-tile_set = ExtResource( 4 )
-cell/size = Vector2( 16, 16 )
-cell/quadrant_size = 16
-cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-cell/half_offset = 2
-cell/tile_origin = 0
-cell/y_sort = false
-collision/use_kinematic = false
-collision/friction = 0.0
-collision/bounce = 0.0
-collision/layers = 0
-collision/mask = 0
-occluder/light_mask = 0
-tile_data = IntArray( 0, 0 )
-
 [node name="Sprite" type="Sprite" parent="map"]
 
 transform/pos = Vector2( 166, 92 )
-transform/scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 5 )
+transform/scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
 modulate = Color( 1, 0.716128, 0, 1 )
 
 [node name="idle" type="AnimationPlayer" parent="map/Sprite"]
@@ -100,8 +81,47 @@ playback/speed = 1.0
 blend_times = [  ]
 autoplay = "idle"
 
+[node name="grid" type="TileMap" parent="map"]
+
+transform/pos = Vector2( 158, 84 )
+mode = 0
+tile_set = ExtResource( 5 )
+cell/size = Vector2( 16, 16 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 0.0
+collision/bounce = 0.0
+collision/layers = 0
+collision/mask = 0
+occluder/light_mask = 0
+tile_data = IntArray( -196616, 16, -196615, 16, -196614, 16, -196613, 16, -196612, 16, -196611, 16, -196610, 16, -196609, 16, -262144, 16, -262143, 16, -262142, 16, -262141, 16, -262140, 16, -262139, 16, -262138, 16, -262137, 16, -262136, 16, -262135, 18, -131080, 16, -131079, 16, -131078, 16, -131077, 16, -131076, 16, -131075, 16, -131074, 16, -131073, 16, -196608, 16, -196607, 16, -196606, 16, -196605, 16, -196604, 16, -196603, 16, -196602, 16, -196601, 16, -196600, 16, -196599, 18, -65544, 16, -65543, 16, -65542, 16, -65541, 16, -65540, 16, -65539, 16, -65538, 16, -65537, 16, -131072, 16, -131071, 16, -131070, 16, -131069, 16, -131068, 16, -131067, 16, -131066, 16, -131065, 16, -131064, 16, -131063, 18, -8, 16, -7, 16, -6, 16, -5, 16, -4, 16, -3, 16, -2, 16, -1, 16, -65536, 16, -65535, 16, -65534, 16, -65533, 16, -65532, 16, -65531, 16, -65530, 16, -65529, 16, -65528, 16, -65527, 18, 65528, 16, 65529, 16, 65530, 16, 65531, 16, 65532, 16, 65533, 16, 65534, 16, 65535, 16, 0, 16, 1, 16, 2, 16, 3, 16, 4, 16, 5, 16, 6, 16, 7, 16, 8, 16, 9, 18, 131064, 16, 131065, 16, 131066, 16, 131067, 16, 131068, 16, 131069, 16, 131070, 16, 131071, 16, 65536, 16, 65537, 16, 65538, 16, 65539, 16, 65540, 16, 65541, 16, 65542, 16, 65543, 16, 65544, 16, 65545, 18, 196600, 16, 196601, 16, 196602, 16, 196603, 16, 196604, 16, 196605, 16, 196606, 16, 196607, 16, 131072, 16, 131073, 16, 131074, 16, 131075, 16, 131076, 16, 131077, 16, 131078, 16, 131079, 16, 131080, 16, 131081, 18, 262136, 16, 262137, 16, 262138, 16, 262139, 16, 262140, 16, 262141, 16, 262142, 16, 262143, 16, 196608, 16, 196609, 16, 196610, 16, 196611, 16, 196612, 16, 196613, 16, 196614, 16, 196615, 16, 196616, 16, 196617, 18, 327672, 16, 327673, 16, 327674, 16, 327675, 16, 327676, 16, 327677, 16, 327678, 16, 327679, 16, 262144, 16, 262145, 16, 262146, 16, 262147, 16, 262148, 16, 262149, 16, 262150, 16, 262151, 16, 262152, 16, 262153, 18, 393208, 17, 393209, 17, 393210, 17, 393211, 17, 393212, 17, 393213, 17, 393214, 17, 393215, 17, 327680, 17, 327681, 17, 327682, 17, 327683, 17, 327684, 17, 327685, 17, 327686, 17, 327687, 17, 327688, 17 )
+
+[node name="TileMap" type="TileMap" parent="map"]
+
+transform/pos = Vector2( 158, 84 )
+mode = 0
+tile_set = ExtResource( 5 )
+cell/size = Vector2( 16, 16 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 0.0
+collision/bounce = 0.0
+collision/layers = 0
+collision/mask = 0
+occluder/light_mask = 0
+tile_data = IntArray( 0, 4 )
+
 [node name="lbl_fps1" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -119,6 +139,7 @@ max_lines_visible = -1
 
 [node name="lbl_fps" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -136,6 +157,7 @@ max_lines_visible = -1
 
 [node name="lbl_obj" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -153,6 +175,7 @@ max_lines_visible = -1
 
 [node name="lbl_player_pos" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -170,6 +193,7 @@ max_lines_visible = -1
 
 [node name="lbl_camera_pos" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -187,6 +211,7 @@ max_lines_visible = -1
 
 [node name="lbl_mouse_pos" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -204,6 +229,7 @@ max_lines_visible = -1
 
 [node name="lbl_camera" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -221,6 +247,7 @@ max_lines_visible = -1
 
 [node name="lbl_player" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -238,6 +265,7 @@ max_lines_visible = -1
 
 [node name="lbl_mouse" type="Label" parent="."]
 
+visibility/visible = false
 rect/scale = Vector2( 2, 2 )
 focus/ignore_mouse = true
 focus/stop_mouse = true
@@ -256,6 +284,7 @@ max_lines_visible = -1
 [node name="Control" type="Control" parent="."]
 
 editor/display_folded = true
+visibility/visible = false
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2

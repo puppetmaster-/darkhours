@@ -22,6 +22,7 @@ var roomCoordinate
 var biom
 var scaleVector
 var floorTileNr
+var properties = {"pattern":0,"scale":Vector2(1,1),"biom":0}
 
 var tilesize = 64
 var zoom_for_noise = 4
@@ -93,6 +94,7 @@ func generate_room():
 	var flip = [Vector2(1,1),Vector2(-1,1),Vector2(-1,-1),Vector2(1,-1)]
 	scaleVector = flip[randi()%4]
 	scale(scaleVector)
+	setProperties()
 
 func clearAllMap():
 	for x in range(roomsize.x/tilesize):
@@ -105,12 +107,11 @@ func init():
 	boxScn = load("res://scenes/objects/box.tscn")
 	
 	objects = get_node("tiles/objects")
-	
 	floor_map = get_node("tiles/floor")
 	decoration_map = get_node("tiles/decoration")
 	wall_map = get_node("tiles/wall")
 	furniture_map = get_node("tiles/furniture")
-	
+
 	var count_wall_patterns = get_node("pattern/wall").get_child_count()
 	var count_furnitur_patterns = get_node("pattern/furnitur").get_child_count()
 	
@@ -160,7 +161,6 @@ func init():
 		biom = 3
 	
 	#print("Room [",roomCoordinate,"] seed [",roomseed,"] biom_noise [",noise_value,"] biom [", biom,"] floorTileNr [",floorTileNr,"]")
-	
 	wall_map.set_tileset(tm)
 
 func randb():
@@ -175,4 +175,11 @@ func placeLight(coordinate):
 	var light = lightScn.instance()
 	light.set_pos(Vector2(coordinate.x+32,coordinate.y+32))
 	objects.add_child(light)
-	
+
+func setProperties():
+	properties["biom"] = biom
+	properties["pattern"] = wall_pattern_nr
+	properties["scale"] = scaleVector
+
+func getProperties():
+	return properties

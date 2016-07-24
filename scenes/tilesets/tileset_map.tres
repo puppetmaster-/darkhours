@@ -1,16 +1,24 @@
-[gd_resource type="TileSet" load_steps=12 format=1]
+[gd_resource type="TileSet" load_steps=20 format=1]
 
 [ext_resource path="res://resources/ui/map_icons_00.png" type="Texture" id=1]
 [ext_resource path="res://resources/ui/map_icons_01.png" type="Texture" id=2]
 [ext_resource path="res://resources/ui/map_icons_09.png" type="Texture" id=3]
-[ext_resource path="res://resources/ui/map_icons_02.png" type="Texture" id=4]
-[ext_resource path="res://resources/ui/map_icons_03.png" type="Texture" id=5]
-[ext_resource path="res://resources/ui/map_icons_04.png" type="Texture" id=6]
-[ext_resource path="res://resources/ui/map_icons_10.png" type="Texture" id=7]
-[ext_resource path="res://resources/ui/map_icons_05.png" type="Texture" id=8]
-[ext_resource path="res://resources/ui/map_icons_06.png" type="Texture" id=9]
-[ext_resource path="res://resources/ui/map_icons_07.png" type="Texture" id=10]
-[ext_resource path="res://resources/ui/map_grass.png" type="Texture" id=11]
+[ext_resource path="res://resources/ui/map_icons_11.png" type="Texture" id=4]
+[ext_resource path="res://resources/ui/map_icons_12.png" type="Texture" id=5]
+[ext_resource path="res://resources/ui/map_icons_13.png" type="Texture" id=6]
+[ext_resource path="res://resources/ui/map_icons_14.png" type="Texture" id=7]
+[ext_resource path="res://resources/ui/map_icons_15.png" type="Texture" id=8]
+[ext_resource path="res://resources/ui/map_icons_47.png" type="Texture" id=9]
+[ext_resource path="res://resources/ui/map_icons_45.png" type="Texture" id=10]
+[ext_resource path="res://resources/ui/map_icons_46.png" type="Texture" id=11]
+[ext_resource path="res://resources/ui/map_icons_02.png" type="Texture" id=12]
+[ext_resource path="res://resources/ui/map_icons_03.png" type="Texture" id=13]
+[ext_resource path="res://resources/ui/map_icons_04.png" type="Texture" id=14]
+[ext_resource path="res://resources/ui/map_icons_10.png" type="Texture" id=15]
+[ext_resource path="res://resources/ui/map_icons_05.png" type="Texture" id=16]
+[ext_resource path="res://resources/ui/map_icons_06.png" type="Texture" id=17]
+[ext_resource path="res://resources/ui/map_icons_07.png" type="Texture" id=18]
+[ext_resource path="res://resources/ui/map_icons_08.png" type="Texture" id=19]
 
 [resource]
 
@@ -31,7 +39,7 @@
 1/shape_offset = Vector2( 0, 0 )
 1/shapes = [  ]
 2/name = "2"
-2/texture = ExtResource( 4 )
+2/texture = ExtResource( 12 )
 2/tex_offset = Vector2( 0, 0 )
 2/region = Rect2( 0, 0, 16, 16 )
 2/occluder_offset = Vector2( 8, 8 )
@@ -39,7 +47,7 @@
 2/shape_offset = Vector2( 0, 0 )
 2/shapes = [  ]
 3/name = "3"
-3/texture = ExtResource( 5 )
+3/texture = ExtResource( 13 )
 3/tex_offset = Vector2( 0, 0 )
 3/region = Rect2( 0, 0, 16, 16 )
 3/occluder_offset = Vector2( 8, 8 )
@@ -47,7 +55,7 @@
 3/shape_offset = Vector2( 0, 0 )
 3/shapes = [  ]
 4/name = "4"
-4/texture = ExtResource( 6 )
+4/texture = ExtResource( 14 )
 4/tex_offset = Vector2( 0, 0 )
 4/region = Rect2( 0, 0, 16, 16 )
 4/occluder_offset = Vector2( 8, 8 )
@@ -55,7 +63,7 @@
 4/shape_offset = Vector2( 0, 0 )
 4/shapes = [  ]
 5/name = "5"
-5/texture = ExtResource( 7 )
+5/texture = ExtResource( 15 )
 5/tex_offset = Vector2( 0, 0 )
 5/region = Rect2( 0, 0, 16, 16 )
 5/occluder_offset = Vector2( 8, 8 )
@@ -63,7 +71,7 @@
 5/shape_offset = Vector2( 0, 0 )
 5/shapes = [  ]
 6/name = "6"
-6/texture = ExtResource( 8 )
+6/texture = ExtResource( 16 )
 6/tex_offset = Vector2( 0, 0 )
 6/region = Rect2( 0, 0, 16, 16 )
 6/occluder_offset = Vector2( 8, 8 )
@@ -71,7 +79,7 @@
 6/shape_offset = Vector2( 0, 0 )
 6/shapes = [  ]
 7/name = "7"
-7/texture = ExtResource( 9 )
+7/texture = ExtResource( 17 )
 7/tex_offset = Vector2( 0, 0 )
 7/region = Rect2( 0, 0, 16, 16 )
 7/occluder_offset = Vector2( 8, 8 )
@@ -79,7 +87,7 @@
 7/shape_offset = Vector2( 0, 0 )
 7/shapes = [  ]
 8/name = "8"
-8/texture = ExtResource( 10 )
+8/texture = ExtResource( 18 )
 8/tex_offset = Vector2( 0, 0 )
 8/region = Rect2( 0, 0, 16, 16 )
 8/occluder_offset = Vector2( 8, 8 )
@@ -87,7 +95,7 @@
 8/shape_offset = Vector2( 0, 0 )
 8/shapes = [  ]
 9/name = "9"
-9/texture = ExtResource( 11 )
+9/texture = ExtResource( 19 )
 9/tex_offset = Vector2( 0, 0 )
 9/region = Rect2( 0, 0, 16, 16 )
 9/occluder_offset = Vector2( 8, 8 )
@@ -102,4 +110,68 @@
 10/navigation_offset = Vector2( 8, 8 )
 10/shape_offset = Vector2( 0, 0 )
 10/shapes = [  ]
+11/name = "11"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/region = Rect2( 0, 0, 16, 16 )
+11/occluder_offset = Vector2( 8, 8 )
+11/navigation_offset = Vector2( 8, 8 )
+11/shape_offset = Vector2( 0, 0 )
+11/shapes = [  ]
+12/name = "12"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/region = Rect2( 0, 0, 16, 16 )
+12/occluder_offset = Vector2( 8, 8 )
+12/navigation_offset = Vector2( 8, 8 )
+12/shape_offset = Vector2( 0, 0 )
+12/shapes = [  ]
+13/name = "13"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/region = Rect2( 0, 0, 16, 16 )
+13/occluder_offset = Vector2( 8, 8 )
+13/navigation_offset = Vector2( 8, 8 )
+13/shape_offset = Vector2( 0, 0 )
+13/shapes = [  ]
+14/name = "14"
+14/texture = ExtResource( 7 )
+14/tex_offset = Vector2( 0, 0 )
+14/region = Rect2( 0, 0, 16, 16 )
+14/occluder_offset = Vector2( 8, 8 )
+14/navigation_offset = Vector2( 8, 8 )
+14/shape_offset = Vector2( 0, 0 )
+14/shapes = [  ]
+15/name = "15"
+15/texture = ExtResource( 8 )
+15/tex_offset = Vector2( 0, 0 )
+15/region = Rect2( 0, 0, 16, 16 )
+15/occluder_offset = Vector2( 8, 8 )
+15/navigation_offset = Vector2( 8, 8 )
+15/shape_offset = Vector2( 0, 0 )
+15/shapes = [  ]
+16/name = "16"
+16/texture = ExtResource( 9 )
+16/tex_offset = Vector2( 0, 0 )
+16/region = Rect2( 0, 0, 16, 16 )
+16/occluder_offset = Vector2( 8, 8 )
+16/navigation_offset = Vector2( 8, 8 )
+16/shape_offset = Vector2( 0, 0 )
+16/shapes = [  ]
+17/name = "17"
+17/texture = ExtResource( 10 )
+17/tex_offset = Vector2( 0, 0 )
+17/region = Rect2( 0, 0, 16, 16 )
+17/occluder_offset = Vector2( 8, 8 )
+17/navigation_offset = Vector2( 8, 8 )
+17/shape_offset = Vector2( 0, 0 )
+17/shapes = [  ]
+18/name = "18"
+18/texture = ExtResource( 11 )
+18/tex_offset = Vector2( 0, 0 )
+18/region = Rect2( 0, 0, 16, 16 )
+18/occluder_offset = Vector2( 8, 8 )
+18/navigation_offset = Vector2( 8, 8 )
+18/shape_offset = Vector2( 0, 0 )
+18/shapes = [  ]
 

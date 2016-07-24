@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=20 format=1]
 
 [ext_resource path="res://resources/ui/map_icons_00.png" type="Texture" id=1]
 [ext_resource path="res://resources/ui/map_icons_01.png" type="Texture" id=2]
@@ -11,6 +11,14 @@
 [ext_resource path="res://resources/ui/map_icons_07.png" type="Texture" id=9]
 [ext_resource path="res://resources/ui/map_icons_08.png" type="Texture" id=10]
 [ext_resource path="res://resources/ui/map_icons_09.png" type="Texture" id=11]
+[ext_resource path="res://resources/ui/map_icons_11.png" type="Texture" id=12]
+[ext_resource path="res://resources/ui/map_icons_12.png" type="Texture" id=13]
+[ext_resource path="res://resources/ui/map_icons_13.png" type="Texture" id=14]
+[ext_resource path="res://resources/ui/map_icons_14.png" type="Texture" id=15]
+[ext_resource path="res://resources/ui/map_icons_15.png" type="Texture" id=16]
+[ext_resource path="res://resources/ui/map_icons_47.png" type="Texture" id=17]
+[ext_resource path="res://resources/ui/map_icons_45.png" type="Texture" id=18]
+[ext_resource path="res://resources/ui/map_icons_46.png" type="Texture" id=19]
 
 [node name="maptile" type="Node2D"]
 
@@ -57,5 +65,37 @@ texture = ExtResource( 10 )
 [node name="10" type="Sprite" parent="."]
 
 texture = ExtResource( 11 )
+
+[node name="11" type="Sprite" parent="."]
+
+texture = ExtResource( 12 )
+
+[node name="12" type="Sprite" parent="."]
+
+texture = ExtResource( 13 )
+
+[node name="13" type="Sprite" parent="."]
+
+texture = ExtResource( 14 )
+
+[node name="14" type="Sprite" parent="."]
+
+texture = ExtResource( 15 )
+
+[node name="15" type="Sprite" parent="."]
+
+texture = ExtResource( 16 )
+
+[node name="16" type="Sprite" parent="."]
+
+texture = ExtResource( 17 )
+
+[node name="17" type="Sprite" parent="."]
+
+texture = ExtResource( 18 )
+
+[node name="18" type="Sprite" parent="."]
+
+texture = ExtResource( 19 )
 
 

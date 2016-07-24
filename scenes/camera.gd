@@ -7,7 +7,7 @@ var diffx = 0
 var diffy = 0
 var direction
 var roomsize
-var speed = 8
+var speed = 16
 const UP = Vector2(0,1)
 const DOWN = Vector2(0,-1)
 const LEFT = Vector2(1,0)

@@ -111,8 +111,6 @@ func set_world_coordinate(position_to_add):
 	world_coordinate += position_to_add
 	world_pos.x = world_pos.x + (position_to_add.x*roomsize.x)
 	world_pos.y = world_pos.y + (position_to_add.y*roomsize.y)
-	var mapiconNr = get_node("/root/game/nav/roomes/"+str(world_coordinate.x)+"_"+str(world_coordinate.y)).wall_pattern_nr
-	game.map.set_cell(world_coordinate.x,world_coordinate.y,mapiconNr,false,false,false)
 
 func shoot():
 	if !menu:

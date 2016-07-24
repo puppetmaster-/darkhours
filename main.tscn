@@ -262,6 +262,7 @@ autoplay = "idle"
 
 [node name="house_center" type="Node2D" parent="."]
 
+editor/display_folded = true
 transform/pos = Vector2( 448, 480 )
 transform/scale = Vector2( 0.8, 0.8 )
 
