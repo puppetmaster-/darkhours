@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=1]
+[gd_scene load_steps=63 format=1]
 
 [ext_resource path="res://resources/tiles/wall/stone (1).png" type="Texture" id=1]
 [ext_resource path="res://resources/tiles/wall/stone (2).png" type="Texture" id=2]
@@ -23,18 +23,45 @@
 [ext_resource path="res://resources/tiles/wall/stone (21).png" type="Texture" id=21]
 [ext_resource path="res://resources/tiles/wall/stone (22).png" type="Texture" id=22]
 [ext_resource path="res://resources/tiles/wall/stone (23).png" type="Texture" id=23]
-[ext_resource path="res://resources/tiles/wall/deko (1).png" type="Texture" id=24]
-[ext_resource path="res://resources/tiles/wall/deko (29).png" type="Texture" id=25]
-[ext_resource path="res://resources/tiles/wall/glas (6).png" type="Texture" id=26]
-[ext_resource path="res://resources/tiles/wall/glas (7).png" type="Texture" id=27]
-[ext_resource path="res://resources/tiles/wall/glas (12).png" type="Texture" id=28]
-[ext_resource path="res://resources/tiles/wall/glas (1).png" type="Texture" id=29]
-[ext_resource path="res://resources/tiles/wall/glas (10).png" type="Texture" id=30]
-[ext_resource path="res://resources/tiles/wall/glas (11).png" type="Texture" id=31]
-[ext_resource path="res://resources/tiles/wall/deko (40).png" type="Texture" id=32]
-[ext_resource path="res://resources/tiles/wall/deko (2).png" type="Texture" id=33]
-[ext_resource path="res://resources/tiles/wall/deko (33).png" type="Texture" id=34]
-[ext_resource path="res://resources/tiles/wall/deko (27).png" type="Texture" id=35]
+[ext_resource path="res://resources/tiles/wall/stone (24).png" type="Texture" id=24]
+[ext_resource path="res://resources/tiles/wall/stone (25).png" type="Texture" id=25]
+[ext_resource path="res://resources/tiles/wall/stone (26).png" type="Texture" id=26]
+[ext_resource path="res://resources/tiles/wall/stone (27).png" type="Texture" id=27]
+[ext_resource path="res://resources/tiles/wall/stone (28).png" type="Texture" id=28]
+[ext_resource path="res://resources/tiles/wall/stone (29).png" type="Texture" id=29]
+[ext_resource path="res://resources/tiles/wall/stone (30).png" type="Texture" id=30]
+[ext_resource path="res://resources/tiles/wall/stone (31).png" type="Texture" id=31]
+[ext_resource path="res://resources/tiles/wall/stone (32).png" type="Texture" id=32]
+[ext_resource path="res://resources/tiles/wall/stone (33).png" type="Texture" id=33]
+[ext_resource path="res://resources/tiles/wall/stone (34).png" type="Texture" id=34]
+[ext_resource path="res://resources/tiles/wall/stone (35).png" type="Texture" id=35]
+[ext_resource path="res://resources/tiles/wall/stone (36).png" type="Texture" id=36]
+[ext_resource path="res://resources/tiles/wall/stone (37).png" type="Texture" id=37]
+[ext_resource path="res://resources/tiles/wall/stone (38).png" type="Texture" id=38]
+[ext_resource path="res://resources/tiles/wall/stone (39).png" type="Texture" id=39]
+[ext_resource path="res://resources/tiles/wall/stone (40).png" type="Texture" id=40]
+[ext_resource path="res://resources/tiles/wall/stone (41).png" type="Texture" id=41]
+[ext_resource path="res://resources/tiles/wall/stone (42).png" type="Texture" id=42]
+[ext_resource path="res://resources/tiles/wall/stone (43).png" type="Texture" id=43]
+[ext_resource path="res://resources/tiles/wall/stone (44).png" type="Texture" id=44]
+[ext_resource path="res://resources/tiles/wall/stone (45).png" type="Texture" id=45]
+[ext_resource path="res://resources/tiles/wall/stone (46).png" type="Texture" id=46]
+[ext_resource path="res://resources/tiles/wall/stone (47).png" type="Texture" id=47]
+[ext_resource path="res://resources/tiles/wall/stone (48).png" type="Texture" id=48]
+[ext_resource path="res://resources/tiles/wall/stone (49).png" type="Texture" id=49]
+[ext_resource path="res://resources/tiles/wall/stone (50).png" type="Texture" id=50]
+[ext_resource path="res://resources/tiles/wall/stone (51).png" type="Texture" id=51]
+[ext_resource path="res://resources/tiles/wall/stone (52).png" type="Texture" id=52]
+[ext_resource path="res://resources/tiles/wall/stone (53).png" type="Texture" id=53]
+[ext_resource path="res://resources/tiles/wall/stone (54).png" type="Texture" id=54]
+[ext_resource path="res://resources/tiles/wall/deko (29).png" type="Texture" id=55]
+[ext_resource path="res://resources/tiles/wall/deko (1).png" type="Texture" id=56]
+[ext_resource path="res://resources/tiles/wall/glas (6).png" type="Texture" id=57]
+[ext_resource path="res://resources/tiles/wall/glas (7).png" type="Texture" id=58]
+[ext_resource path="res://resources/tiles/wall/glas (12).png" type="Texture" id=59]
+[ext_resource path="res://resources/tiles/wall/glas (1).png" type="Texture" id=60]
+[ext_resource path="res://resources/tiles/wall/glas (10).png" type="Texture" id=61]
+[ext_resource path="res://resources/tiles/wall/glas (11).png" type="Texture" id=62]
 
 [node name="wall" type="Node2D"]
 
@@ -130,52 +157,166 @@ texture = ExtResource( 22 )
 
 texture = ExtResource( 23 )
 
-[node name="door1" type="Sprite" parent="."]
+[node name="wall24" type="Sprite" parent="."]
 
 texture = ExtResource( 24 )
 
-[node name="door2" type="Sprite" parent="."]
+[node name="wall25" type="Sprite" parent="."]
 
 texture = ExtResource( 25 )
 
-[node name="glas1" type="Sprite" parent="."]
+[node name="wall26" type="Sprite" parent="."]
 
 texture = ExtResource( 26 )
 
-[node name="glas2" type="Sprite" parent="."]
+[node name="wall27" type="Sprite" parent="."]
 
 texture = ExtResource( 27 )
 
-[node name="glas3" type="Sprite" parent="."]
+[node name="wall28" type="Sprite" parent="."]
 
 texture = ExtResource( 28 )
 
-[node name="glas4" type="Sprite" parent="."]
+[node name="wall29" type="Sprite" parent="."]
 
 texture = ExtResource( 29 )
 
-[node name="glas5" type="Sprite" parent="."]
+[node name="wall30" type="Sprite" parent="."]
 
 texture = ExtResource( 30 )
 
-[node name="glas6" type="Sprite" parent="."]
+[node name="wall31" type="Sprite" parent="."]
 
 texture = ExtResource( 31 )
 
-[node name="deco1" type="Sprite" parent="."]
+[node name="wall32" type="Sprite" parent="."]
 
 texture = ExtResource( 32 )
 
-[node name="deco2" type="Sprite" parent="."]
+[node name="wall33" type="Sprite" parent="."]
 
 texture = ExtResource( 33 )
 
-[node name="deco3" type="Sprite" parent="."]
+[node name="wall34" type="Sprite" parent="."]
 
 texture = ExtResource( 34 )
 
-[node name="deco4" type="Sprite" parent="."]
+[node name="wall35" type="Sprite" parent="."]
 
 texture = ExtResource( 35 )
+
+[node name="wall36" type="Sprite" parent="."]
+
+texture = ExtResource( 36 )
+
+[node name="wall37" type="Sprite" parent="."]
+
+texture = ExtResource( 37 )
+
+[node name="wall38" type="Sprite" parent="."]
+
+texture = ExtResource( 38 )
+
+[node name="wall39" type="Sprite" parent="."]
+
+texture = ExtResource( 39 )
+
+[node name="wall40" type="Sprite" parent="."]
+
+texture = ExtResource( 40 )
+
+[node name="wall41" type="Sprite" parent="."]
+
+texture = ExtResource( 41 )
+
+[node name="wall42" type="Sprite" parent="."]
+
+texture = ExtResource( 42 )
+
+[node name="wall43" type="Sprite" parent="."]
+
+texture = ExtResource( 43 )
+
+[node name="wall44" type="Sprite" parent="."]
+
+texture = ExtResource( 44 )
+
+[node name="wall45" type="Sprite" parent="."]
+
+texture = ExtResource( 45 )
+
+[node name="wall46" type="Sprite" parent="."]
+
+texture = ExtResource( 46 )
+
+[node name="wall47" type="Sprite" parent="."]
+
+texture = ExtResource( 47 )
+
+[node name="wall48" type="Sprite" parent="."]
+
+texture = ExtResource( 48 )
+
+[node name="wall49" type="Sprite" parent="."]
+
+texture = ExtResource( 49 )
+
+[node name="wall50" type="Sprite" parent="."]
+
+texture = ExtResource( 50 )
+
+[node name="wall51" type="Sprite" parent="."]
+
+texture = ExtResource( 51 )
+
+[node name="wall52" type="Sprite" parent="."]
+
+texture = ExtResource( 52 )
+
+[node name="wall53" type="Sprite" parent="."]
+
+texture = ExtResource( 53 )
+
+[node name="wall54" type="Sprite" parent="."]
+
+texture = ExtResource( 54 )
+
+[node name="door1" type="Sprite" parent="."]
+
+texture = ExtResource( 55 )
+
+[node name="door2" type="Sprite" parent="."]
+
+texture = ExtResource( 56 )
+
+[node name="glas1" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 57 )
+
+[node name="glas2" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 58 )
+
+[node name="glas3" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 59 )
+
+[node name="glas4" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 60 )
+
+[node name="glas5" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 61 )
+
+[node name="glas6" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 62 )
 
 

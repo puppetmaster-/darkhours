@@ -15,6 +15,11 @@ var shootTimer
 var reloadTimer
 var canShoot = true
 var canReload = true
+var gun
+var shootposition
+
+var canFlashlight =true
+var flashlightTimer
 
 var bulletScn
 var bulletSpeed = 800
@@ -35,16 +40,17 @@ func _ready():
 		world_pos = Vector2(0,0)
 		old_mouse_pos = get_node("/root/game/Camera2D").get_global_mouse_pos()
 	
-	gfx_stand = get_node("gfx/stand")
-	gfx_hold = get_node("gfx/hold")
-	gfx_shoot = get_node("gfx/shoot")
-	gfx_reload = get_node("gfx/reload")
+	gfx_shoot = get_node("gfx/arm_right")
+	
+	gun = get_node("gfx/arm_right/gun")
+	shootposition = gun.get_node("Position2D")
+	
 	shootTimer = get_node("shootTimer")
 	shootTimer.connect("timeout",self,"shootTimerTimeout")
 	reloadTimer = get_node("reloadTimer")
 	reloadTimer.connect("timeout",self,"reloadTimerTimeout")
-	
-	gfx_stand.show()
+	flashlightTimer = get_node("gfx/arm_left/flashlight/flashlightTimer")
+	flashlightTimer.connect("timeout",self,"flashlightTimerTimeout")
 	
 	bulletScn = load("res://scenes/bullet/bullet.tscn")
 	set_fixed_process(true)
@@ -67,10 +73,15 @@ func _fixed_process(delta):
 			if ( Input.is_action_pressed("shoot") ):
 				if canShoot && canReload:
 					shoot()
+			"""
 			if ( Input.is_action_pressed("reload") ):
 				if canReload:
 					reload()
-					
+			"""
+			if ( Input.is_action_pressed("flashlight") ):
+				if canFlashlight:
+					switchFlashlight()
+			
 			#rotate the vector to move in direction
 			if !menu:
 				direction = direction.rotated(get_rot()-deg2rad(90))
@@ -114,9 +125,10 @@ func set_world_coordinate(position_to_add):
 
 func shoot():
 	if !menu:
-		shootDir = (get_node("/root/game/Camera2D").get_global_mouse_pos() - get_global_pos()).normalized()
+		var _mousePos = get_node("/root/game/Camera2D").get_global_mouse_pos()
+		shootDir = (_mousePos - gun.get_global_pos()).normalized()
 		var bullet = bulletScn.instance()
-		bullet.set_global_pos(gfx_shoot.get_node("Position2D").get_global_pos())
+		bullet.set_global_pos(shootposition.get_global_pos())
 		bullet.setVelocity(shootDir * Vector2(bulletSpeed,bulletSpeed))
 		get_node("/root/game/objects").add_child(bullet)
 		shootTimer.start()
@@ -131,10 +143,23 @@ func reload():
 
 func shootTimerTimeout():
 	gfx_shoot.hide()
-	gfx_stand.show()
 	canShoot = true
 
 func reloadTimerTimeout():
 	gfx_reload.hide()
 	gfx_stand.show()
 	canReload = true
+
+func switchFlashlight():
+	flashlightTimer.start()
+	canFlashlight = false
+	if get_node("gfx/arm_left/flashlight/Light2D1").is_enabled():
+		get_node("gfx/arm_left/flashlight/Light2D1").set_enabled(false)
+		get_node("gfx/arm_left/flashlight/Light2D2").set_enabled(false)
+	else:
+		get_node("gfx/arm_left/flashlight/Light2D1").set_enabled(true)
+		get_node("gfx/arm_left/flashlight/Light2D2").set_enabled(true)
+
+func flashlightTimerTimeout():
+	canFlashlight = true
+	

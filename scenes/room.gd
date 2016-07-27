@@ -103,7 +103,7 @@ func clearAllMap():
 			wall_map.set_cell(x,y,-1,false,false,false)
 
 func init():
-	lightScn = load("res://scenes/objects/light.tscn")
+	lightScn = load("res://scenes/objects/tableWithLight.tscn")
 	boxScn = load("res://scenes/objects/box.tscn")
 	
 	objects = get_node("tiles/objects")
@@ -132,32 +132,32 @@ func init():
 	if noise_value <= 3.0/6:
 		# floorTile 0-5 green
 		floorTileNr = randi()%6
-		tm = load("res://scenes/tilesets/wall_"+str(randi()%2+3)+".tres")
+		tm = load("res://scenes/tilesets/wall_"+str(randi()%2+4)+".tres")
 		biom = 0
 	elif noise_value > 3.0/6 && noise_value <= 4.0/6:
 		# floorTile 6-9 mood
 		floorTileNr = randi()%4+6
-		tm = load("res://scenes/tilesets/wall_"+str(randi()%2)+".tres")
+		tm = load("res://scenes/tilesets/wall_"+str(randi()%4)+".tres")
 		biom = 4
 	elif noise_value > 4.0/6 && noise_value <= 4.1/6:
 		# 10 snow
 		floorTileNr = 10
-		tm = load("res://scenes/tilesets/wall_"+str(randi()%2)+".tres")
+		tm = load("res://scenes/tilesets/wall_"+str(randi()%4)+".tres")
 		biom = 5
 	elif noise_value > 4.1/6 && noise_value <= 4.5/6:
 		# floortile 11-15 grey
 		floorTileNr = randi()%5+11
-		tm = load("res://scenes/tilesets/wall_"+str(randi()%2)+".tres")
+		tm = load("res://scenes/tilesets/wall_"+str(randi()%4)+".tres")
 		biom = 2
 	elif noise_value > 4.5/6 && noise_value <= 5.2/6:
 		# floortile 16-19 tile
 		floorTileNr = randi()%4+16
-		tm = load("res://scenes/tilesets/wall_"+str(randi()%2)+".tres")
+		tm = load("res://scenes/tilesets/wall_"+str(randi()%4)+".tres")
 		biom = 1
 	else:
 		# floortile 20-37 wood
 		floorTileNr = randi()%18+20
-		tm = load("res://scenes/tilesets/wall_"+str(randi()%2)+".tres")
+		tm = load("res://scenes/tilesets/wall_"+str(randi()%4)+".tres")
 		biom = 3
 	
 	#print("Room [",roomCoordinate,"] seed [",roomseed,"] biom_noise [",noise_value,"] biom [", biom,"] floorTileNr [",floorTileNr,"]")

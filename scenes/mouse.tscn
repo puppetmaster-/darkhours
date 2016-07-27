@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://scenes/mouse.gd" type="Script" id=1]
+[ext_resource path="res://resources/ui/cursor.png" type="Texture" id=2]
+[ext_resource path="res://resources/ui/cursor2.png" type="Texture" id=3]
+
+[node name="mouse" type="Node2D"]
+
+script/script = ExtResource( 1 )
+gui = false
+
+[node name="cursor" type="Node2D" parent="."]
+
+[node name="shoot" type="Sprite" parent="cursor"]
+
+visibility/blend_mode = 1
+transform/scale = Vector2( 0.5, 0.5 )
+z/z = 2
+texture = ExtResource( 2 )
+modulate = Color( 0.424438, 0.953125, 0.531828, 0.637999 )
+
+[node name="gui" type="Sprite" parent="cursor"]
+
+visibility/blend_mode = 1
+transform/pos = Vector2( -12.2142, -12.2301 )
+transform/scale = Vector2( 0.5, 0.5 )
+z/z = 2
+texture = ExtResource( 3 )
+offset = Vector2( 24.4285, 24.4602 )
+modulate = Color( 0.424438, 0.953125, 0.531828, 0.637999 )
+
+

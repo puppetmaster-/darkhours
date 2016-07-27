@@ -1,15 +1,14 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://scenes/objects/light.gd" type="Script" id=1]
 [ext_resource path="res://resources/light2.png" type="Texture" id=2]
-[ext_resource path="res://resources/tiles/wall/deko (41).png" type="Texture" id=3]
-[ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=4]
-[ext_resource path="res://resources/tiles/deko/tile_264.png" type="Texture" id=5]
+[ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=3]
+[ext_resource path="res://resources/tiles/deko/tile_264.png" type="Texture" id=4]
 
-[sub_resource type="ConvexPolygonShape2D" id=1]
+[sub_resource type="CircleShape2D" id=3]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+radius = 20.0
 
 [sub_resource type="Animation" id=2]
 
@@ -53,30 +52,41 @@ tracks/6/interp = 1
 tracks/6/imported = false
 tracks/6/keys = { "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ 80.1236, 102.881 ] }
 
-[node name="light" type="StaticBody2D" groups=[ "object" ]]
+[node name="light" type="RigidBody2D" groups=[ "object" ]]
 
 input/pickable = false
-shapes/0/shape = SubResource( 1 )
+shapes/0/shape = SubResource( 3 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
+mode = 0
+mass = 2.0
 friction = 1.0
 bounce = 0.0
+gravity_scale = 2.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = false
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
 script/script = ExtResource( 1 )
-lightSwitch = true
+lightSwitch = false
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-build_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-shape_range = Vector2( 0, 0 )
+shape = SubResource( 3 )
 trigger = false
+_update_shape_index = 0
 
 [node name="Light2D" type="Light2D" parent="."]
 
+visibility/visible = false
 enabled = true
 texture = ExtResource( 2 )
 offset = Vector2( 0, 0 )
@@ -96,25 +106,21 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 100.0
 shadow/item_mask = 1
 
-[node name="table" type="Sprite" parent="."]
-
-texture = ExtResource( 3 )
-
 [node name="lamp" type="Sprite" parent="."]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 
 [node name="hit" type="Node2D" parent="."]
 
 visibility/visible = false
-transform/rot = 2.69425
+transform/rot = 7.21373
 
 [node name="Sprite2" type="Sprite" parent="hit"]
 
 transform/pos = Vector2( 2.7972, 3.32167 )
 transform/rot = -16.2909
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 modulate = Color( 0.990112, 1, 0.683594, 1 )
 
 [node name="Sprite3" type="Sprite" parent="hit"]
@@ -122,7 +128,7 @@ modulate = Color( 0.990112, 1, 0.683594, 1 )
 transform/pos = Vector2( -3.14684, -6.99299 )
 transform/rot = 80.1236
 transform/scale = Vector2( -0.3, 0.3 )
-texture = ExtResource( 5 )
+texture = ExtResource( 4 )
 modulate = Color( 0.990112, 1, 0.683594, 1 )
 
 [node name="ani" type="AnimationPlayer" parent="."]
@@ -135,5 +141,12 @@ playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
 autoplay = ""
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = false
+autostart = false
 
 

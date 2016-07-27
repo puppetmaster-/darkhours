@@ -1,15 +1,67 @@
-[gd_scene load_steps=47 format=1]
+[gd_scene load_steps=118 format=1]
 
-[ext_resource path="res://resources/tiles/wall/nature (10).png" type="Texture" id=1]
-[ext_resource path="res://resources/tiles/wall/nature (22).png" type="Texture" id=2]
-[ext_resource path="res://resources/tiles/wall/nature (23).png" type="Texture" id=3]
-[ext_resource path="res://resources/tiles/wall/nature (18).png" type="Texture" id=4]
-[ext_resource path="res://resources/tiles/wall/nature (8).png" type="Texture" id=5]
-[ext_resource path="res://resources/tiles/wall/nature (6).png" type="Texture" id=6]
-[ext_resource path="res://resources/tiles/wall/nature (20).png" type="Texture" id=7]
-[ext_resource path="res://resources/tiles/wall/nature (21).png" type="Texture" id=8]
-[ext_resource path="res://resources/tiles/wall/nature (9).png" type="Texture" id=9]
-[ext_resource path="res://resources/tiles/wall/nature (19).png" type="Texture" id=10]
+[ext_resource path="res://resources/tiles/wall/wood (1).png" type="Texture" id=1]
+[ext_resource path="res://resources/tiles/wall/wood (2).png" type="Texture" id=2]
+[ext_resource path="res://resources/tiles/wall/wood (3).png" type="Texture" id=3]
+[ext_resource path="res://resources/tiles/wall/wood (4).png" type="Texture" id=4]
+[ext_resource path="res://resources/tiles/wall/wood (5).png" type="Texture" id=5]
+[ext_resource path="res://resources/tiles/wall/wood (6).png" type="Texture" id=6]
+[ext_resource path="res://resources/tiles/wall/wood (7).png" type="Texture" id=7]
+[ext_resource path="res://resources/tiles/wall/wood (8).png" type="Texture" id=8]
+[ext_resource path="res://resources/tiles/wall/wood (9).png" type="Texture" id=9]
+[ext_resource path="res://resources/tiles/wall/wood (10).png" type="Texture" id=10]
+[ext_resource path="res://resources/tiles/wall/wood (11).png" type="Texture" id=11]
+[ext_resource path="res://resources/tiles/wall/wood (12).png" type="Texture" id=12]
+[ext_resource path="res://resources/tiles/wall/wood (13).png" type="Texture" id=13]
+[ext_resource path="res://resources/tiles/wall/wood (14).png" type="Texture" id=14]
+[ext_resource path="res://resources/tiles/wall/wood (15).png" type="Texture" id=15]
+[ext_resource path="res://resources/tiles/wall/wood (16).png" type="Texture" id=16]
+[ext_resource path="res://resources/tiles/wall/wood (17).png" type="Texture" id=17]
+[ext_resource path="res://resources/tiles/wall/wood (18).png" type="Texture" id=18]
+[ext_resource path="res://resources/tiles/wall/wood (19).png" type="Texture" id=19]
+[ext_resource path="res://resources/tiles/wall/wood (20).png" type="Texture" id=20]
+[ext_resource path="res://resources/tiles/wall/wood (21).png" type="Texture" id=21]
+[ext_resource path="res://resources/tiles/wall/wood (22).png" type="Texture" id=22]
+[ext_resource path="res://resources/tiles/wall/wood (23).png" type="Texture" id=23]
+[ext_resource path="res://resources/tiles/wall/wood (24).png" type="Texture" id=24]
+[ext_resource path="res://resources/tiles/wall/wood (25).png" type="Texture" id=25]
+[ext_resource path="res://resources/tiles/wall/wood (26).png" type="Texture" id=26]
+[ext_resource path="res://resources/tiles/wall/wood (27).png" type="Texture" id=27]
+[ext_resource path="res://resources/tiles/wall/wood (28).png" type="Texture" id=28]
+[ext_resource path="res://resources/tiles/wall/wood (29).png" type="Texture" id=29]
+[ext_resource path="res://resources/tiles/wall/wood (30).png" type="Texture" id=30]
+[ext_resource path="res://resources/tiles/wall/wood (31).png" type="Texture" id=31]
+[ext_resource path="res://resources/tiles/wall/wood (32).png" type="Texture" id=32]
+[ext_resource path="res://resources/tiles/wall/wood (33).png" type="Texture" id=33]
+[ext_resource path="res://resources/tiles/wall/wood (34).png" type="Texture" id=34]
+[ext_resource path="res://resources/tiles/wall/wood (35).png" type="Texture" id=35]
+[ext_resource path="res://resources/tiles/wall/wood (36).png" type="Texture" id=36]
+[ext_resource path="res://resources/tiles/wall/wood (37).png" type="Texture" id=37]
+[ext_resource path="res://resources/tiles/wall/wood (38).png" type="Texture" id=38]
+[ext_resource path="res://resources/tiles/wall/wood (39).png" type="Texture" id=39]
+[ext_resource path="res://resources/tiles/wall/wood (40).png" type="Texture" id=40]
+[ext_resource path="res://resources/tiles/wall/wood (41).png" type="Texture" id=41]
+[ext_resource path="res://resources/tiles/wall/wood (42).png" type="Texture" id=42]
+[ext_resource path="res://resources/tiles/wall/wood (43).png" type="Texture" id=43]
+[ext_resource path="res://resources/tiles/wall/wood (44).png" type="Texture" id=44]
+[ext_resource path="res://resources/tiles/wall/wood (45).png" type="Texture" id=45]
+[ext_resource path="res://resources/tiles/wall/wood (46).png" type="Texture" id=46]
+[ext_resource path="res://resources/tiles/wall/wood (47).png" type="Texture" id=47]
+[ext_resource path="res://resources/tiles/wall/wood (48).png" type="Texture" id=48]
+[ext_resource path="res://resources/tiles/wall/wood (49).png" type="Texture" id=49]
+[ext_resource path="res://resources/tiles/wall/wood (50).png" type="Texture" id=50]
+[ext_resource path="res://resources/tiles/wall/wood (51).png" type="Texture" id=51]
+[ext_resource path="res://resources/tiles/wall/wood (52).png" type="Texture" id=52]
+[ext_resource path="res://resources/tiles/wall/wood (53).png" type="Texture" id=53]
+[ext_resource path="res://resources/tiles/wall/wood (54).png" type="Texture" id=54]
+[ext_resource path="res://resources/tiles/wall/deko (29).png" type="Texture" id=55]
+[ext_resource path="res://resources/tiles/wall/deko (1).png" type="Texture" id=56]
+[ext_resource path="res://resources/tiles/wall/glas (6).png" type="Texture" id=57]
+[ext_resource path="res://resources/tiles/wall/glas (7).png" type="Texture" id=58]
+[ext_resource path="res://resources/tiles/wall/glas (12).png" type="Texture" id=59]
+[ext_resource path="res://resources/tiles/wall/glas (1).png" type="Texture" id=60]
+[ext_resource path="res://resources/tiles/wall/glas (10).png" type="Texture" id=61]
+[ext_resource path="res://resources/tiles/wall/glas (11).png" type="Texture" id=62]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 
@@ -20,190 +72,303 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( -0.278587, -31.086, -19.8107, -27.8664, -27.967, -17.993, -31.4012, -2.96832, -27.5377, 16.5638, -20.0254, 26.2225, -1.13714, 30.5153, 9.80944, 27.2957, 24.4049, 23.4323, 27.1952, 7.97826, 30.844, -0.607292, 27.4098, -8.33429, 26.7659, -19.7101, 18.8243, -28.725, 8.52161, -27.8664 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
+[sub_resource type="OccluderPolygon2D" id=4]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
 [sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
+
+[sub_resource type="OccluderPolygon2D" id=6]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
+[sub_resource type="OccluderPolygon2D" id=8]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
 [sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=68]
+[sub_resource type="OccluderPolygon2D" id=10]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 4, -20, 16, -4, 16, 20, 0, 20, -20, 12, -20, 0, -8, -20 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=69]
+[sub_resource type="OccluderPolygon2D" id=12]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 12, -12, 20, 0, 0, 20, -20, -4, -8, -20 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=14]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=15]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
+[sub_resource type="OccluderPolygon2D" id=16]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
 [sub_resource type="ConvexPolygonShape2D" id=17]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=18]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
+[sub_resource type="OccluderPolygon2D" id=20]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
 [sub_resource type="ConvexPolygonShape2D" id=21]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=22]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=23]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=70]
+[sub_resource type="OccluderPolygon2D" id=24]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 20, -4, 12, 20, -12, 20, -20, 0, 0, -20 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=71]
+[sub_resource type="OccluderPolygon2D" id=26]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 12, -12, 20, 0, 0, 20, -20, -4, -8, -20 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=28]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=29]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=65]
+[sub_resource type="OccluderPolygon2D" id=30]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -20, -20, 20, -20, 20, 20, -20, 20 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=32]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=33]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
 
-[sub_resource type="ConvexPolygonShape2D" id=66]
+[sub_resource type="OccluderPolygon2D" id=34]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+
+[sub_resource type="CircleShape2D" id=35]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -24, -24, 24, -24, 24, 24, -24, 24 )
+radius = 32.0
 
 [sub_resource type="OccluderPolygon2D" id=36]
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( -24, -24, 24, -24, 24, 24, -24, 24 )
+polygon = Vector2Array( 0, -32, 10, -30, 18, -26, 26, -18, 30, -10, 32, 0, 30, 10, 26, 18, 18, 26, 10, 30, 0, 32, -10, 30, -18, 26, -26, 18, -30, 10, -32, 0, -30, -10, -26, -18, -18, -26, -10, -30 )
 
-[sub_resource type="ConvexPolygonShape2D" id=67]
+[sub_resource type="CircleShape2D" id=37]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -28, -28, 28, -28, 28, 28, -28, 28 )
+radius = 22.0
 
 [sub_resource type="OccluderPolygon2D" id=38]
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( -24, -24, 24, -24, 24, 24, -24, 24 )
+polygon = Vector2Array( 0, -22, 8, -20, 16, -14, 20, -8, 22, 0, 20, 8, 16, 14, 8, 20, 0, 22, -8, 20, -16, 14, -20, 8, -22, 0, -20, -8, -14, -16, -8, -20 )
 
-[sub_resource type="ConvexPolygonShape2D" id=72]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 4, -20, 20, 0, 20, 20, 0, 20, -20, 12, -20, 0, -8, -20 )
-
-[sub_resource type="ConvexPolygonShape2D" id=73]
+[sub_resource type="ConvexPolygonShape2D" id=39]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 12, -12, 20, 0, 0, 20, -20, -4, -8, -20 )
+points = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=74]
+[sub_resource type="OccluderPolygon2D" id=40]
 
-custom_solver_bias = 0.0
-points = Vector2Array( 20, -4, 12, 20, -12, 20, -20, 0, 0, -20 )
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=75]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 20, -4, 12, 20, -12, 20, -20, 0, 0, -20 )
-
-[sub_resource type="ConvexPolygonShape2D" id=76]
+[sub_resource type="ConvexPolygonShape2D" id=41]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 32, 28, -32, 28, -32, -20, 32, -20 )
+points = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=77]
+[sub_resource type="OccluderPolygon2D" id=42]
 
-custom_solver_bias = 0.0
-points = Vector2Array( 32, 28, -32, 28, -32, -20, 32, -20 )
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=56]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 26, 22, -26, 22, -26, -16, 26, -16 )
-
-[sub_resource type="NavigationPolygon" id=57]
-
-vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-polygons = [ IntArray( 0, 1, 2, 3 ) ]
-outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
-
-[sub_resource type="ConvexPolygonShape2D" id=58]
+[sub_resource type="ConvexPolygonShape2D" id=43]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 26, 22, -26, 22, -26, -16, 26, -16 )
+points = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
 
-[sub_resource type="NavigationPolygon" id=59]
+[sub_resource type="OccluderPolygon2D" id=44]
 
-vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-polygons = [ IntArray( 0, 1, 2, 3 ) ]
-outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=60]
-
-custom_solver_bias = 0.0
-points = Vector2Array( 28, 24, -28, 24, -28, -24, 28, -24 )
-
-[sub_resource type="NavigationPolygon" id=61]
-
-vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-polygons = [ IntArray( 0, 1, 2, 3 ) ]
-outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
-
-[sub_resource type="ConvexPolygonShape2D" id=62]
+[sub_resource type="ConvexPolygonShape2D" id=45]
 
 custom_solver_bias = 0.0
-points = Vector2Array( 32, 32, -32, 32, -32, -32, 32, -32 )
+points = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
 
-[sub_resource type="NavigationPolygon" id=63]
+[sub_resource type="OccluderPolygon2D" id=46]
 
-vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-polygons = [ IntArray( 0, 1, 2, 3 ) ]
-outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+closed = true
+cull_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 32, 10, -32, 10, -32, -10, 32, -10 )
+
+[sub_resource type="OccluderPolygon2D" id=48]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
+
+[sub_resource type="OccluderPolygon2D" id=49]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
+
+[sub_resource type="ConvexPolygonShape2D" id=50]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, -16, -32, -16, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=51]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 16, -32, 32, -32, 32, 32, 16, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=52]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, -16, -32, -16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=53]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, 16, 32, 16, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=54]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 8, -32, 8, 32, -8, 32, -8, -32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=55]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 32, 8, -32, 8, -32, -8, 32, -8 )
 
 [node name="wall" type="Node2D"]
 
 [node name="wall1" type="Sprite" parent="."]
 
+editor/display_folded = true
 texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall1"]
 
@@ -232,9 +397,8 @@ light_mask = 1
 
 [node name="wall2" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall2"]
 
@@ -258,14 +422,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall2"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 4 )
 light_mask = 1
 
 [node name="wall3" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall3"]
 
@@ -289,14 +452,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall3"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 6 )
 light_mask = 1
 
 [node name="wall4" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall4"]
 
@@ -320,14 +482,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall4"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 8 )
 light_mask = 1
 
 [node name="wall5" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 5 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall5"]
 
@@ -351,19 +512,18 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall5"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 10 )
 light_mask = 1
 
 [node name="wall6" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 2 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 6 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall6"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 68 )
+shapes/0/shape = SubResource( 11 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -376,20 +536,24 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall6/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( -8, -20, -20, 0, -20, 12, 0, 20, 16, 20, 16, -4, 4, -20 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall6"]
+
+occluder = SubResource( 12 )
+light_mask = 1
+
 [node name="wall7" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 3 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 7 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall7"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 69 )
+shapes/0/shape = SubResource( 13 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -402,15 +566,19 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall7/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( -8, -20, -20, -4, 0, 20, 20, 0, 12, -12 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall7"]
+
+occluder = SubResource( 14 )
+light_mask = 1
+
 [node name="wall8" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 8 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall8"]
 
@@ -434,14 +602,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall8"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 16 )
 light_mask = 1
 
 [node name="wall9" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall9"]
 
@@ -465,14 +632,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall9"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 18 )
 light_mask = 1
 
 [node name="wall10" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall10"]
 
@@ -496,14 +662,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall10"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 20 )
 light_mask = 1
 
 [node name="wall11" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 11 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall11"]
 
@@ -527,14 +692,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall11"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 22 )
 light_mask = 1
 
 [node name="wall12" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 12 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall12"]
 
@@ -558,19 +722,18 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall12"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 24 )
 light_mask = 1
 
 [node name="wall13" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 4 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 13 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall13"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 70 )
+shapes/0/shape = SubResource( 25 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -583,20 +746,24 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall13/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( 0, -20, -20, 0, -12, 20, 12, 20, 20, -4 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall13"]
+
+occluder = SubResource( 26 )
+light_mask = 1
+
 [node name="wall14" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 3 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 14 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall14"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 71 )
+shapes/0/shape = SubResource( 27 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -609,15 +776,19 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall14/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( -8, -20, -20, -4, 0, 20, 20, 0, 12, -12 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall14"]
+
+occluder = SubResource( 28 )
+light_mask = 1
+
 [node name="wall15" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 1 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 15 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall15"]
 
@@ -641,19 +812,19 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall15"]
 
-occluder = SubResource( 2 )
+occluder = SubResource( 30 )
 light_mask = 1
 
 [node name="wall16" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 5 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 16 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall16"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 65 )
+shapes/0/shape = SubResource( 31 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -666,18 +837,23 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall16/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( -20, -20, 20, -20, 20, 20, -20, 20 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall16"]
+
+occluder = SubResource( 32 )
+light_mask = 1
+
 [node name="wall17" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 6 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 17 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall17"]
 
+editor/display_folded = true
 input/pickable = false
 shapes/0/shape = SubResource( 33 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -688,7 +864,6 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
-__meta__ = { "_editor_collapsed":true }
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall17/StaticBody2D"]
 
@@ -697,16 +872,21 @@ polygon = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall17"]
+
+occluder = SubResource( 34 )
+light_mask = 1
+
 [node name="wall18" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 7 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 18 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall18"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 66 )
+shapes/0/shape = SubResource( 35 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -716,12 +896,11 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall18/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall18/StaticBody2D"]
 
-build_mode = 0
-polygon = Vector2Array( -24, -24, 24, -24, 24, 24, -24, 24 )
-shape_range = Vector2( 0, 0 )
+shape = SubResource( 35 )
 trigger = false
+_update_shape_index = 0
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall18"]
 
@@ -730,14 +909,14 @@ light_mask = 1
 
 [node name="wall19" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 8 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 19 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall19"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 67 )
+shapes/0/shape = SubResource( 37 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -747,12 +926,11 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall19/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall19/StaticBody2D"]
 
-build_mode = 0
-polygon = Vector2Array( -28, -28, 28, -28, 28, 28, -28, 28 )
-shape_range = Vector2( 0, 0 )
+shape = SubResource( 37 )
 trigger = false
+_update_shape_index = 0
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall19"]
 
@@ -761,14 +939,14 @@ light_mask = 1
 
 [node name="wall20" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 2 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 20 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall20"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 72 )
+shapes/0/shape = SubResource( 39 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -781,21 +959,25 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall20/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( -8, -20, -20, 0, -20, 12, 0, 20, 20, 20, 20, 0, 4, -20 )
+polygon = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall20"]
+
+occluder = SubResource( 40 )
+light_mask = 1
+
 [node name="wall21" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 3 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 21 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall21"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 73 )
-shapes/0/transform = Matrix32( 1, -0, 0, 1, 0, 0 )
+shapes/0/shape = SubResource( 41 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
@@ -807,20 +989,25 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall21/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( -8, -20, -20, -4, 0, 20, 20, 0, 12, -12 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall21"]
+
+occluder = SubResource( 42 )
+light_mask = 1
+
 [node name="wall22" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 4 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 22 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall22"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 74 )
+shapes/0/shape = SubResource( 43 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -833,20 +1020,25 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall22/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( 0, -20, -20, 0, -12, 20, 12, 20, 20, -4 )
+polygon = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall22"]
+
+occluder = SubResource( 44 )
+light_mask = 1
+
 [node name="wall23" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 4 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 23 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall23"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 75 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -859,20 +1051,985 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall23/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( 0, -20, -20, 0, -12, 20, 12, 20, 20, -4 )
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall23"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall24" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 24 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall24"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall24/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall24"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall25" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 25 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall25"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall25/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall25"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall26" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 26 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall26"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall26/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall26"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall27" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 27 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall27"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall27/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall27"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall28" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 28 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall28"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall28/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall28"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall29" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 29 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall29"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall29/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall29"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall30" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 30 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall30"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall30/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall30"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall31" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 31 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall31"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall31/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall31"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall32" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall32"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall32/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall32"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall33" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 33 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall33"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall33/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall33"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall34" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 34 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall34"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall34/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall34"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall35" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 35 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall35"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall35/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall35"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall36" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 36 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall36"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall36/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall36"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall37" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 37 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall37"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall37/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall37"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall38" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 38 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall38"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall38/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall38"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall39" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 39 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall39"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall39/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall39"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall40" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 40 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall40"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall40/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall40"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall41" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 41 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall41"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall41/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall41"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall42" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 42 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall42"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall42/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall42"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall43" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 43 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall43"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall43/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall43"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall44" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 44 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall44"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall44/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall44"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall45" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 45 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall45"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall45/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall45"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall46" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 46 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall46"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall46/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall46"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall47" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 47 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall47"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall47/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall47"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall48" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 48 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall48"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall48/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall48"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall49" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 49 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall49"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall49/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall49"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall50" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 50 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall50"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall50/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall50"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall51" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 51 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall51"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall51/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall51"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall52" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 52 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall52"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall52/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall52"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall53" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 53 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall53"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall53/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall53"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
+[node name="wall54" type="Sprite" parent="."]
+
+editor/display_folded = true
+texture = ExtResource( 54 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wall54"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 45 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall54/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="wall54"]
+
+occluder = SubResource( 46 )
+light_mask = 1
+
 [node name="door1" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 9 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 55 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="door1"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 76 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -885,20 +2042,24 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door1/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( 32, 28, -32, 28, -32, -20, 32, -20 )
+polygon = Vector2Array( 32, 10, -32, 10, -32, -10, 32, -10 )
 shape_range = Vector2( 0, 0 )
 trigger = false
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="door1"]
+
+occluder = SubResource( 48 )
+light_mask = 1
+
 [node name="door2" type="Sprite" parent="."]
 
-visibility/visible = false
-texture = ExtResource( 9 )
-__meta__ = { "_editor_collapsed":true }
+editor/display_folded = true
+texture = ExtResource( 56 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="door2"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 77 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -911,44 +2072,156 @@ bounce = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door2/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( 32, 28, -32, 28, -32, -20, 32, -20 )
+polygon = Vector2Array( 32, 10, -32, 10, -32, -10, 32, -10 )
 shape_range = Vector2( 0, 0 )
 trigger = false
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="door2"]
+
+occluder = SubResource( 49 )
+light_mask = 1
 
 [node name="glas1" type="Sprite" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
+texture = ExtResource( 57 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="glas1"]
+
+editor/display_folded = true
+input/pickable = false
+shapes/0/shape = SubResource( 50 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="glas1/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -32, -32, -16, -32, -16, 32, -32, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
 
 [node name="glas2" type="Sprite" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
+texture = ExtResource( 58 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="glas2"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 51 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="glas2/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 16, -32, 32, -32, 32, 32, 16, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
 
 [node name="glas3" type="Sprite" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
+texture = ExtResource( 59 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="glas3"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 52 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="glas3/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, -16, -32, -16 )
+shape_range = Vector2( 0, 0 )
+trigger = false
 
 [node name="glas4" type="Sprite" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
+texture = ExtResource( 60 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="glas4"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 53 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="glas4/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( -32, 16, 32, 16, 32, 32, -32, 32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
 
 [node name="glas5" type="Sprite" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
+texture = ExtResource( 61 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="glas5"]
+
+input/pickable = false
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="glas5/StaticBody2D"]
+
+build_mode = 0
+polygon = Vector2Array( 8, -32, 8, 32, -8, 32, -8, -32 )
+shape_range = Vector2( 0, 0 )
+trigger = false
 
 [node name="glas6" type="Sprite" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
+texture = ExtResource( 62 )
 
-[node name="deco1" type="Sprite" parent="."]
-
-visibility/visible = false
-texture = ExtResource( 10 )
-__meta__ = { "_editor_collapsed":true }
-
-[node name="StaticBody2D" type="StaticBody2D" parent="deco1"]
+[node name="StaticBody2D" type="StaticBody2D" parent="glas6"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 56 )
+shapes/0/shape = SubResource( 55 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -958,109 +2231,11 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="deco1/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="glas6/StaticBody2D"]
 
 build_mode = 0
-polygon = Vector2Array( 26, 22, -26, 22, -26, -16, 26, -16 )
+polygon = Vector2Array( 32, 8, -32, 8, -32, -8, 32, -8 )
 shape_range = Vector2( 0, 0 )
 trigger = false
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="deco1"]
-
-navpoly = SubResource( 57 )
-enabled = true
-
-[node name="deco2" type="Sprite" parent="."]
-
-visibility/visible = false
-texture = ExtResource( 7 )
-__meta__ = { "_editor_collapsed":true }
-
-[node name="StaticBody2D" type="StaticBody2D" parent="deco2"]
-
-input/pickable = false
-shapes/0/shape = SubResource( 58 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="deco2/StaticBody2D"]
-
-build_mode = 0
-polygon = Vector2Array( 26, 22, -26, 22, -26, -16, 26, -16 )
-shape_range = Vector2( 0, 0 )
-trigger = false
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="deco2"]
-
-navpoly = SubResource( 59 )
-enabled = true
-
-[node name="deco3" type="Sprite" parent="."]
-
-visibility/visible = false
-texture = ExtResource( 8 )
-__meta__ = { "_editor_collapsed":true }
-
-[node name="StaticBody2D" type="StaticBody2D" parent="deco3"]
-
-input/pickable = false
-shapes/0/shape = SubResource( 60 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="deco3/StaticBody2D"]
-
-build_mode = 0
-polygon = Vector2Array( 28, 24, -28, 24, -28, -24, 28, -24 )
-shape_range = Vector2( 0, 0 )
-trigger = false
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="deco3"]
-
-navpoly = SubResource( 61 )
-enabled = true
-
-[node name="deco4" type="Sprite" parent="."]
-
-visibility/visible = false
-texture = ExtResource( 8 )
-__meta__ = { "_editor_collapsed":true }
-
-[node name="StaticBody2D" type="StaticBody2D" parent="deco4"]
-
-input/pickable = false
-shapes/0/shape = SubResource( 62 )
-shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
-shapes/0/trigger = false
-collision/layers = 1
-collision/mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="deco4/StaticBody2D"]
-
-build_mode = 0
-polygon = Vector2Array( 32, 32, -32, 32, -32, -32, 32, -32 )
-shape_range = Vector2( 0, 0 )
-trigger = false
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="deco4"]
-
-navpoly = SubResource( 63 )
-enabled = true
 
 

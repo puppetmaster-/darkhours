@@ -1,12 +1,13 @@
-[gd_scene load_steps=12 format=1]
+[gd_scene load_steps=14 format=1]
 
 [ext_resource path="res://scenes/player.gd" type="Script" id=1]
 [ext_resource path="res://resources/tiles/wall/deko (24).png" type="Texture" id=2]
-[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=3]
-[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=4]
-[ext_resource path="res://resources/player/hitman1_hold.png" type="Texture" id=5]
-[ext_resource path="res://resources/player/hitman1_silencer.png" type="Texture" id=6]
-[ext_resource path="res://resources/player/hitman1_reload.png" type="Texture" id=7]
+[ext_resource path="res://resources/player/hitman_hand_left.png" type="Texture" id=3]
+[ext_resource path="res://resources/fx/taschenlampe.png" type="Texture" id=4]
+[ext_resource path="res://resources/player/hitman_hand_right.png" type="Texture" id=5]
+[ext_resource path="res://resources/player/gun1.png" type="Texture" id=6]
+[ext_resource path="res://resources/fx/light.png" type="Texture" id=7]
+[ext_resource path="res://resources/player/hitman1_stand.png" type="Texture" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -21,20 +22,10 @@ length = 0.4
 loop = false
 step = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("gfx/stand:modulate")
+tracks/0/path = NodePath("gfx/body:modulate")
 tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
-tracks/1/type = "value"
-tracks/1/path = NodePath("gfx/hold:modulate")
-tracks/1/interp = 1
-tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.309804, 0.309804, 1 ), Color( 1, 1, 1, 1 ) ] }
-tracks/2/type = "value"
-tracks/2/path = NodePath("gfx/shoot:modulate")
-tracks/2/interp = 1
-tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 0.1, 0.2 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ Color( 1, 1, 1, 1 ), Color( 1, 0.3125, 0.3125, 1 ), Color( 1, 1, 1, 1 ) ] }
 
 [sub_resource type="Animation" id=3]
 
@@ -48,7 +39,13 @@ tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = { "times":FloatArray( 0, 0.3, 0.8 ), "transitions":FloatArray( 1, 1, 1 ), "update":0, "values":[ 0.0, 1.4, -1.0 ] }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="OccluderPolygon2D" id=4]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( 0, -32, -11, -26, -11, 27, 0, 33, 11, 27, 11, -26 )
+
+[sub_resource type="Animation" id=5]
 
 length = 1.0
 loop = false
@@ -59,12 +56,12 @@ tracks/0/interp = 1
 tracks/0/imported = false
 tracks/0/keys = { "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 0.25 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 1.2, 1.2 ), Vector2( 1, 1 ) ] }
 tracks/1/type = "value"
-tracks/1/path = NodePath("gfx/lamp/Light2D:transform/scale")
+tracks/1/path = NodePath("gfx/arm_left/flashlight/Light2D1:transform/scale")
 tracks/1/interp = 1
 tracks/1/imported = false
 tracks/1/keys = { "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "update":0, "values":[ Vector2( 1, 1 ), Vector2( 0.894943, 1 ), Vector2( 1, 1 ) ] }
 tracks/2/type = "value"
-tracks/2/path = NodePath("gfx/lamp/Light2D1:transform/scale")
+tracks/2/path = NodePath("gfx/arm_left/flashlight/Light2D2:transform/scale")
 tracks/2/interp = 1
 tracks/2/imported = false
 tracks/2/keys = { "times":FloatArray( 0, 0.6, 1 ), "transitions":FloatArray( 0.25, 0.25, 1 ), "update":0, "values":[ Vector2( 0.588385, 1.34922 ), Vector2( 0.530553, 1.34922 ), Vector2( 0.588385, 1.34922 ) ] }
@@ -102,12 +99,25 @@ autoplay = ""
 
 [node name="gfx" type="Node2D" parent="."]
 
-[node name="lamp" type="Node2D" parent="gfx"]
+[node name="arm_left" type="Node2D" parent="gfx"]
 
-transform/pos = Vector2( 16, -15 )
+editor/display_folded = true
+transform/pos = Vector2( 6, -22 )
+
+[node name="hand" type="Sprite" parent="gfx/arm_left"]
+
+transform/pos = Vector2( 7, 5 )
+transform/scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="flashlight" type="Node2D" parent="gfx/arm_left"]
+
+editor/display_folded = true
+transform/pos = Vector2( 13, 6 )
 transform/rot = -0.988074
+transform/scale = Vector2( 1, 1 )
 
-[node name="Polygon2D" type="Polygon2D" parent="gfx/lamp"]
+[node name="Polygon2D" type="Polygon2D" parent="gfx/arm_left/flashlight"]
 
 polygon = Vector2Array( 0, -3, 10, -4, 13, -6, 13, 6, 10, 4, 0, 3, -1, 0.999998, -1, -1 )
 uv = Vector2Array(  )
@@ -121,11 +131,11 @@ texture/rotation = 0.0
 invert/enable = false
 invert/border = 100.0
 
-[node name="Light2D" type="Light2D" parent="gfx/lamp"]
+[node name="Light2D1" type="Light2D" parent="gfx/arm_left/flashlight"]
 
 transform/pos = Vector2( 5, 1 )
 enabled = true
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 offset = Vector2( 159, 3 )
 scale = 1.0
 color = Color( 0.921001, 0.933594, 0.809601, 1 )
@@ -143,12 +153,12 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 2000.0
 shadow/item_mask = 1
 
-[node name="Light2D1" type="Light2D" parent="gfx/lamp"]
+[node name="Light2D2" type="Light2D" parent="gfx/arm_left/flashlight"]
 
 transform/pos = Vector2( 5, 1 )
 transform/scale = Vector2( 0.588385, 1.34922 )
 enabled = true
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 offset = Vector2( 238.279, 5.69445 )
 scale = 1.5
 color = Color( 0.921001, 0.933594, 0.809601, 0.373065 )
@@ -166,7 +176,7 @@ shadow/buffer_size = 2048
 shadow/esm_multiplier = 2000.0
 shadow/item_mask = 1
 
-[node name="animation" type="AnimationPlayer" parent="gfx/lamp"]
+[node name="animation" type="AnimationPlayer" parent="gfx/arm_left/flashlight"]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
@@ -177,41 +187,80 @@ playback/speed = 0.3
 blend_times = [  ]
 autoplay = "idle"
 
-[node name="stand" type="Sprite" parent="gfx"]
+[node name="flashlightTimer" type="Timer" parent="gfx/arm_left/flashlight"]
 
-transform/pos = Vector2( 3, 0 )
-transform/scale = Vector2( 1, -1 )
-texture = ExtResource( 4 )
+process_mode = 1
+wait_time = 0.5
+one_shot = false
+autostart = false
 
-[node name="hold" type="Sprite" parent="gfx"]
-
-visibility/visible = false
-transform/pos = Vector2( 5, 0 )
-texture = ExtResource( 5 )
-
-[node name="shoot" type="Sprite" parent="gfx"]
+[node name="arm_right" type="Node2D" parent="gfx"]
 
 editor/display_folded = true
 visibility/visible = false
-transform/pos = Vector2( 20, 0 )
+transform/pos = Vector2( 6, 22 )
+
+[node name="hand" type="Sprite" parent="gfx/arm_right"]
+
+transform/pos = Vector2( 8, -4 )
+transform/scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 5 )
+
+[node name="gun" type="Node2D" parent="gfx/arm_right"]
+
+transform/pos = Vector2( 22, -6 )
+
+[node name="gun1" type="Sprite" parent="gfx/arm_right/gun"]
+
+transform/pos = Vector2( 8, 1 )
+transform/scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 6 )
 
-[node name="Position2D" type="Position2D" parent="gfx/shoot"]
+[node name="Position2D" type="Position2D" parent="gfx/arm_right/gun"]
 
-transform/pos = Vector2( 32, 14 )
+transform/pos = Vector2( 23, 1 )
+transform/scale = Vector2( 0.3, 0.3 )
 
-[node name="reload" type="Sprite" parent="gfx"]
+[node name="fire" type="Light2D" parent="gfx/arm_right/gun"]
+
+transform/pos = Vector2( 22, 1 )
+enabled = true
+texture = ExtResource( 7 )
+offset = Vector2( 0, 0 )
+scale = 1.0
+color = Color( 1, 0, 0, 1 )
+energy = 4.0
+mode = 0
+range/height = 0.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 1
+shadow/enabled = true
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 1000.0
+shadow/item_mask = 1
+
+[node name="body" type="Sprite" parent="gfx"]
+
+transform/pos = Vector2( 3, 0 )
+transform/scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 8 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="gfx"]
 
 visibility/visible = false
-transform/pos = Vector2( 8, 0 )
-texture = ExtResource( 7 )
+occluder = SubResource( 4 )
+light_mask = 1
 
 [node name="jump" type="AnimationPlayer" parent="."]
 
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/jump = SubResource( 4 )
+anims/jump = SubResource( 5 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]

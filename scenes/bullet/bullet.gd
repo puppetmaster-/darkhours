@@ -48,7 +48,7 @@ func onBodyEnter(body):
 		set_layer_mask(0)
 	if(body.is_in_group("object")):
 		hide()
-		body.get_node("ani").play("hit")
+		body.hit()
 		velocity = Vector2(0,0)
 		speed = 0
 		set_collision_mask(0)
