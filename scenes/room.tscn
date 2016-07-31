@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=1]
+[gd_scene load_steps=9 format=1]
 
 [ext_resource path="res://scenes/room.gd" type="Script" id=1]
 [ext_resource path="res://scenes/tilesets/floor.tres" type="TileSet" id=2]
@@ -7,6 +7,11 @@
 [ext_resource path="res://scenes/tilesets/wall_0.tres" type="TileSet" id=5]
 [ext_resource path="res://scenes/tilesets/wall_pattern.tres" type="TileSet" id=6]
 [ext_resource path="res://scenes/tilesets/tileset_editor.tres" type="TileSet" id=7]
+
+[sub_resource type="ColorRamp" id=1]
+
+offsets = FloatArray( 0, 1 )
+colors = ColorArray( 1, 1, 1, 1, 1, 1, 1, 0.689497 )
 
 [node name="room" type="Node2D"]
 
@@ -93,6 +98,7 @@ tile_data = IntArray(  )
 
 [node name="pattern" type="Node2D" parent="."]
 
+editor/display_folded = true
 visibility/visible = false
 transform/pos = Vector2( -512, -352 )
 
@@ -814,5 +820,30 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( 65537, -1073741814, 65549, -1073741816, 65550, -1073741816, 131086, -1073741816, 262154, -1073741814 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 0, 192 )
+config/amount = 100
+config/lifetime = 2.0
+config/half_extents = Vector2( 400, 250 )
+params/direction = 0.0
+params/spread = 80.0
+params/linear_velocity = 10.0
+params/spin_velocity = 1.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 4.0
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 2.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color_ramp = SubResource( 1 )
 
 

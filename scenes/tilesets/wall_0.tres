@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=121 format=1]
+[gd_resource type="TileSet" load_steps=165 format=1]
 
 [ext_resource path="res://resources/tiles/wall/cave (1).png" type="Texture" id=1]
 [ext_resource path="res://resources/tiles/wall/cave (2).png" type="Texture" id=2]
@@ -97,60 +97,28 @@ polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=25]
+[sub_resource type="NavigationPolygon" id=33]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=32]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=24]
+[sub_resource type="ConvexPolygonShape2D" id=31]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=27]
+[sub_resource type="NavigationPolygon" id=36]
 
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=26]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=29]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=28]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=31]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=30]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=33]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=32]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="OccluderPolygon2D" id=35]
 
@@ -163,46 +131,114 @@ polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=37]
+[sub_resource type="NavigationPolygon" id=39]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=38]
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=36]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
-
-[sub_resource type="OccluderPolygon2D" id=39]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( 0, -32, 10, -30, 18, -26, 26, -18, 30, -10, 32, 0, 30, 10, 26, 18, 18, 26, 10, 30, 0, 32, -10, 30, -18, 26, -26, 18, -30, 10, -32, 0, -30, -10, -26, -18, -18, -26, -10, -30 )
-
-[sub_resource type="CircleShape2D" id=38]
+[sub_resource type="ConvexPolygonShape2D" id=37]
 
 custom_solver_bias = 0.0
-radius = 32.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=42]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="OccluderPolygon2D" id=41]
 
 closed = true
 cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=40]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=45]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=44]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=48]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=47]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=46]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=50]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+
+[sub_resource type="OccluderPolygon2D" id=52]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( 0, -32, 10, -30, 18, -26, 26, -18, 30, -10, 32, 0, 30, 10, 26, 18, 18, 26, 10, 30, 0, 32, -10, 30, -18, 26, -26, 18, -30, 10, -32, 0, -30, -10, -26, -18, -18, -26, -10, -30 )
+
+[sub_resource type="CircleShape2D" id=51]
+
+custom_solver_bias = 0.0
+radius = 32.0
+
+[sub_resource type="OccluderPolygon2D" id=54]
+
+closed = true
+cull_mode = 0
 polygon = Vector2Array( 0, -22, 8, -20, 16, -14, 20, -8, 22, 0, 20, 8, 16, 14, 8, 20, 0, 22, -8, 20, -16, 14, -20, 8, -22, 0, -20, -8, -14, -16, -8, -20 )
 
-[sub_resource type="CircleShape2D" id=40]
+[sub_resource type="CircleShape2D" id=53]
 
 custom_solver_bias = 0.0
 radius = 22.0
 
-[sub_resource type="OccluderPolygon2D" id=43]
+[sub_resource type="OccluderPolygon2D" id=56]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=42]
+[sub_resource type="ConvexPolygonShape2D" id=55]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
@@ -224,38 +260,86 @@ polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
-[sub_resource type="OccluderPolygon2D" id=45]
+[sub_resource type="OccluderPolygon2D" id=58]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=44]
+[sub_resource type="ConvexPolygonShape2D" id=57]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
 
-[sub_resource type="OccluderPolygon2D" id=47]
+[sub_resource type="OccluderPolygon2D" id=60]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=46]
+[sub_resource type="ConvexPolygonShape2D" id=59]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=49]
+[sub_resource type="OccluderPolygon2D" id=62]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=48]
+[sub_resource type="ConvexPolygonShape2D" id=61]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
+
+[sub_resource type="NavigationPolygon" id=63]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=64]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=65]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=66]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=67]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=68]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=69]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=12]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="OccluderPolygon2D" id=11]
 
@@ -268,69 +352,148 @@ polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
-[sub_resource type="OccluderPolygon2D" id=13]
+[sub_resource type="NavigationPolygon" id=70]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=71]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=72]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=73]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=74]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=75]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=76]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=77]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=78]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=79]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=15]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=14]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=13]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
-[sub_resource type="OccluderPolygon2D" id=15]
+[sub_resource type="NavigationPolygon" id=80]
 
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=14]
+[sub_resource type="NavigationPolygon" id=81]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="OccluderPolygon2D" id=51]
+[sub_resource type="NavigationPolygon" id=82]
 
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=50]
+[sub_resource type="NavigationPolygon" id=83]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="OccluderPolygon2D" id=53]
+[sub_resource type="NavigationPolygon" id=84]
 
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -8, 32, -8, 32, 8, -32, 8 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=52]
+[sub_resource type="NavigationPolygon" id=85]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -8, 32, -8, 32, 8, -32, 8 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=54]
+[sub_resource type="NavigationPolygon" id=86]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, -16, -32, -16, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=55]
+[sub_resource type="NavigationPolygon" id=87]
 
-custom_solver_bias = 0.0
-points = Vector2Array( 16, -32, 32, -32, 32, 32, 16, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=56]
+[sub_resource type="NavigationPolygon" id=88]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, -16, -32, -16 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="ConvexPolygonShape2D" id=57]
+[sub_resource type="NavigationPolygon" id=89]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, 16, 32, 16, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=18]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="OccluderPolygon2D" id=17]
 
@@ -343,32 +506,99 @@ polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=58]
+[sub_resource type="NavigationPolygon" id=90]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=91]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=92]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=93]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=95]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
+
+[sub_resource type="ConvexPolygonShape2D" id=94]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
+
+[sub_resource type="OccluderPolygon2D" id=97]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -8, 32, -8, 32, 8, -32, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=96]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -8, 32, -8, 32, 8, -32, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=98]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, -16, -32, -16, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=99]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 16, -32, 32, -32, 32, 32, 16, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=100]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, -16, -32, -16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=101]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, 16, 32, 16, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=21]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=20]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=102]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -8, -32, 8, -32, 8, 32, -8, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=19]
+[sub_resource type="NavigationPolygon" id=24]
 
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=18]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=21]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="ConvexPolygonShape2D" id=20]
-
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="OccluderPolygon2D" id=23]
 
@@ -377,6 +607,40 @@ cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="ConvexPolygonShape2D" id=22]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=27]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=26]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=30]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="OccluderPolygon2D" id=29]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
@@ -420,6 +684,7 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 3/occluder_offset = Vector2( 32, 32 )
 3/occluder = SubResource( 11 )
 3/navigation_offset = Vector2( 32, 32 )
+3/navigation = SubResource( 12 )
 3/shape_offset = Vector2( 32, 32 )
 3/shapes = [ SubResource( 10 ) ]
 4/name = "wall5"
@@ -427,469 +692,512 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 4/tex_offset = Vector2( 0, 0 )
 4/region = Rect2( 0, 0, 64, 64 )
 4/occluder_offset = Vector2( 32, 32 )
-4/occluder = SubResource( 13 )
+4/occluder = SubResource( 14 )
 4/navigation_offset = Vector2( 32, 32 )
+4/navigation = SubResource( 15 )
 4/shape_offset = Vector2( 32, 32 )
-4/shapes = [ SubResource( 12 ) ]
+4/shapes = [ SubResource( 13 ) ]
 5/name = "wall6"
 5/texture = ExtResource( 46 )
 5/tex_offset = Vector2( 0, 0 )
 5/region = Rect2( 0, 0, 64, 64 )
 5/occluder_offset = Vector2( 32, 32 )
-5/occluder = SubResource( 15 )
+5/occluder = SubResource( 17 )
 5/navigation_offset = Vector2( 32, 32 )
+5/navigation = SubResource( 18 )
 5/shape_offset = Vector2( 32, 32 )
-5/shapes = [ SubResource( 14 ) ]
+5/shapes = [ SubResource( 16 ) ]
 6/name = "wall7"
 6/texture = ExtResource( 57 )
 6/tex_offset = Vector2( 0, 0 )
 6/region = Rect2( 0, 0, 64, 64 )
 6/occluder_offset = Vector2( 32, 32 )
-6/occluder = SubResource( 17 )
+6/occluder = SubResource( 20 )
 6/navigation_offset = Vector2( 32, 32 )
+6/navigation = SubResource( 21 )
 6/shape_offset = Vector2( 32, 32 )
-6/shapes = [ SubResource( 16 ) ]
+6/shapes = [ SubResource( 19 ) ]
 7/name = "wall8"
 7/texture = ExtResource( 60 )
 7/tex_offset = Vector2( 0, 0 )
 7/region = Rect2( 0, 0, 64, 64 )
 7/occluder_offset = Vector2( 32, 32 )
-7/occluder = SubResource( 19 )
+7/occluder = SubResource( 23 )
 7/navigation_offset = Vector2( 32, 32 )
+7/navigation = SubResource( 24 )
 7/shape_offset = Vector2( 32, 32 )
-7/shapes = [ SubResource( 18 ) ]
+7/shapes = [ SubResource( 22 ) ]
 8/name = "wall9"
 8/texture = ExtResource( 61 )
 8/tex_offset = Vector2( 0, 0 )
 8/region = Rect2( 0, 0, 64, 64 )
 8/occluder_offset = Vector2( 32, 32 )
-8/occluder = SubResource( 21 )
+8/occluder = SubResource( 26 )
 8/navigation_offset = Vector2( 32, 32 )
+8/navigation = SubResource( 27 )
 8/shape_offset = Vector2( 32, 32 )
-8/shapes = [ SubResource( 20 ) ]
+8/shapes = [ SubResource( 25 ) ]
 9/name = "wall10"
 9/texture = ExtResource( 62 )
 9/tex_offset = Vector2( 0, 0 )
 9/region = Rect2( 0, 0, 64, 64 )
 9/occluder_offset = Vector2( 32, 32 )
-9/occluder = SubResource( 23 )
+9/occluder = SubResource( 29 )
 9/navigation_offset = Vector2( 32, 32 )
+9/navigation = SubResource( 30 )
 9/shape_offset = Vector2( 32, 32 )
-9/shapes = [ SubResource( 22 ) ]
+9/shapes = [ SubResource( 28 ) ]
 10/name = "wall11"
 10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/region = Rect2( 0, 0, 64, 64 )
 10/occluder_offset = Vector2( 32, 32 )
-10/occluder = SubResource( 25 )
+10/occluder = SubResource( 32 )
 10/navigation_offset = Vector2( 32, 32 )
+10/navigation = SubResource( 33 )
 10/shape_offset = Vector2( 32, 32 )
-10/shapes = [ SubResource( 24 ) ]
+10/shapes = [ SubResource( 31 ) ]
 11/name = "wall12"
 11/texture = ExtResource( 4 )
 11/tex_offset = Vector2( 0, 0 )
 11/region = Rect2( 0, 0, 64, 64 )
 11/occluder_offset = Vector2( 32, 32 )
-11/occluder = SubResource( 27 )
+11/occluder = SubResource( 35 )
 11/navigation_offset = Vector2( 32, 32 )
+11/navigation = SubResource( 36 )
 11/shape_offset = Vector2( 32, 32 )
-11/shapes = [ SubResource( 26 ) ]
+11/shapes = [ SubResource( 34 ) ]
 12/name = "wall13"
 12/texture = ExtResource( 5 )
 12/tex_offset = Vector2( 0, 0 )
 12/region = Rect2( 0, 0, 64, 64 )
 12/occluder_offset = Vector2( 32, 32 )
-12/occluder = SubResource( 29 )
+12/occluder = SubResource( 38 )
 12/navigation_offset = Vector2( 32, 32 )
+12/navigation = SubResource( 39 )
 12/shape_offset = Vector2( 32, 32 )
-12/shapes = [ SubResource( 28 ) ]
+12/shapes = [ SubResource( 37 ) ]
 13/name = "wall14"
 13/texture = ExtResource( 6 )
 13/tex_offset = Vector2( 0, 0 )
 13/region = Rect2( 0, 0, 64, 64 )
 13/occluder_offset = Vector2( 32, 32 )
-13/occluder = SubResource( 31 )
+13/occluder = SubResource( 41 )
 13/navigation_offset = Vector2( 32, 32 )
+13/navigation = SubResource( 42 )
 13/shape_offset = Vector2( 32, 32 )
-13/shapes = [ SubResource( 30 ) ]
+13/shapes = [ SubResource( 40 ) ]
 14/name = "wall15"
 14/texture = ExtResource( 7 )
 14/tex_offset = Vector2( 0, 0 )
 14/region = Rect2( 0, 0, 64, 64 )
 14/occluder_offset = Vector2( 32, 32 )
-14/occluder = SubResource( 33 )
+14/occluder = SubResource( 44 )
 14/navigation_offset = Vector2( 32, 32 )
+14/navigation = SubResource( 45 )
 14/shape_offset = Vector2( 32, 32 )
-14/shapes = [ SubResource( 32 ) ]
+14/shapes = [ SubResource( 43 ) ]
 15/name = "wall16"
 15/texture = ExtResource( 8 )
 15/tex_offset = Vector2( 0, 0 )
 15/region = Rect2( 0, 0, 64, 64 )
 15/occluder_offset = Vector2( 32, 32 )
-15/occluder = SubResource( 35 )
+15/occluder = SubResource( 47 )
 15/navigation_offset = Vector2( 32, 32 )
+15/navigation = SubResource( 48 )
 15/shape_offset = Vector2( 32, 32 )
-15/shapes = [ SubResource( 34 ) ]
+15/shapes = [ SubResource( 46 ) ]
 16/name = "wall17"
 16/texture = ExtResource( 9 )
 16/tex_offset = Vector2( 0, 0 )
 16/region = Rect2( 0, 0, 64, 64 )
 16/occluder_offset = Vector2( 32, 32 )
-16/occluder = SubResource( 37 )
+16/occluder = SubResource( 50 )
 16/navigation_offset = Vector2( 32, 32 )
 16/shape_offset = Vector2( 32, 32 )
-16/shapes = [ SubResource( 36 ) ]
+16/shapes = [ SubResource( 49 ) ]
 17/name = "wall18"
 17/texture = ExtResource( 10 )
 17/tex_offset = Vector2( 0, 0 )
 17/region = Rect2( 0, 0, 64, 64 )
 17/occluder_offset = Vector2( 32, 32 )
-17/occluder = SubResource( 39 )
+17/occluder = SubResource( 52 )
 17/navigation_offset = Vector2( 32, 32 )
 17/shape_offset = Vector2( 32, 32 )
-17/shapes = [ SubResource( 38 ) ]
+17/shapes = [ SubResource( 51 ) ]
 18/name = "wall19"
 18/texture = ExtResource( 11 )
 18/tex_offset = Vector2( 0, 0 )
 18/region = Rect2( 0, 0, 64, 64 )
 18/occluder_offset = Vector2( 32, 32 )
-18/occluder = SubResource( 41 )
+18/occluder = SubResource( 54 )
 18/navigation_offset = Vector2( 32, 32 )
 18/shape_offset = Vector2( 32, 32 )
-18/shapes = [ SubResource( 40 ) ]
+18/shapes = [ SubResource( 53 ) ]
 19/name = "wall20"
 19/texture = ExtResource( 12 )
 19/tex_offset = Vector2( 0, 0 )
 19/region = Rect2( 0, 0, 64, 64 )
 19/occluder_offset = Vector2( 32, 32 )
-19/occluder = SubResource( 43 )
+19/occluder = SubResource( 56 )
 19/navigation_offset = Vector2( 32, 32 )
 19/shape_offset = Vector2( 32, 32 )
-19/shapes = [ SubResource( 42 ) ]
+19/shapes = [ SubResource( 55 ) ]
 20/name = "wall21"
 20/texture = ExtResource( 14 )
 20/tex_offset = Vector2( 0, 0 )
 20/region = Rect2( 0, 0, 64, 64 )
 20/occluder_offset = Vector2( 32, 32 )
-20/occluder = SubResource( 45 )
+20/occluder = SubResource( 58 )
 20/navigation_offset = Vector2( 32, 32 )
 20/shape_offset = Vector2( 32, 32 )
-20/shapes = [ SubResource( 44 ) ]
+20/shapes = [ SubResource( 57 ) ]
 21/name = "wall22"
 21/texture = ExtResource( 15 )
 21/tex_offset = Vector2( 0, 0 )
 21/region = Rect2( 0, 0, 64, 64 )
 21/occluder_offset = Vector2( 32, 32 )
-21/occluder = SubResource( 47 )
+21/occluder = SubResource( 60 )
 21/navigation_offset = Vector2( 32, 32 )
 21/shape_offset = Vector2( 32, 32 )
-21/shapes = [ SubResource( 46 ) ]
+21/shapes = [ SubResource( 59 ) ]
 22/name = "wall23"
 22/texture = ExtResource( 16 )
 22/tex_offset = Vector2( 0, 0 )
 22/region = Rect2( 0, 0, 64, 64 )
 22/occluder_offset = Vector2( 32, 32 )
-22/occluder = SubResource( 49 )
+22/occluder = SubResource( 62 )
 22/navigation_offset = Vector2( 32, 32 )
 22/shape_offset = Vector2( 32, 32 )
-22/shapes = [ SubResource( 48 ) ]
+22/shapes = [ SubResource( 61 ) ]
 23/name = "wall24"
 23/texture = ExtResource( 17 )
 23/tex_offset = Vector2( 0, 0 )
 23/region = Rect2( 0, 0, 64, 64 )
 23/occluder_offset = Vector2( 32, 32 )
-23/occluder = SubResource( 49 )
+23/occluder = SubResource( 62 )
 23/navigation_offset = Vector2( 32, 32 )
+23/navigation = SubResource( 63 )
 23/shape_offset = Vector2( 32, 32 )
-23/shapes = [ SubResource( 48 ) ]
+23/shapes = [ SubResource( 61 ) ]
 24/name = "wall25"
 24/texture = ExtResource( 18 )
 24/tex_offset = Vector2( 0, 0 )
 24/region = Rect2( 0, 0, 64, 64 )
 24/occluder_offset = Vector2( 32, 32 )
-24/occluder = SubResource( 49 )
+24/occluder = SubResource( 62 )
 24/navigation_offset = Vector2( 32, 32 )
+24/navigation = SubResource( 64 )
 24/shape_offset = Vector2( 32, 32 )
-24/shapes = [ SubResource( 48 ) ]
+24/shapes = [ SubResource( 61 ) ]
 25/name = "wall26"
 25/texture = ExtResource( 19 )
 25/tex_offset = Vector2( 0, 0 )
 25/region = Rect2( 0, 0, 64, 64 )
 25/occluder_offset = Vector2( 32, 32 )
-25/occluder = SubResource( 49 )
+25/occluder = SubResource( 62 )
 25/navigation_offset = Vector2( 32, 32 )
+25/navigation = SubResource( 65 )
 25/shape_offset = Vector2( 32, 32 )
-25/shapes = [ SubResource( 48 ) ]
+25/shapes = [ SubResource( 61 ) ]
 26/name = "wall27"
 26/texture = ExtResource( 20 )
 26/tex_offset = Vector2( 0, 0 )
 26/region = Rect2( 0, 0, 64, 64 )
 26/occluder_offset = Vector2( 32, 32 )
-26/occluder = SubResource( 49 )
+26/occluder = SubResource( 62 )
 26/navigation_offset = Vector2( 32, 32 )
+26/navigation = SubResource( 66 )
 26/shape_offset = Vector2( 32, 32 )
-26/shapes = [ SubResource( 48 ) ]
+26/shapes = [ SubResource( 61 ) ]
 27/name = "wall28"
 27/texture = ExtResource( 21 )
 27/tex_offset = Vector2( 0, 0 )
 27/region = Rect2( 0, 0, 64, 64 )
 27/occluder_offset = Vector2( 32, 32 )
-27/occluder = SubResource( 49 )
+27/occluder = SubResource( 62 )
 27/navigation_offset = Vector2( 32, 32 )
+27/navigation = SubResource( 67 )
 27/shape_offset = Vector2( 32, 32 )
-27/shapes = [ SubResource( 48 ) ]
+27/shapes = [ SubResource( 61 ) ]
 28/name = "wall29"
 28/texture = ExtResource( 22 )
 28/tex_offset = Vector2( 0, 0 )
 28/region = Rect2( 0, 0, 64, 64 )
 28/occluder_offset = Vector2( 32, 32 )
-28/occluder = SubResource( 49 )
+28/occluder = SubResource( 62 )
 28/navigation_offset = Vector2( 32, 32 )
+28/navigation = SubResource( 68 )
 28/shape_offset = Vector2( 32, 32 )
-28/shapes = [ SubResource( 48 ) ]
+28/shapes = [ SubResource( 61 ) ]
 29/name = "wall30"
 29/texture = ExtResource( 23 )
 29/tex_offset = Vector2( 0, 0 )
 29/region = Rect2( 0, 0, 64, 64 )
 29/occluder_offset = Vector2( 32, 32 )
-29/occluder = SubResource( 49 )
+29/occluder = SubResource( 62 )
 29/navigation_offset = Vector2( 32, 32 )
+29/navigation = SubResource( 69 )
 29/shape_offset = Vector2( 32, 32 )
-29/shapes = [ SubResource( 48 ) ]
+29/shapes = [ SubResource( 61 ) ]
 30/name = "wall31"
 30/texture = ExtResource( 25 )
 30/tex_offset = Vector2( 0, 0 )
 30/region = Rect2( 0, 0, 64, 64 )
 30/occluder_offset = Vector2( 32, 32 )
-30/occluder = SubResource( 49 )
+30/occluder = SubResource( 62 )
 30/navigation_offset = Vector2( 32, 32 )
+30/navigation = SubResource( 70 )
 30/shape_offset = Vector2( 32, 32 )
-30/shapes = [ SubResource( 48 ) ]
+30/shapes = [ SubResource( 61 ) ]
 31/name = "wall32"
 31/texture = ExtResource( 26 )
 31/tex_offset = Vector2( 0, 0 )
 31/region = Rect2( 0, 0, 64, 64 )
 31/occluder_offset = Vector2( 32, 32 )
-31/occluder = SubResource( 49 )
+31/occluder = SubResource( 62 )
 31/navigation_offset = Vector2( 32, 32 )
+31/navigation = SubResource( 71 )
 31/shape_offset = Vector2( 32, 32 )
-31/shapes = [ SubResource( 48 ) ]
+31/shapes = [ SubResource( 61 ) ]
 32/name = "wall33"
 32/texture = ExtResource( 27 )
 32/tex_offset = Vector2( 0, 0 )
 32/region = Rect2( 0, 0, 64, 64 )
 32/occluder_offset = Vector2( 32, 32 )
-32/occluder = SubResource( 49 )
+32/occluder = SubResource( 62 )
 32/navigation_offset = Vector2( 32, 32 )
+32/navigation = SubResource( 72 )
 32/shape_offset = Vector2( 32, 32 )
-32/shapes = [ SubResource( 48 ) ]
+32/shapes = [ SubResource( 61 ) ]
 33/name = "wall34"
 33/texture = ExtResource( 28 )
 33/tex_offset = Vector2( 0, 0 )
 33/region = Rect2( 0, 0, 64, 64 )
 33/occluder_offset = Vector2( 32, 32 )
-33/occluder = SubResource( 49 )
+33/occluder = SubResource( 62 )
 33/navigation_offset = Vector2( 32, 32 )
+33/navigation = SubResource( 73 )
 33/shape_offset = Vector2( 32, 32 )
-33/shapes = [ SubResource( 48 ) ]
+33/shapes = [ SubResource( 61 ) ]
 34/name = "wall35"
 34/texture = ExtResource( 29 )
 34/tex_offset = Vector2( 0, 0 )
 34/region = Rect2( 0, 0, 64, 64 )
 34/occluder_offset = Vector2( 32, 32 )
-34/occluder = SubResource( 49 )
+34/occluder = SubResource( 62 )
 34/navigation_offset = Vector2( 32, 32 )
+34/navigation = SubResource( 74 )
 34/shape_offset = Vector2( 32, 32 )
-34/shapes = [ SubResource( 48 ) ]
+34/shapes = [ SubResource( 61 ) ]
 35/name = "wall36"
 35/texture = ExtResource( 30 )
 35/tex_offset = Vector2( 0, 0 )
 35/region = Rect2( 0, 0, 64, 64 )
 35/occluder_offset = Vector2( 32, 32 )
-35/occluder = SubResource( 49 )
+35/occluder = SubResource( 62 )
 35/navigation_offset = Vector2( 32, 32 )
+35/navigation = SubResource( 75 )
 35/shape_offset = Vector2( 32, 32 )
-35/shapes = [ SubResource( 48 ) ]
+35/shapes = [ SubResource( 61 ) ]
 36/name = "wall37"
 36/texture = ExtResource( 31 )
 36/tex_offset = Vector2( 0, 0 )
 36/region = Rect2( 0, 0, 64, 64 )
 36/occluder_offset = Vector2( 32, 32 )
-36/occluder = SubResource( 49 )
+36/occluder = SubResource( 62 )
 36/navigation_offset = Vector2( 32, 32 )
+36/navigation = SubResource( 76 )
 36/shape_offset = Vector2( 32, 32 )
-36/shapes = [ SubResource( 48 ) ]
+36/shapes = [ SubResource( 61 ) ]
 37/name = "wall38"
 37/texture = ExtResource( 32 )
 37/tex_offset = Vector2( 0, 0 )
 37/region = Rect2( 0, 0, 64, 64 )
 37/occluder_offset = Vector2( 32, 32 )
-37/occluder = SubResource( 49 )
+37/occluder = SubResource( 62 )
 37/navigation_offset = Vector2( 32, 32 )
+37/navigation = SubResource( 77 )
 37/shape_offset = Vector2( 32, 32 )
-37/shapes = [ SubResource( 48 ) ]
+37/shapes = [ SubResource( 61 ) ]
 38/name = "wall39"
 38/texture = ExtResource( 33 )
 38/tex_offset = Vector2( 0, 0 )
 38/region = Rect2( 0, 0, 64, 64 )
 38/occluder_offset = Vector2( 32, 32 )
-38/occluder = SubResource( 49 )
+38/occluder = SubResource( 62 )
 38/navigation_offset = Vector2( 32, 32 )
+38/navigation = SubResource( 78 )
 38/shape_offset = Vector2( 32, 32 )
-38/shapes = [ SubResource( 48 ) ]
+38/shapes = [ SubResource( 61 ) ]
 39/name = "wall40"
 39/texture = ExtResource( 34 )
 39/tex_offset = Vector2( 0, 0 )
 39/region = Rect2( 0, 0, 64, 64 )
 39/occluder_offset = Vector2( 32, 32 )
-39/occluder = SubResource( 49 )
+39/occluder = SubResource( 62 )
 39/navigation_offset = Vector2( 32, 32 )
+39/navigation = SubResource( 79 )
 39/shape_offset = Vector2( 32, 32 )
-39/shapes = [ SubResource( 48 ) ]
+39/shapes = [ SubResource( 61 ) ]
 40/name = "wall41"
 40/texture = ExtResource( 36 )
 40/tex_offset = Vector2( 0, 0 )
 40/region = Rect2( 0, 0, 64, 64 )
 40/occluder_offset = Vector2( 32, 32 )
-40/occluder = SubResource( 49 )
+40/occluder = SubResource( 62 )
 40/navigation_offset = Vector2( 32, 32 )
+40/navigation = SubResource( 80 )
 40/shape_offset = Vector2( 32, 32 )
-40/shapes = [ SubResource( 48 ) ]
+40/shapes = [ SubResource( 61 ) ]
 41/name = "wall42"
 41/texture = ExtResource( 37 )
 41/tex_offset = Vector2( 0, 0 )
 41/region = Rect2( 0, 0, 64, 64 )
 41/occluder_offset = Vector2( 32, 32 )
-41/occluder = SubResource( 49 )
+41/occluder = SubResource( 62 )
 41/navigation_offset = Vector2( 32, 32 )
+41/navigation = SubResource( 81 )
 41/shape_offset = Vector2( 32, 32 )
-41/shapes = [ SubResource( 48 ) ]
+41/shapes = [ SubResource( 61 ) ]
 42/name = "wall43"
 42/texture = ExtResource( 38 )
 42/tex_offset = Vector2( 0, 0 )
 42/region = Rect2( 0, 0, 64, 64 )
 42/occluder_offset = Vector2( 32, 32 )
-42/occluder = SubResource( 49 )
+42/occluder = SubResource( 62 )
 42/navigation_offset = Vector2( 32, 32 )
+42/navigation = SubResource( 82 )
 42/shape_offset = Vector2( 32, 32 )
-42/shapes = [ SubResource( 48 ) ]
+42/shapes = [ SubResource( 61 ) ]
 43/name = "wall44"
 43/texture = ExtResource( 39 )
 43/tex_offset = Vector2( 0, 0 )
 43/region = Rect2( 0, 0, 64, 64 )
 43/occluder_offset = Vector2( 32, 32 )
-43/occluder = SubResource( 49 )
+43/occluder = SubResource( 62 )
 43/navigation_offset = Vector2( 32, 32 )
+43/navigation = SubResource( 83 )
 43/shape_offset = Vector2( 32, 32 )
-43/shapes = [ SubResource( 48 ) ]
+43/shapes = [ SubResource( 61 ) ]
 44/name = "wall45"
 44/texture = ExtResource( 40 )
 44/tex_offset = Vector2( 0, 0 )
 44/region = Rect2( 0, 0, 64, 64 )
 44/occluder_offset = Vector2( 32, 32 )
-44/occluder = SubResource( 49 )
+44/occluder = SubResource( 62 )
 44/navigation_offset = Vector2( 32, 32 )
+44/navigation = SubResource( 84 )
 44/shape_offset = Vector2( 32, 32 )
-44/shapes = [ SubResource( 48 ) ]
+44/shapes = [ SubResource( 61 ) ]
 45/name = "wall46"
 45/texture = ExtResource( 41 )
 45/tex_offset = Vector2( 0, 0 )
 45/region = Rect2( 0, 0, 64, 64 )
 45/occluder_offset = Vector2( 32, 32 )
-45/occluder = SubResource( 49 )
+45/occluder = SubResource( 62 )
 45/navigation_offset = Vector2( 32, 32 )
+45/navigation = SubResource( 85 )
 45/shape_offset = Vector2( 32, 32 )
-45/shapes = [ SubResource( 48 ) ]
+45/shapes = [ SubResource( 61 ) ]
 46/name = "wall47"
 46/texture = ExtResource( 42 )
 46/tex_offset = Vector2( 0, 0 )
 46/region = Rect2( 0, 0, 64, 64 )
 46/occluder_offset = Vector2( 32, 32 )
-46/occluder = SubResource( 49 )
+46/occluder = SubResource( 62 )
 46/navigation_offset = Vector2( 32, 32 )
+46/navigation = SubResource( 86 )
 46/shape_offset = Vector2( 32, 32 )
-46/shapes = [ SubResource( 48 ) ]
+46/shapes = [ SubResource( 61 ) ]
 47/name = "wall48"
 47/texture = ExtResource( 43 )
 47/tex_offset = Vector2( 0, 0 )
 47/region = Rect2( 0, 0, 64, 64 )
 47/occluder_offset = Vector2( 32, 32 )
-47/occluder = SubResource( 49 )
+47/occluder = SubResource( 62 )
 47/navigation_offset = Vector2( 32, 32 )
+47/navigation = SubResource( 87 )
 47/shape_offset = Vector2( 32, 32 )
-47/shapes = [ SubResource( 48 ) ]
+47/shapes = [ SubResource( 61 ) ]
 48/name = "wall49"
 48/texture = ExtResource( 44 )
 48/tex_offset = Vector2( 0, 0 )
 48/region = Rect2( 0, 0, 64, 64 )
 48/occluder_offset = Vector2( 32, 32 )
-48/occluder = SubResource( 49 )
+48/occluder = SubResource( 62 )
 48/navigation_offset = Vector2( 32, 32 )
+48/navigation = SubResource( 88 )
 48/shape_offset = Vector2( 32, 32 )
-48/shapes = [ SubResource( 48 ) ]
+48/shapes = [ SubResource( 61 ) ]
 49/name = "wall50"
 49/texture = ExtResource( 45 )
 49/tex_offset = Vector2( 0, 0 )
 49/region = Rect2( 0, 0, 64, 64 )
 49/occluder_offset = Vector2( 32, 32 )
-49/occluder = SubResource( 49 )
+49/occluder = SubResource( 62 )
 49/navigation_offset = Vector2( 32, 32 )
+49/navigation = SubResource( 89 )
 49/shape_offset = Vector2( 32, 32 )
-49/shapes = [ SubResource( 48 ) ]
+49/shapes = [ SubResource( 61 ) ]
 50/name = "wall51"
 50/texture = ExtResource( 47 )
 50/tex_offset = Vector2( 0, 0 )
 50/region = Rect2( 0, 0, 64, 64 )
 50/occluder_offset = Vector2( 32, 32 )
-50/occluder = SubResource( 49 )
+50/occluder = SubResource( 62 )
 50/navigation_offset = Vector2( 32, 32 )
+50/navigation = SubResource( 90 )
 50/shape_offset = Vector2( 32, 32 )
-50/shapes = [ SubResource( 48 ) ]
+50/shapes = [ SubResource( 61 ) ]
 51/name = "wall52"
 51/texture = ExtResource( 48 )
 51/tex_offset = Vector2( 0, 0 )
 51/region = Rect2( 0, 0, 64, 64 )
 51/occluder_offset = Vector2( 32, 32 )
-51/occluder = SubResource( 49 )
+51/occluder = SubResource( 62 )
 51/navigation_offset = Vector2( 32, 32 )
+51/navigation = SubResource( 91 )
 51/shape_offset = Vector2( 32, 32 )
-51/shapes = [ SubResource( 48 ) ]
+51/shapes = [ SubResource( 61 ) ]
 52/name = "wall53"
 52/texture = ExtResource( 49 )
 52/tex_offset = Vector2( 0, 0 )
 52/region = Rect2( 0, 0, 64, 64 )
 52/occluder_offset = Vector2( 32, 32 )
-52/occluder = SubResource( 49 )
+52/occluder = SubResource( 62 )
 52/navigation_offset = Vector2( 32, 32 )
+52/navigation = SubResource( 92 )
 52/shape_offset = Vector2( 32, 32 )
-52/shapes = [ SubResource( 48 ) ]
+52/shapes = [ SubResource( 61 ) ]
 53/name = "wall54"
 53/texture = ExtResource( 50 )
 53/tex_offset = Vector2( 0, 0 )
 53/region = Rect2( 0, 0, 64, 64 )
 53/occluder_offset = Vector2( 32, 32 )
-53/occluder = SubResource( 49 )
+53/occluder = SubResource( 62 )
 53/navigation_offset = Vector2( 32, 32 )
+53/navigation = SubResource( 93 )
 53/shape_offset = Vector2( 32, 32 )
-53/shapes = [ SubResource( 48 ) ]
+53/shapes = [ SubResource( 61 ) ]
 54/name = "door1"
 54/texture = ExtResource( 51 )
 54/tex_offset = Vector2( 0, 0 )
 54/region = Rect2( 0, 0, 64, 64 )
 54/occluder_offset = Vector2( 32, 32 )
-54/occluder = SubResource( 51 )
+54/occluder = SubResource( 95 )
 54/navigation_offset = Vector2( 32, 32 )
 54/shape_offset = Vector2( 32, 32 )
-54/shapes = [ SubResource( 50 ) ]
+54/shapes = [ SubResource( 94 ) ]
 55/name = "door2"
 55/texture = ExtResource( 52 )
 55/tex_offset = Vector2( 0, 0 )
 55/region = Rect2( 0, 0, 64, 64 )
 55/occluder_offset = Vector2( 32, 32 )
-55/occluder = SubResource( 53 )
+55/occluder = SubResource( 97 )
 55/navigation_offset = Vector2( 32, 32 )
 55/shape_offset = Vector2( 32, 32 )
-55/shapes = [ SubResource( 52 ) ]
+55/shapes = [ SubResource( 96 ) ]
 56/name = "glas1"
 56/texture = ExtResource( 53 )
 56/tex_offset = Vector2( 0, 0 )
@@ -897,7 +1205,7 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 56/occluder_offset = Vector2( 32, 32 )
 56/navigation_offset = Vector2( 32, 32 )
 56/shape_offset = Vector2( 32, 32 )
-56/shapes = [ SubResource( 54 ) ]
+56/shapes = [ SubResource( 98 ) ]
 57/name = "glas2"
 57/texture = ExtResource( 54 )
 57/tex_offset = Vector2( 0, 0 )
@@ -905,7 +1213,7 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 57/occluder_offset = Vector2( 32, 32 )
 57/navigation_offset = Vector2( 32, 32 )
 57/shape_offset = Vector2( 32, 32 )
-57/shapes = [ SubResource( 55 ) ]
+57/shapes = [ SubResource( 99 ) ]
 58/name = "glas3"
 58/texture = ExtResource( 55 )
 58/tex_offset = Vector2( 0, 0 )
@@ -913,7 +1221,7 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 58/occluder_offset = Vector2( 32, 32 )
 58/navigation_offset = Vector2( 32, 32 )
 58/shape_offset = Vector2( 32, 32 )
-58/shapes = [ SubResource( 56 ) ]
+58/shapes = [ SubResource( 100 ) ]
 59/name = "glas4"
 59/texture = ExtResource( 56 )
 59/tex_offset = Vector2( 0, 0 )
@@ -921,7 +1229,7 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 59/occluder_offset = Vector2( 32, 32 )
 59/navigation_offset = Vector2( 32, 32 )
 59/shape_offset = Vector2( 32, 32 )
-59/shapes = [ SubResource( 57 ) ]
+59/shapes = [ SubResource( 101 ) ]
 60/name = "glas5"
 60/texture = ExtResource( 58 )
 60/tex_offset = Vector2( 0, 0 )
@@ -929,7 +1237,7 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 60/occluder_offset = Vector2( 32, 32 )
 60/navigation_offset = Vector2( 32, 32 )
 60/shape_offset = Vector2( 32, 32 )
-60/shapes = [ SubResource( 58 ) ]
+60/shapes = [ SubResource( 102 ) ]
 61/name = "glas6"
 61/texture = ExtResource( 59 )
 61/tex_offset = Vector2( 0, 0 )
@@ -937,5 +1245,5 @@ points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 61/occluder_offset = Vector2( 32, 32 )
 61/navigation_offset = Vector2( 32, 32 )
 61/shape_offset = Vector2( 32, 32 )
-61/shapes = [ SubResource( 52 ) ]
+61/shapes = [ SubResource( 96 ) ]
 

@@ -1,4 +1,3 @@
-tool
 extends Node2D
 
 var floor_map
@@ -30,6 +29,7 @@ var zoom_for_noise = 4
 func _ready():
 	if !get_node("/root/game") == null:
 		roomsize = get_node("/root/game").gamesize
+		get_node("Particles2D").show()
 
 func generate_first_room(seed_value,coordinate):
 	roomseed = seed_value

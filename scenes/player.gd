@@ -39,6 +39,8 @@ func _ready():
 		world_coordinate = Vector2(0,0)
 		world_pos = Vector2(0,0)
 		old_mouse_pos = get_node("/root/game/Camera2D").get_global_mouse_pos()
+	else:
+		old_mouse_pos = get_global_mouse_pos()
 	
 	gfx_shoot = get_node("gfx/arm_right")
 	
@@ -98,19 +100,22 @@ func _fixed_process(delta):
 				velocity = n.slide(velocity)
 				move(motion)
 			
+			var mousePos
+			var specialRot
+			
 			if !menu:
-				var isDistanceToPlayerOK = get_global_pos().distance_to(get_node("/root/game/Camera2D").get_global_mouse_pos()) > 30.0
-				var hasMouseNewPosition = old_mouse_pos.distance_to(get_node("/root/game/Camera2D").get_global_mouse_pos()) > 0.5
-				
-				if  isDistanceToPlayerOK && hasMouseNewPosition:
-					set_rot( get_global_pos().angle_to_point(get_node("/root/game/Camera2D").get_global_mouse_pos()) + deg2rad(90))
-				
-				old_mouse_pos = get_node("/root/game/Camera2D").get_global_mouse_pos()
+				mousePos = get_node("/root/game/Camera2D").get_global_mouse_pos()
+				specialRot = deg2rad(90)
 			else:
-				if old_mouse_pos != get_global_mouse_pos():
-					set_rot( get_global_pos().angle_to_point(get_global_mouse_pos()) - deg2rad(90))
+				mousePos = get_global_mouse_pos()
+				specialRot = -deg2rad(90)
 				
-				old_mouse_pos = get_global_mouse_pos()
+			var isDistanceToPlayerOK = get_global_pos().distance_to(mousePos) > 30.0
+			var hasMouseNewPosition = old_mouse_pos.distance_to(mousePos) > 0.5
+		
+			if  isDistanceToPlayerOK && hasMouseNewPosition:
+				set_rot( get_global_pos().angle_to_point(mousePos) + specialRot)
+			old_mouse_pos = mousePos
 
 func get_world_coordinate():
 	return world_coordinate

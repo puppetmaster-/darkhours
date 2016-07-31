@@ -5,7 +5,7 @@
 [ext_resource path="res://resources/tiles/deko/lamp.png" type="Texture" id=3]
 [ext_resource path="res://resources/tiles/deko/tile_264.png" type="Texture" id=4]
 
-[sub_resource type="CircleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 20.0
@@ -55,18 +55,18 @@ tracks/6/keys = { "times":FloatArray( 0.1, 0.3 ), "transitions":FloatArray( 1, 1
 [node name="light" type="RigidBody2D" groups=[ "object" ]]
 
 input/pickable = false
-shapes/0/shape = SubResource( 3 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
 collision/mask = 1
 mode = 0
-mass = 2.0
+mass = 1.0
 friction = 1.0
 bounce = 0.0
 gravity_scale = 2.0
 custom_integrator = false
-continuous_cd = 0
+continuous_cd = 2
 contacts_reported = 0
 contact_monitor = false
 sleeping = false
@@ -80,7 +80,7 @@ lightSwitch = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
-shape = SubResource( 3 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
@@ -113,7 +113,7 @@ texture = ExtResource( 3 )
 [node name="hit" type="Node2D" parent="."]
 
 visibility/visible = false
-transform/rot = 7.21373
+transform/rot = 3.12114
 
 [node name="Sprite2" type="Sprite" parent="hit"]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=1]
+[gd_scene load_steps=21 format=1]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
 [ext_resource path="res://resources/font/120.fnt" type="BitmapFont" id=2]
@@ -9,12 +9,13 @@
 [ext_resource path="res://resources/font/80.fnt" type="BitmapFont" id=7]
 [ext_resource path="res://scenes/tilesets/floor.tres" type="TileSet" id=8]
 [ext_resource path="res://scenes/tilesets/wall_1.tres" type="TileSet" id=9]
-[ext_resource path="res://scenes/objects/light.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/objects/couch2.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/objects/plant1.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/objects/plant3.tscn" type="PackedScene" id=13]
-[ext_resource path="res://scenes/objects/plant2.tscn" type="PackedScene" id=14]
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/tilesets/furnitures.tres" type="TileSet" id=10]
+[ext_resource path="res://scenes/objects/light.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/objects/couch2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/objects/plant1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/objects/plant3.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/objects/plant2.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=16]
 
 [sub_resource type="Animation" id=1]
 
@@ -30,34 +31,54 @@ tracks/0/keys = { "times":FloatArray( 0, 0.5, 1 ), "transitions":FloatArray( 1, 
 
 [sub_resource type="Animation" id=2]
 
-length = 15.0
+length = 10.0
 loop = false
 step = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("../CanvasModulate:color")
 tracks/0/interp = 1
 tracks/0/imported = false
-tracks/0/keys = { "times":FloatArray( 0, 15 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Color( 0.429688, 0.429688, 0.429688, 1 ), Color( 0.0351563, 0.0351563, 0.0351563, 1 ) ] }
+tracks/0/keys = { "times":FloatArray( 0, 10 ), "transitions":FloatArray( 1, 1 ), "update":0, "values":[ Color( 0.223175, 0.255334, 0.402344, 1 ), Color( 0, 0.0280762, 0.15625, 1 ) ] }
 tracks/1/type = "value"
 tracks/1/path = NodePath("house/objects/light:lightSwitch")
 tracks/1/interp = 1
 tracks/1/imported = false
-tracks/1/keys = { "times":FloatArray( 0, 7.2 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/1/keys = { "times":FloatArray( 0, 5 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/2/type = "value"
 tracks/2/path = NodePath("house/objects/light1:lightSwitch")
 tracks/2/interp = 1
 tracks/2/imported = false
-tracks/2/keys = { "times":FloatArray( 0, 6.7 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/2/keys = { "times":FloatArray( 0, 8.2 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/3/type = "value"
-tracks/3/path = NodePath("house/objects/light2:lightSwitch")
+tracks/3/path = NodePath("house/objects/light4:lightSwitch")
 tracks/3/interp = 1
 tracks/3/imported = false
-tracks/3/keys = { "times":FloatArray( 0, 7.4 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/3/keys = { "times":FloatArray( 0, 2.7 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 tracks/4/type = "value"
-tracks/4/path = NodePath("house/objects/light3:lightSwitch")
+tracks/4/path = NodePath("house/objects/light5:lightSwitch")
 tracks/4/interp = 1
 tracks/4/imported = false
-tracks/4/keys = { "times":FloatArray( 0, 7.5 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/4/keys = { "times":FloatArray( 0, 3 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/5/type = "value"
+tracks/5/path = NodePath("house/objects/light7:lightSwitch")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = { "times":FloatArray( 0, 6.3 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/6/type = "value"
+tracks/6/path = NodePath("house/objects/light8:lightSwitch")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = { "times":FloatArray( 0, 6.3 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/7/type = "value"
+tracks/7/path = NodePath("house/objects/light9:lightSwitch")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = { "times":FloatArray( 0, 1.7 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
+tracks/8/type = "value"
+tracks/8/path = NodePath("house/objects/light10:lightSwitch")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = { "times":FloatArray( 0, 1.7 ), "transitions":FloatArray( 1, 1 ), "update":1, "values":[ false, true ] }
 
 [sub_resource type="Animation" id=3]
 
@@ -82,7 +103,7 @@ script/script = ExtResource( 1 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 
-color = Color( 0.214011, 0.214011, 0.214011, 1 )
+color = Color( 0, 0.0280762, 0.15625, 1 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -93,6 +114,7 @@ scale = Vector2( 1, 1 )
 
 [node name="lbl_center" type="Node2D" parent="CanvasLayer"]
 
+editor/display_folded = true
 transform/pos = Vector2( 512, 224 )
 
 [node name="Label" type="Label" parent="CanvasLayer/lbl_center"]
@@ -189,6 +211,7 @@ max_lines_visible = -1
 
 [node name="start" type="Node2D" parent="CanvasLayer"]
 
+editor/display_folded = true
 transform/pos = Vector2( 512, 729 )
 transform/scale = Vector2( 0.8, 0.8 )
 
@@ -198,10 +221,10 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = -96.0
-margin/top = -32.0
-margin/right = 96.0
-margin/bottom = 32.0
+margin/left = -183.0
+margin/top = -59.0
+margin/right = 182.0
+margin/bottom = 54.0
 toggle_mode = false
 click_on_press = true
 enabled_focus_mode = 2
@@ -262,14 +285,12 @@ autoplay = "idle"
 
 [node name="house_center" type="Node2D" parent="."]
 
-editor/display_folded = true
-transform/pos = Vector2( 448, 480 )
-transform/scale = Vector2( 0.8, 0.8 )
+transform/pos = Vector2( 509, 386 )
+transform/scale = Vector2( 0.6, 0.6 )
 
 [node name="house" type="Node2D" parent="house_center"]
 
 transform/pos = Vector2( -512, -480 )
-__meta__ = { "_edit_lock_":true }
 
 [node name="TileMap" type="TileMap" parent="house_center/house"]
 
@@ -288,7 +309,6 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -327686, 0, -327685, 0, -327684, 0, -327683, 2, -327682, 0, -327681, 0, -393216, 0, -393215, 0, -393214, 0, -393213, 0, -393212, 0, -393211, 0, -393210, 2, -393209, 2, -393208, 2, -393207, 0, -393206, 0, -393205, 0, -393204, 2, -393203, 2, -393202, 0, -393201, 0, -393200, 0, -393199, 0, -393198, 0, -393197, 0, -393196, 2, -393195, 0, -393194, 0, -393193, 0, -262150, 0, -262149, 2, -262148, 0, -262147, 2, -262146, 0, -262145, 0, -327680, 0, -327679, 2, -327678, 2, -327677, 2, -327676, 0, -327675, 0, -327674, 2, -327673, 2, -327672, 0, -327671, 2, -327670, 0, -327669, 0, -327668, 0, -327667, 0, -327666, 0, -327665, 0, -327664, 2, -327663, 0, -327662, 0, -327661, 2, -327660, 2, -327659, 0, -327658, 0, -327657, 0, -196614, 0, -196613, 2, -196612, 2, -196611, 0, -196610, 0, -196609, 0, -262144, 0, -262143, 0, -262142, 0, -262141, 2, -262140, 2, -262139, 0, -262138, 0, -262137, 0, -262136, 0, -262135, 2, -262134, 0, -262133, 0, -262132, 0, -262131, 0, -262130, 0, -262129, 0, -262128, 2, -262127, 0, -262126, 0, -262125, 0, -262124, 2, -262123, 0, -262122, 0, -262121, 0, -131078, 0, -131077, 2, -131076, 2, -131075, 0, -131074, 0, -131073, 0, -196608, 0, -196607, 0, -196606, 0, -196605, 0, -196604, 0, -196603, 0, -196602, 0, -196601, 0, -196600, 0, -196599, 0, -196598, 0, -196597, 0, -196596, 0, -196595, 0, -196594, 0, -196593, 0, -196592, 0, -196591, 0, -196590, 0, -196589, 2, -196588, 0, -196587, 0, -196586, 0, -196585, 0, -65542, 0, -65541, 2, -65540, 2, -65539, 0, -65538, 0, -65537, 0, -131072, 0, -131071, 0, -131070, 0, -131069, 0, -131068, 0, -131067, 0, -131066, 0, -131065, 0, -131064, 0, -131063, 0, -131062, 0, -131061, 0, -131060, 0, -131059, 0, -131058, 0, -131057, 0, -131056, 0, -131055, 0, -131054, 0, -131053, 0, -131052, 0, -131051, 0, -131050, 0, -131049, 0, -6, 0, -5, 0, -4, 0, -3, 0, -2, 0, -1, 0, -65536, 0, -65535, 0, -65534, 0, -65533, 0, -65532, 0, -65531, 0, -65530, 0, -65529, 0, -65528, 0, -65527, 0, -65526, 0, -65525, 0, -65524, 0, -65523, 0, -65522, 0, -65521, 0, -65520, 0, -65519, 0, -65518, 0, -65517, 2, -65516, 0, -65515, 0, -65514, 0, -65513, 0, 65530, 0, 65531, 2, 65532, 0, 65533, 2, 65534, 2, 65535, 0, 0, 0, 1, 0, 2, 0, 3, 0, 4, 536870915, 5, 536870915, 6, 0, 7, 1, 8, 1, 9, 0, 10, 0, 11, 0, 12, 536870915, 13, 0, 14, 0, 15, 0, 16, 0, 17, 0, 18, 0, 19, 2, 20, 0, 21, 0, 22, 0, 23, 0, 131066, 0, 131067, 0, 131068, 0, 131069, 0, 131070, 2, 131071, 0, 65536, 0, 65537, 1, 65538, 0, 65539, 2, 65540, 2, 65541, 0, 65542, 1, 65543, 1, 65544, 536870915, 65545, 1, 65546, 0, 65547, 536870915, 65548, 1, 65549, 1, 65550, 536870914, 65551, 1, 65552, 0, 65553, 0, 65554, 0, 65555, 2, 65556, 0, 65557, 0, 65558, 0, 65559, 0, 196602, 0, 196603, 0, 196604, 0, 196605, 0, 196606, 2, 196607, 0, 131072, 0, 131073, 536870914, 131074, 0, 131075, 536870913, 131076, 1, 131077, 2, 131078, 0, 131079, 0, 131080, 536870913, 131081, 0, 131082, 0, 131083, 1, 131084, 0, 131085, 0, 131086, 0, 131087, 1, 131088, 0, 131089, 0, 131090, 0, 131091, 0, 131092, 0, 131093, 0, 131094, 0, 131095, 0, 262138, 0, 262139, 0, 262140, 0, 262141, 0, 262142, 0, 262143, 0, 196608, 0, 196609, 0, 196610, 0, 196611, 2, 196612, 1, 196613, 2, 196614, 3, 196615, 1, 196616, 2, 196617, 2, 196618, 1, 196619, 536870915, 196620, 3, 196621, 3, 196622, 2, 196623, 1, 196624, 0, 196625, 0, 196626, 0, 196627, 2, 196628, 0, 196629, 0, 196630, 0, 196631, 0, 327674, 0, 327675, 0, 327676, 2, 327677, 2, 327678, 0, 327679, 0, 262144, 0, 262145, 0, 262146, 536870914, 262147, 0, 262148, 0, 262149, 1, 262150, 1, 262151, 3, 262152, 536870914, 262153, 3, 262154, 1, 262155, 1, 262156, 536870913, 262157, 536870913, 262158, 536870915, 262159, 536870915, 262160, 0, 262161, 0, 262162, 0, 262163, 0, 262164, 0, 262165, 0, 262166, 0, 262167, 0, 393210, 0, 393211, 0, 393212, 2, 393213, 0, 393214, 0, 393215, 0, 327680, 0, 327681, 1, 327682, 0, 327683, 1, 327684, 0, 327685, 1, 327686, 3, 327687, 0, 327688, 3, 327689, 3, 327690, 1, 327691, 536870915, 327692, 536870915, 327693, 2, 327694, 536870915, 327695, 2, 327696, 0, 327697, 0, 327698, 0, 327699, 0, 327700, 0, 327701, 0, 327702, 0, 327703, 0, 458746, 0, 458747, 0, 458748, 2, 458749, 0, 458750, 0, 458751, 0, 393216, 1, 393217, 1, 393218, 0, 393219, 0, 393220, 0, 393221, 2, 393222, 2, 393223, 536870914, 393224, 3, 393225, 1, 393226, 536870915, 393227, 536870915, 393228, 1, 393229, 3, 393230, 1, 393231, 2, 393232, 0, 393233, 0, 393234, 2, 393235, 0, 393236, 0, 393237, 0, 393238, 0, 393239, 0, 524282, 0, 524283, 0, 524284, 0, 524285, 2, 524286, 0, 524287, 0, 458752, 0, 458753, 0, 458754, 536870915, 458755, 536870914, 458756, 2, 458757, 1, 458758, 2, 458759, 2, 458760, 3, 458761, 3, 458762, 536870915, 458763, 2, 458764, 2, 458765, 3, 458766, 536870914, 458767, 2, 458768, 0, 458769, 0, 458770, 2, 458771, 0, 458772, 0, 458773, 0, 458774, 0, 458775, 0, 589818, 0, 589819, 0, 589820, 0, 589821, 2, 589822, 0, 589823, 0, 524288, 536870913, 524289, 0, 524290, 0, 524291, 0, 524292, 2, 524293, 1, 524294, 3, 524295, 3, 524296, 2, 524297, 536870915, 524298, 2, 524299, 3, 524300, 3, 524301, 3, 524302, 3, 524303, 2, 524304, 0, 524305, 0, 524306, 0, 524307, 0, 524308, 0, 524309, 0, 524310, 0, 524311, 0, 655354, 0, 655355, 0, 655356, 0, 655357, 0, 655358, 0, 655359, 0, 589824, 2, 589825, 536870915, 589826, 0, 589827, 2, 589828, 1, 589829, 1, 589830, 1, 589831, 3, 589832, 2, 589833, 536870913, 589834, 2, 589835, 536870915, 589836, 1, 589837, 3, 589838, 3, 589839, 3, 589840, 0, 589841, 0, 589842, 0, 589843, 2, 589844, 0, 589845, 0, 589846, 0, 589847, 0, 720890, 0, 720891, 0, 720892, 0, 720893, 0, 720894, 0, 720895, 0, 655360, 0, 655361, 1, 655362, 536870914, 655363, 0, 655364, 1, 655365, 3, 655366, 1, 655367, 536870913, 655368, 2, 655369, 536870915, 655370, 1, 655371, 1, 655372, 3, 655373, 2, 655374, 1, 655375, 3, 655376, 0, 655377, 0, 655378, 0, 655379, 2, 655380, 0, 655381, 0, 655382, 0, 655383, 0, 786426, 0, 786427, 0, 786428, 2, 786429, 0, 786430, 0, 786431, 0, 720896, 2, 720897, 2, 720898, 536870915, 720899, 2, 720900, 2, 720901, 1, 720902, 3, 720903, 2, 720904, 536870913, 720905, 536870913, 720906, 3, 720907, 0, 720908, 2, 720909, 536870914, 720910, 1, 720911, 536870914, 720912, 0, 720913, 0, 720914, 0, 720915, 0, 720916, 0, 720917, 0, 720918, 0, 720919, 0, 851962, 0, 851963, 0, 851964, 2, 851965, 0, 851966, 0, 851967, 0, 786432, 2, 786433, 1, 786434, 536870915, 786435, 1, 786436, 0, 786437, 1, 786438, 2, 786439, 3, 786440, 2, 786441, 2, 786442, 0, 786443, 536870914, 786444, 2, 786445, 3, 786446, 3, 786447, 3, 786448, 0, 786449, 0, 786450, 0, 786451, 0, 786452, 0, 786453, 0, 786454, 0, 786455, 0, 917498, 0, 917499, 0, 917500, 2, 917501, 0, 917502, 0, 917503, 0, 851968, 0, 851969, 536870914, 851970, 0, 851971, 0, 851972, 0, 851973, 0, 851974, 1, 851975, 1, 851976, 0, 851977, 536870915, 851978, 536870912, 851979, 536870914, 851980, 2, 851981, 1, 851982, 536870912, 851983, 3, 851984, 0, 851985, 0, 851986, 0, 851987, 0, 851988, 0, 851989, 0, 851990, 0, 851991, 0, 983034, 0, 983035, 2, 983036, 0, 983037, 2, 983038, 0, 983039, 0, 917504, 0, 917505, 3, 917506, 536870914, 917507, 0, 917508, 0, 917509, 0, 917510, 536870915, 917511, 536870914, 917512, 536870915, 917513, 536870912, 917514, 536870912, 917515, 0, 917516, 536870912, 917517, 536870914, 917518, 3, 917519, 1, 917520, 0, 917521, 0, 917522, 0, 917523, 0, 917524, 0, 917525, 0, 917526, 0, 917527, 0, 1048570, 0, 1048571, 2, 1048572, 0, 1048573, 0, 1048574, 2, 1048575, 0, 983040, 2, 983041, 2, 983042, 0, 983043, 0, 983044, 0, 983045, 0, 983046, 0, 983047, 0, 983048, 0, 983049, 0, 983050, 0, 983051, 0, 983052, 0, 983053, 0, 983054, 0, 983055, 0, 983056, 0, 983057, 0, 983058, 0, 983059, 0, 983060, 0, 983061, 0, 983062, 0, 983063, 0, 1114106, 0, 1114107, 0, 1114108, 0, 1114109, 2, 1114110, 0, 1114111, 0, 1048576, 2, 1048577, 2, 1048578, 0, 1048579, 0, 1048580, 0, 1048581, 0, 1048582, 0, 1048583, 0, 1048584, 0, 1048585, 0, 1048586, 0, 1048587, 0, 1048588, 0, 1048589, 0, 1048590, 0, 1048591, 0, 1048592, 0, 1048593, 0, 1048594, 0, 1048595, 2, 1048596, 0, 1048597, 0, 1048598, 0, 1048599, 0, 1179642, 0, 1179643, 0, 1179644, 2, 1179645, 2, 1179646, 0, 1179647, 0, 1114112, 0, 1114113, 0, 1114114, 0, 1114115, 0, 1114116, 0, 1114117, 0, 1114118, 0, 1114119, 0, 1114120, 0, 1114121, 0, 1114122, 0, 1114123, 0, 1114124, 0, 1114125, 0, 1114126, 0, 1114127, 0, 1114128, 0, 1114129, 0, 1114130, 2, 1114131, 2, 1114132, 0, 1114133, 0, 1114134, 0, 1114135, 0, 1245178, 0, 1245179, 0, 1245180, 0, 1245181, 0, 1245182, 2, 1245183, 2, 1179648, 0, 1179649, 0, 1179650, 0, 1179651, 0, 1179652, 2, 1179653, 2, 1179654, 2, 1179655, 2, 1179656, 0, 1179657, 0, 1179658, 0, 1179659, 0, 1179660, 0, 1179661, 0, 1179662, 0, 1179663, 2, 1179664, 0, 1179665, 0, 1179666, 0, 1179667, 0, 1179668, 0, 1179669, 0, 1179670, 0, 1179671, 0, 1310714, 0, 1310715, 0, 1310716, 0, 1310717, 0, 1310718, 0, 1310719, 0, 1245184, 0, 1245185, 0, 1245186, 0, 1245187, 0, 1245188, 0, 1245189, 0, 1245190, 0, 1245191, 0, 1245192, 0, 1245193, 0, 1245194, 0, 1245195, 0, 1245196, 2, 1245197, 2, 1245198, 2, 1245199, 0, 1245200, 0, 1245201, 2, 1245202, 2, 1245203, 0, 1245204, 0, 1245205, 0, 1245206, 0, 1245207, 0, 1376250, 0, 1376251, 0, 1376252, 0, 1376253, 0, 1376254, 0, 1376255, 0, 1310720, 0, 1310721, 0, 1310722, 0, 1310723, 0, 1310724, 0, 1310725, 0, 1310726, 0, 1310727, 0, 1310728, 0, 1310729, 0, 1310730, 0, 1310731, 0, 1310732, 0, 1310733, 0, 1310734, 0, 1310735, 0, 1310736, 0, 1310737, 0, 1310738, 0, 1310739, 0, 1310740, 0, 1310741, 0, 1310742, 0, 1310743, 0, 1441786, 0, 1441787, 0, 1441788, 0, 1441789, 0, 1441790, 0, 1441791, 0, 1376256, 0, 1376257, 0, 1376258, 0, 1376259, 0, 1376260, 0, 1376261, 0, 1376262, 0, 1376263, 0, 1376264, 0, 1376265, 0, 1376266, 0, 1376267, 0, 1376268, 0, 1376269, 0, 1376270, 0, 1376271, 0, 1376272, 0, 1376273, 0, 1376274, 0, 1376275, 0, 1376276, 0, 1376277, 0, 1376278, 0, 1376279, 0, 1507322, 0, 1507323, 0, 1507324, 0, 1507325, 0, 1507326, 0, 1507327, 0, 1441792, 0, 1441793, 0, 1441794, 0, 1441795, 0, 1441796, 0, 1441797, 0, 1441798, 0, 1441799, 0, 1441800, 0, 1441801, 0, 1441802, 0, 1441803, 0, 1441804, 0, 1441805, 0, 1441806, 0, 1441807, 0, 1441808, 0, 1441809, 0, 1441810, 0, 1441811, 0, 1441812, 0, 1441813, 0, 1441814, 0, 1441815, 0 )
-__meta__ = { "_edit_lock_":true }
 
 [node name="TileMap2" type="TileMap" parent="house_center/house"]
 
@@ -307,7 +327,6 @@ collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
 tile_data = IntArray( -262143, 19, -262142, 19, -262141, 19, -262140, 19, -262139, 19, -262138, 19, -262137, 19, -262136, 19, -262135, 19, -262134, 19, -262133, 19, -262132, 19, -262131, 19, -262130, 19, -196607, 19, -196606, 19, -196605, 19, -196604, 19, -196603, 19, -196602, 19, -196601, 19, -196600, 19, -196599, 19, -196598, 19, -196597, 19, -196596, 19, -196595, 19, -196594, 19, -131067, 19, -131066, 19, -131063, 19, -131062, 19, -4, 18, -3, 18, -2, 18, -1, 18, -65536, 18, -65535, 18, -65534, 18, -65533, 18, -65532, 19, -65531, 19, -65530, 19, -65529, 19, -65528, 19, -65527, 19, -65526, 19, -65525, 19, -65524, 18, -65523, 18, -65522, 18, -65521, 18, -65520, 18, -65519, 18, -65518, 18, -65517, 18, 65532, 18, 65533, 18, 65534, 18, 65535, 18, 0, 18, 1, 18, 2, 18, 3, 19, 4, 19, 5, 15, 6, 15, 7, 15, 8, 15, 9, 15, 10, 15, 11, 19, 12, 19, 13, 18, 14, 18, 15, 18, 16, 18, 17, 18, 18, 18, 19, 18, 131068, 18, 131069, 18, 131070, 18, 131071, 18, 65536, 18, 65537, 18, 65538, 18, 65539, 18, 65540, 19, 65541, 15, 65542, 15, 65543, 15, 65544, 15, 65545, 15, 65546, 15, 65547, 19, 65548, 18, 65549, 18, 65550, 18, 65551, 18, 65552, 18, 65553, 18, 65554, 18, 65555, 18, 196604, 18, 196605, 18, 196606, 18, 196607, 18, 131072, 18, 131073, 18, 131074, 18, 131075, 18, 131076, 19, 131077, 15, 131078, 15, 131079, 15, 131080, 15, 131081, 15, 131082, 15, 131083, 19, 131084, 18, 131085, 18, 131086, 18, 131087, 18, 131088, 18, 131089, 18, 131090, 18, 131091, 18, 262140, 18, 262141, 18, 262142, 18, 262143, 18, 196608, 18, 196609, 18, 196610, 18, 196611, 18, 196612, 19, 196613, 15, 196614, 15, 196615, 15, 196616, 15, 196617, 15, 196618, 15, 196619, 19, 196620, 18, 196621, 18, 196622, 18, 196623, 18, 196624, 18, 196625, 18, 196626, 18, 196627, 18, 327676, 18, 327677, 18, 327678, 18, 327679, 18, 262144, 18, 262145, 18, 262146, 18, 262147, 18, 262148, 19, 262149, 15, 262150, 15, 262151, 15, 262152, 15, 262153, 15, 262154, 15, 262155, 19, 262156, 18, 262157, 18, 262158, 18, 262159, 18, 262160, 18, 262161, 18, 262162, 18, 262163, 18, 393212, 18, 393213, 18, 393214, 18, 393215, 18, 327680, 18, 327681, 18, 327682, 18, 327683, 19, 327684, 19, 327685, 15, 327686, 15, 327687, 15, 327688, 15, 327689, 15, 327690, 15, 327691, 19, 327692, 19, 327693, 18, 327694, 18, 327695, 18, 327696, 18, 327697, 18, 327698, 18, 327699, 18, 458748, 18, 458749, 18, 458750, 18, 458751, 18, 393216, 18, 393217, 18, 393218, 18, 393219, 18, 393220, 19, 393221, 19, 393222, 19, 393223, 19, 393224, 19, 393225, 19, 393226, 19, 393227, 19, 393228, 18, 393229, 18, 393230, 18, 393231, 18, 393232, 18, 393233, 18, 393234, 18, 393235, 18, 524284, 18, 524285, 18, 458752, 0, 458753, 0, 458754, 536870948, 458755, 36, 458756, 536870948, 458757, 536870948, 458758, 536870948, 458759, 36, 458760, 34, 458761, 32, 458762, 536870948, 458763, 536870948, 458764, 536870948, 458765, 536870948, 458766, 536870914, 458767, 2, 458770, 18, 458771, 18, 524289, 0, 524290, 536870948, 524291, 34, 524292, 36, 524293, 536870948, 524294, 36, 524295, 536870948, 524296, 536870948, 524297, 36, 524298, 36, 524299, 36, 524300, 536870948, 524301, 36, 524302, 3, 589825, 36, 589826, 36, 589827, 536870948, 589828, 536870948, 589829, 36, 589830, 536870948, 589831, 34, 589832, 36, 589833, 36, 589834, 536870948, 589835, 36, 589836, 36, 589837, 536870948, 589838, 36, 655361, 36, 655362, 536870948, 655363, 536870948, 655364, 536870946, 655365, 36, 655366, 536870948, 655367, 536870948, 655368, 536870948, 655369, 536870946, 655370, 36, 655371, 36, 655372, 536870948, 655373, 536870946, 655374, 36, 720897, 2, 720898, 536870946, 720899, 536870948, 720900, 36, 720901, 536870948, 720902, 536870948, 720903, 36, 720904, 34, 720905, 536870948, 720906, 536870946, 720907, 536870948, 720908, 536870946, 720909, 536870948, 720910, 1, 786433, 1, 786434, 536870915, 786435, 36, 786436, 36, 786437, 1, 786438, 2, 786439, 3, 786440, 2, 786441, 2, 786442, 0, 786443, 36, 786444, 36, 786445, 3, 786446, 3, 851970, 0, 851971, 0, 851972, 0, 851973, 0 )
-__meta__ = { "_edit_lock_":true }
 
 [node name="TileMap1" type="TileMap" parent="house_center/house"]
 
@@ -325,63 +344,236 @@ collision/bounce = 0.0
 collision/layers = 1
 collision/mask = 1
 occluder/light_mask = 1
-tile_data = IntArray( -262144, 9, -262129, 9, -196608, 9, -196593, 9, -65541, 0, -65540, 2, -65539, 2, -65538, 2, -65537, 2, -131072, 4, -131071, 2, -131070, 2, -131069, 3, -131068, 5, -131067, 1610612760, -131066, 1610612760, -131065, 13, -131064, 5, -131063, 1610612760, -131062, 1610612760, -131061, 13, -131060, 3, -131059, 2, -131058, 2, -131057, 4, -131056, 2, -131055, 2, -131054, 2, -131053, 2, -131052, 1, -5, 9, -65533, 6, -65524, 6, -65516, 9, 65531, 9, 0, 1610612768, 3, -1610612713, 12, -1610612713, 15, 1610612768, 20, 9, 131067, 9, 131070, 1610612753, 131071, 1610612770, 65536, 1610612770, 65537, 1610612770, 65539, 12, 65548, 12, 65550, 1610612770, 65551, 1610612770, 65552, 1610612770, 65553, 1610612753, 65556, 9, 196603, 9, 131075, 9, 131084, 9, 131092, 9, 262139, 9, 196608, 1610612768, 196611, 9, 196613, 34, 196620, 9, 196623, 1610612768, 196628, 9, 327675, 9, 327678, 1610612753, 327679, 1610612770, 262144, 1610612770, 262145, 1610612770, 262147, 6, 262156, 6, 262158, 1610612770, 262159, 1610612770, 262160, 1610612770, 262161, 1610612753, 262164, 9, 393211, 9, 327692, -1610612713, 327700, 9, 458747, 9, 393219, 12, 393228, 12, 393236, 9, 524283, 6, 524284, 30, 524285, 30, 524286, 13, 524287, 2, 458752, 2, 458753, 3, 458754, 2, 458755, 4, 458756, 2, 458757, 2, 458758, 5, 458760, 0, 458761, 2, 458762, 2, 458763, 2, 458764, 4, 458765, 2, 458766, 3, 458767, 2, 458768, 2, 458769, 5, 458770, 30, 458771, 30, 458772, 6, 524289, 6, 524296, 9, 524297, 1610612767, 524298, 1610612767, 524302, 6, 589825, 29, 589832, 6, 589833, 34, 589834, 34, 589838, 29, 655361, 29, 655368, -1610612712, 655374, 29, 720897, 12, 720904, 12, 720910, 12, 786433, 7, 786434, 5, 786435, 30, 786436, 30, 786437, 13, 786438, 2, 786439, 2, 786440, 4, 786441, 2, 786442, 5, 786443, 30, 786444, 30, 786445, 13, 786446, 8 )
-__meta__ = { "_edit_lock_":true }
+tile_data = IntArray( -262144, 9, -262129, 9, -196608, 9, -196593, 9, -65541, 0, -65540, 2, -65539, 2, -65538, 2, -65537, 2, -131072, 4, -131071, 2, -131070, 2, -131069, 3, -131068, 5, -131067, 55, -131066, 55, -131065, 13, -131064, 5, -131063, 55, -131062, 55, -131061, 13, -131060, 3, -131059, 2, -131058, 2, -131057, 4, -131056, 2, -131055, 2, -131054, 2, -131053, 2, -131052, 1, -5, 9, -65533, 6, -65524, 6, -65516, 9, 65531, 9, 3, -1610612682, 12, -1610612682, 20, 9, 131067, 9, 131070, 1610612753, 65539, 12, 65548, 12, 65553, 1610612753, 65556, 9, 196603, 9, 131075, 9, 131084, 9, 131092, 9, 262139, 9, 196611, 9, 196620, 9, 196628, 9, 327675, 9, 327678, 1610612753, 262147, 6, 262156, 6, 262161, 1610612753, 262164, 9, 393211, 9, 327683, -1610612682, 327692, -1610612682, 327700, 9, 458747, 9, 393219, 12, 393228, 12, 393236, 9, 524283, 6, 524284, 61, 524285, 61, 524286, 13, 524287, 2, 458752, 2, 458753, 3, 458754, 2, 458755, 4, 458756, 2, 458757, 2, 458758, 5, 458760, 0, 458761, 2, 458762, 2, 458763, 2, 458764, 4, 458765, 2, 458766, 3, 458767, 2, 458768, 2, 458769, 5, 458770, 61, 458771, 61, 458772, 6, 524289, 6, 524296, 9, 524302, 6, 589825, 60, 589832, 6, 589838, 60, 655361, 60, 655368, -1610612682, 655374, 60, 720897, 12, 720904, -1610612682, 720910, 12, 786433, 7, 786434, 5, 786435, 61, 786436, 61, 786437, 13, 786438, 2, 786439, 2, 786440, 4, 786441, 2, 786442, 5, 786443, 61, 786444, 61, 786445, 13, 786446, 8 )
+
+[node name="TileMap3" type="TileMap" parent="house_center/house"]
+
+mode = 0
+tile_set = ExtResource( 10 )
+cell/size = Vector2( 64, 64 )
+cell/quadrant_size = 16
+cell/custom_transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+cell/half_offset = 2
+cell/tile_origin = 0
+cell/y_sort = false
+collision/use_kinematic = false
+collision/friction = 1.0
+collision/bounce = 0.0
+collision/layers = 1
+collision/mask = 1
+occluder/light_mask = 1
+tile_data = IntArray( -3, 6, -65529, -1610612730, -65528, 6, 65535, 12, 0, 12, 1, 12, 14, 12, 15, 12, 16, 12, 131071, 9, 65536, 9, 65537, 9, 65550, 9, 65551, 9, 65552, 9, 262143, 12, 196608, 12, 196609, 12, 196613, 34, 196622, 12, 196623, 12, 196624, 12, 327679, 9, 262144, 9, 262145, 9, 262158, 9, 262159, 9, 262160, 9, 327692, -1610612681, 458748, 1610612742, 393225, 0, 393226, 1, 393227, 1, 524290, 3, 524291, 4, 524292, 3, 524293, 5, 524294, 3, 524298, 18, 524301, 1610612742, 589825, 60, 589833, 19, 589834, 19, 589838, 60, 655361, 60, 720898, 6 )
 
 [node name="objects" type="Node2D" parent="house_center/house"]
 
 transform/rot = 180.0
 
-[node name="light" parent="house_center/house/objects" instance=ExtResource( 10 )]
+[node name="light7" parent="house_center/house/objects" instance=ExtResource( 11 )]
 
-transform/pos = Vector2( -166, -561.409 )
+editor/display_folded = true
+transform/pos = Vector2( 245.96, -197.206 )
+transform/rot = 90.1128
+collision/layers = 0
+collision/mask = 0
+lightSwitch = true
 
-[node name="light1" parent="house_center/house/objects" instance=ExtResource( 10 )]
+[node name="CollisionShape2D" parent="house_center/house/objects/light7"]
 
-transform/pos = Vector2( -851.526, -710.854 )
+trigger = true
 
-[node name="Node2D" parent="house_center/house/objects" instance=ExtResource( 11 )]
+[node name="Light2D" parent="house_center/house/objects/light7"]
 
-transform/pos = Vector2( -288, -544 )
+visibility/visible = true
+scale = 1.5
+energy = 2.0
 
-[node name="light2" parent="house_center/house/objects" instance=ExtResource( 10 )]
+[node name="lamp" parent="house_center/house/objects/light7"]
 
-transform/pos = Vector2( -32, -352 )
+transform/scale = Vector2( 1, 0.2 )
 
-[node name="light3" parent="house_center/house/objects" instance=ExtResource( 10 )]
+[node name="hit" parent="house_center/house/objects/light7"]
 
-transform/pos = Vector2( -992, -352 )
+transform/rot = 53.0553
 
-[node name="tree" parent="house_center/house/objects" instance=ExtResource( 12 )]
+[node name="light8" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -1276.68, -195.941 )
+transform/rot = 90.1128
+collision/layers = 0
+collision/mask = 0
+lightSwitch = true
+
+[node name="CollisionShape2D" parent="house_center/house/objects/light8"]
+
+trigger = true
+
+[node name="Light2D" parent="house_center/house/objects/light8"]
+
+visibility/visible = true
+scale = 1.5
+energy = 2.0
+
+[node name="lamp" parent="house_center/house/objects/light8"]
+
+transform/scale = Vector2( 1, 0.2 )
+
+[node name="hit" parent="house_center/house/objects/light8"]
+
+editor/display_folded = true
+transform/rot = 32.3427
+
+[node name="Node2D" parent="house_center/house/objects" instance=ExtResource( 12 )]
+
+transform/pos = Vector2( -524.913, -44.7512 )
+transform/rot = 0.0989011
+
+[node name="tree" parent="house_center/house/objects" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( 32, -608 )
 transform/rot = -29.6741
 
-[node name="tree1" parent="house_center/house/objects" instance=ExtResource( 12 )]
+[node name="tree1" parent="house_center/house/objects" instance=ExtResource( 13 )]
 
 transform/pos = Vector2( -1137.76, -689.765 )
 transform/rot = 19.6058
 transform/scale = Vector2( 2, 2 )
 
-[node name="tree 2" parent="house_center/house/objects" instance=ExtResource( 13 )]
+[node name="tree 2" parent="house_center/house/objects" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( 224, 32 )
 
-[node name="tree3" parent="house_center/house/objects" instance=ExtResource( 13 )]
+[node name="tree3" parent="house_center/house/objects" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( -480, -736 )
 
-[node name="tree4" parent="house_center/house/objects" instance=ExtResource( 13 )]
+[node name="tree4" parent="house_center/house/objects" instance=ExtResource( 14 )]
 
 transform/pos = Vector2( -1248, -416 )
 transform/scale = Vector2( 1, -1 )
 
-[node name="tree 3" parent="house_center/house/objects" instance=ExtResource( 14 )]
+[node name="tree 3" parent="house_center/house/objects" instance=ExtResource( 15 )]
 
-transform/pos = Vector2( -843.903, -555.903 )
+transform/pos = Vector2( -1236.07, 18.2499 )
 transform/rot = -30.9594
 
-[node name="player" parent="house_center/house/objects" instance=ExtResource( 15 )]
+[node name="light" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -271.117, -514.988 )
+transform/rot = -8.14222e-013
+collision/layers = 0
+collision/mask = 0
+lightSwitch = true
+
+[node name="CollisionShape2D" parent="house_center/house/objects/light"]
+
+trigger = true
+
+[node name="Light2D" parent="house_center/house/objects/light"]
+
+visibility/visible = true
+energy = 2.0
+
+[node name="lamp" parent="house_center/house/objects/light"]
+
+transform/scale = Vector2( 1, 0.2 )
+
+[node name="hit" parent="house_center/house/objects/light"]
+
+transform/rot = 11.8034
+
+[node name="light4" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( -856.985, 36.2234 )
+transform/rot = 4.07111e-013
+lightSwitch = true
+
+[node name="light1" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -734.935, -514.119 )
+transform/rot = 4.07111e-013
+collision/layers = 0
+collision/mask = 0
+lightSwitch = true
+
+[node name="CollisionShape2D" parent="house_center/house/objects/light1"]
+
+trigger = true
+
+[node name="Light2D" parent="house_center/house/objects/light1"]
+
+visibility/visible = true
+energy = 2.0
+
+[node name="lamp" parent="house_center/house/objects/light1"]
+
+transform/scale = Vector2( 1, 0.2 )
+
+[node name="hit" parent="house_center/house/objects/light1"]
+
+transform/rot = 14.0129
+
+[node name="light9" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -259.935, -209.119 )
+transform/rot = -89.924
+collision/layers = 0
+collision/mask = 0
+lightSwitch = true
+
+[node name="CollisionShape2D" parent="house_center/house/objects/light9"]
+
+trigger = true
+
+[node name="Light2D" parent="house_center/house/objects/light9"]
+
+visibility/visible = true
+energy = 2.0
+
+[node name="lamp" parent="house_center/house/objects/light9"]
+
+transform/scale = Vector2( 1, 0.2 )
+
+[node name="hit" parent="house_center/house/objects/light9"]
+
+transform/rot = 27.2195
+
+[node name="light10" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+editor/display_folded = true
+transform/pos = Vector2( -761.185, -191.619 )
+transform/rot = -89.7982
+collision/layers = 0
+collision/mask = 0
+lightSwitch = true
+
+[node name="CollisionShape2D" parent="house_center/house/objects/light10"]
+
+trigger = true
+
+[node name="Light2D" parent="house_center/house/objects/light10"]
+
+visibility/visible = true
+energy = 2.0
+
+[node name="lamp" parent="house_center/house/objects/light10"]
+
+transform/scale = Vector2( 1, 0.2 )
+
+[node name="hit" parent="house_center/house/objects/light10"]
+
+transform/rot = 33.6609
+
+[node name="light5" parent="house_center/house/objects" instance=ExtResource( 11 )]
+
+transform/pos = Vector2( -864.603, -412.53 )
+transform/rot = 4.07111e-013
+lightSwitch = true
+
+[node name="player" parent="house_center/house/objects" instance=ExtResource( 16 )]
 
 transform/pos = Vector2( -224, -712 )
 menu = true
@@ -393,7 +585,7 @@ playback/default_blend_time = 0.0
 root/root = NodePath("..")
 anims/night = SubResource( 2 )
 playback/active = true
-playback/speed = 1.0
+playback/speed = 2.0
 blend_times = [  ]
 autoplay = "night"
 
@@ -410,3 +602,9 @@ blend_times = [  ]
 autoplay = "idle"
 
 
+[editable path="house_center/house/objects/light7"]
+[editable path="house_center/house/objects/light8"]
+[editable path="house_center/house/objects/light"]
+[editable path="house_center/house/objects/light1"]
+[editable path="house_center/house/objects/light9"]
+[editable path="house_center/house/objects/light10"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=121 format=1]
+[gd_scene load_steps=165 format=1]
 
 [ext_resource path="res://resources/tiles/wall/cave (1).png" type="Texture" id=1]
 [ext_resource path="res://resources/tiles/wall/cave (2).png" type="Texture" id=2]
@@ -125,27 +125,28 @@ closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="NavigationPolygon" id=12]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 32, -32, 32, 32, -32, 32, -32, -32 )
 
-[sub_resource type="OccluderPolygon2D" id=13]
+[sub_resource type="OccluderPolygon2D" id=14]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=14]
+[sub_resource type="NavigationPolygon" id=15]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=15]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="ConvexPolygonShape2D" id=16]
 
@@ -158,27 +159,28 @@ closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=18]
+[sub_resource type="NavigationPolygon" id=18]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=19]
+[sub_resource type="OccluderPolygon2D" id=20]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=20]
+[sub_resource type="NavigationPolygon" id=21]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=21]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="ConvexPolygonShape2D" id=22]
 
@@ -191,27 +193,28 @@ closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=24]
+[sub_resource type="NavigationPolygon" id=24]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=25]
+[sub_resource type="OccluderPolygon2D" id=26]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=26]
+[sub_resource type="NavigationPolygon" id=27]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=27]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="ConvexPolygonShape2D" id=28]
 
@@ -224,27 +227,28 @@ closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=30]
+[sub_resource type="NavigationPolygon" id=30]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=31]
+[sub_resource type="OccluderPolygon2D" id=32]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=32]
+[sub_resource type="NavigationPolygon" id=33]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
-
-[sub_resource type="OccluderPolygon2D" id=33]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="ConvexPolygonShape2D" id=34]
 
@@ -257,126 +261,386 @@ closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=36]
+[sub_resource type="NavigationPolygon" id=36]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=37]
+[sub_resource type="OccluderPolygon2D" id=38]
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="CircleShape2D" id=38]
+[sub_resource type="NavigationPolygon" id=39]
 
-custom_solver_bias = 0.0
-radius = 32.0
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
-[sub_resource type="OccluderPolygon2D" id=39]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( 0, -32, 10, -30, 18, -26, 26, -18, 30, -10, 32, 0, 30, 10, 26, 18, 18, 26, 10, 30, 0, 32, -10, 30, -18, 26, -26, 18, -30, 10, -32, 0, -30, -10, -26, -18, -18, -26, -10, -30 )
-
-[sub_resource type="CircleShape2D" id=40]
+[sub_resource type="ConvexPolygonShape2D" id=40]
 
 custom_solver_bias = 0.0
-radius = 22.0
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="OccluderPolygon2D" id=41]
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( 0, -22, 8, -20, 16, -14, 20, -8, 22, 0, 20, 8, 16, 14, 8, 20, 0, 22, -8, 20, -16, 14, -20, 8, -22, 0, -20, -8, -14, -16, -8, -20 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=42]
+[sub_resource type="NavigationPolygon" id=42]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=43]
+[sub_resource type="OccluderPolygon2D" id=44]
 
 closed = true
 cull_mode = 0
-polygon = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=44]
+[sub_resource type="NavigationPolygon" id=45]
 
-custom_solver_bias = 0.0
-points = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
-
-[sub_resource type="OccluderPolygon2D" id=45]
-
-closed = true
-cull_mode = 0
-polygon = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
 
 [sub_resource type="ConvexPolygonShape2D" id=46]
 
 custom_solver_bias = 0.0
-points = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
+points = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
 
 [sub_resource type="OccluderPolygon2D" id=47]
 
 closed = true
 cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[sub_resource type="NavigationPolygon" id=48]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+
+[sub_resource type="OccluderPolygon2D" id=50]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -26, -26, 26, -26, 26, 26, -26, 26 )
+
+[sub_resource type="CircleShape2D" id=51]
+
+custom_solver_bias = 0.0
+radius = 32.0
+
+[sub_resource type="OccluderPolygon2D" id=52]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( 0, -32, 10, -30, 18, -26, 26, -18, 30, -10, 32, 0, 30, 10, 26, 18, 18, 26, 10, 30, 0, 32, -10, 30, -18, 26, -26, 18, -30, 10, -32, 0, -30, -10, -26, -18, -18, -26, -10, -30 )
+
+[sub_resource type="CircleShape2D" id=53]
+
+custom_solver_bias = 0.0
+radius = 22.0
+
+[sub_resource type="OccluderPolygon2D" id=54]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( 0, -22, 8, -20, 16, -14, 20, -8, 22, 0, 20, 8, 16, 14, 8, 20, 0, 22, -8, 20, -16, 14, -20, 8, -22, 0, -20, -8, -14, -16, -8, -20 )
+
+[sub_resource type="ConvexPolygonShape2D" id=55]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=56]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 0, -32, 0, 32, -32, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=57]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
+
+[sub_resource type="OccluderPolygon2D" id=58]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -32, -32, 32, -32, 32, 0, -32, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=59]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
+
+[sub_resource type="OccluderPolygon2D" id=60]
+
+closed = true
+cull_mode = 0
 polygon = Vector2Array( -32, 0, 32, 0, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=48]
+[sub_resource type="ConvexPolygonShape2D" id=61]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
 
-[sub_resource type="OccluderPolygon2D" id=49]
+[sub_resource type="OccluderPolygon2D" id=62]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( 0, -32, 32, -32, 32, 32, 0, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=50]
+[sub_resource type="NavigationPolygon" id=63]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=64]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=65]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=66]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=67]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=68]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=69]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=70]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=71]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=72]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=73]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=74]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=75]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=76]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=77]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=78]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=79]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=80]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=81]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=82]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=83]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=84]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=85]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=86]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=87]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=88]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=89]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=90]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=91]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=92]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="NavigationPolygon" id=93]
+
+vertices = Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+polygons = [ IntArray( 0, 1, 2, 3 ) ]
+outlines = [ Vector2Array( -32, -32, 32, -32, 32, 32, -32, 32 ) ]
+
+[sub_resource type="ConvexPolygonShape2D" id=94]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
 
-[sub_resource type="OccluderPolygon2D" id=51]
+[sub_resource type="OccluderPolygon2D" id=95]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -10, 32, -10, 32, 10, -32, 10 )
 
-[sub_resource type="ConvexPolygonShape2D" id=52]
+[sub_resource type="ConvexPolygonShape2D" id=96]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -8, 32, -8, 32, 8, -32, 8 )
 
-[sub_resource type="OccluderPolygon2D" id=53]
+[sub_resource type="OccluderPolygon2D" id=97]
 
 closed = true
 cull_mode = 0
 polygon = Vector2Array( -32, -8, 32, -8, 32, 8, -32, 8 )
 
-[sub_resource type="ConvexPolygonShape2D" id=54]
+[sub_resource type="ConvexPolygonShape2D" id=98]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, -16, -32, -16, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=55]
+[sub_resource type="ConvexPolygonShape2D" id=99]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 16, -32, 32, -32, 32, 32, 16, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=56]
+[sub_resource type="ConvexPolygonShape2D" id=100]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, -32, 32, -32, 32, -16, -32, -16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=57]
+[sub_resource type="ConvexPolygonShape2D" id=101]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -32, 16, 32, 16, 32, 32, -32, 32 )
 
-[sub_resource type="ConvexPolygonShape2D" id=58]
+[sub_resource type="ConvexPolygonShape2D" id=102]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -8, -32, 8, -32, 8, 32, -8, 32 )
@@ -422,7 +686,6 @@ enabled = true
 [node name="wall2" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 68, 0 )
 texture = ExtResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall2"]
@@ -458,7 +721,6 @@ enabled = true
 [node name="wall3" type="Sprite" parent="."]
 
 editor/display_folded = true
-transform/pos = Vector2( 136, 0 )
 texture = ExtResource( 3 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall3"]
@@ -494,7 +756,6 @@ enabled = true
 [node name="wall4" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall4"]
@@ -522,16 +783,20 @@ trigger = false
 occluder = SubResource( 11 )
 light_mask = 1
 
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall4"]
+
+navpoly = SubResource( 12 )
+enabled = true
+
 [node name="wall5" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 5 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall5"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 13 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -550,19 +815,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall5"]
 
-occluder = SubResource( 13 )
+occluder = SubResource( 14 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall5"]
+
+navpoly = SubResource( 15 )
+enabled = true
 
 [node name="wall6" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 6 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall6"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 14 )
+shapes/0/shape = SubResource( 16 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -581,19 +850,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall6"]
 
-occluder = SubResource( 15 )
+occluder = SubResource( 17 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall6"]
+
+navpoly = SubResource( 18 )
+enabled = true
 
 [node name="wall7" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 7 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall7"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 16 )
+shapes/0/shape = SubResource( 19 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -612,19 +885,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall7"]
 
-occluder = SubResource( 17 )
+occluder = SubResource( 20 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall7"]
+
+navpoly = SubResource( 21 )
+enabled = true
 
 [node name="wall8" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 8 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall8"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 18 )
+shapes/0/shape = SubResource( 22 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -643,19 +920,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall8"]
 
-occluder = SubResource( 19 )
+occluder = SubResource( 23 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall8"]
+
+navpoly = SubResource( 24 )
+enabled = true
 
 [node name="wall9" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 9 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall9"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 20 )
+shapes/0/shape = SubResource( 25 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -674,19 +955,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall9"]
 
-occluder = SubResource( 21 )
+occluder = SubResource( 26 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall9"]
+
+navpoly = SubResource( 27 )
+enabled = true
 
 [node name="wall10" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall10"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 22 )
+shapes/0/shape = SubResource( 28 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -705,19 +990,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall10"]
 
-occluder = SubResource( 23 )
+occluder = SubResource( 29 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall10"]
+
+navpoly = SubResource( 30 )
+enabled = true
 
 [node name="wall11" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 11 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall11"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 24 )
+shapes/0/shape = SubResource( 31 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -736,19 +1025,24 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall11"]
 
-occluder = SubResource( 25 )
+occluder = SubResource( 32 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall11"]
+
+navpoly = SubResource( 33 )
+enabled = true
 
 [node name="wall12" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 12 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall12"]
 
+editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 26 )
+shapes/0/shape = SubResource( 34 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -767,19 +1061,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall12"]
 
-occluder = SubResource( 27 )
+occluder = SubResource( 35 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall12"]
+
+navpoly = SubResource( 36 )
+enabled = true
 
 [node name="wall13" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 13 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall13"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 28 )
+shapes/0/shape = SubResource( 37 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -798,19 +1096,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall13"]
 
-occluder = SubResource( 29 )
+occluder = SubResource( 38 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall13"]
+
+navpoly = SubResource( 39 )
+enabled = true
 
 [node name="wall14" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 14 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall14"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 30 )
+shapes/0/shape = SubResource( 40 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -829,19 +1131,23 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall14"]
 
-occluder = SubResource( 31 )
+occluder = SubResource( 41 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall14"]
+
+navpoly = SubResource( 42 )
+enabled = true
 
 [node name="wall15" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 15 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall15"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 32 )
+shapes/0/shape = SubResource( 43 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -860,20 +1166,24 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall15"]
 
-occluder = SubResource( 33 )
+occluder = SubResource( 44 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall15"]
+
+navpoly = SubResource( 45 )
+enabled = true
 
 [node name="wall16" type="Sprite" parent="."]
 
 editor/display_folded = true
-visibility/visible = false
 texture = ExtResource( 16 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="wall16"]
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 34 )
+shapes/0/shape = SubResource( 46 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -892,8 +1202,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall16"]
 
-occluder = SubResource( 35 )
+occluder = SubResource( 47 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall16"]
+
+navpoly = SubResource( 48 )
+enabled = true
 
 [node name="wall17" type="Sprite" parent="."]
 
@@ -905,7 +1220,7 @@ texture = ExtResource( 17 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 36 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -924,7 +1239,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall17"]
 
-occluder = SubResource( 37 )
+occluder = SubResource( 50 )
 light_mask = 1
 
 [node name="wall18" type="Sprite" parent="."]
@@ -937,7 +1252,7 @@ texture = ExtResource( 18 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 38 )
+shapes/0/shape = SubResource( 51 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -949,13 +1264,13 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall18/StaticBody2D"]
 
-shape = SubResource( 38 )
+shape = SubResource( 51 )
 trigger = false
 _update_shape_index = 0
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall18"]
 
-occluder = SubResource( 39 )
+occluder = SubResource( 52 )
 light_mask = 1
 
 [node name="wall19" type="Sprite" parent="."]
@@ -968,7 +1283,7 @@ texture = ExtResource( 19 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 40 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -980,13 +1295,13 @@ bounce = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wall19/StaticBody2D"]
 
-shape = SubResource( 40 )
+shape = SubResource( 53 )
 trigger = false
 _update_shape_index = 0
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall19"]
 
-occluder = SubResource( 41 )
+occluder = SubResource( 54 )
 light_mask = 1
 
 [node name="wall20" type="Sprite" parent="."]
@@ -999,7 +1314,7 @@ texture = ExtResource( 20 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 42 )
+shapes/0/shape = SubResource( 55 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1018,7 +1333,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall20"]
 
-occluder = SubResource( 43 )
+occluder = SubResource( 56 )
 light_mask = 1
 
 [node name="wall21" type="Sprite" parent="."]
@@ -1030,7 +1345,7 @@ texture = ExtResource( 21 )
 [node name="StaticBody2D" type="StaticBody2D" parent="wall21"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 44 )
+shapes/0/shape = SubResource( 57 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1049,7 +1364,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall21"]
 
-occluder = SubResource( 45 )
+occluder = SubResource( 58 )
 light_mask = 1
 
 [node name="wall22" type="Sprite" parent="."]
@@ -1062,7 +1377,7 @@ texture = ExtResource( 22 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 46 )
+shapes/0/shape = SubResource( 59 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1081,7 +1396,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall22"]
 
-occluder = SubResource( 47 )
+occluder = SubResource( 60 )
 light_mask = 1
 
 [node name="wall23" type="Sprite" parent="."]
@@ -1094,7 +1409,7 @@ texture = ExtResource( 23 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1113,7 +1428,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall23"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
 
 [node name="wall24" type="Sprite" parent="."]
@@ -1126,7 +1441,7 @@ texture = ExtResource( 24 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1145,8 +1460,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall24"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall24"]
+
+navpoly = SubResource( 63 )
+enabled = true
 
 [node name="wall25" type="Sprite" parent="."]
 
@@ -1158,7 +1478,7 @@ texture = ExtResource( 25 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1177,8 +1497,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall25"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall25"]
+
+navpoly = SubResource( 64 )
+enabled = true
 
 [node name="wall26" type="Sprite" parent="."]
 
@@ -1190,7 +1515,7 @@ texture = ExtResource( 26 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1209,8 +1534,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall26"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall26"]
+
+navpoly = SubResource( 65 )
+enabled = true
 
 [node name="wall27" type="Sprite" parent="."]
 
@@ -1222,7 +1552,7 @@ texture = ExtResource( 27 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1241,8 +1571,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall27"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall27"]
+
+navpoly = SubResource( 66 )
+enabled = true
 
 [node name="wall28" type="Sprite" parent="."]
 
@@ -1254,7 +1589,7 @@ texture = ExtResource( 28 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1273,8 +1608,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall28"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall28"]
+
+navpoly = SubResource( 67 )
+enabled = true
 
 [node name="wall29" type="Sprite" parent="."]
 
@@ -1286,7 +1626,7 @@ texture = ExtResource( 29 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1305,8 +1645,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall29"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall29"]
+
+navpoly = SubResource( 68 )
+enabled = true
 
 [node name="wall30" type="Sprite" parent="."]
 
@@ -1318,7 +1663,7 @@ texture = ExtResource( 30 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1337,8 +1682,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall30"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall30"]
+
+navpoly = SubResource( 69 )
+enabled = true
 
 [node name="wall31" type="Sprite" parent="."]
 
@@ -1350,7 +1700,7 @@ texture = ExtResource( 31 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1369,8 +1719,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall31"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall31"]
+
+navpoly = SubResource( 70 )
+enabled = true
 
 [node name="wall32" type="Sprite" parent="."]
 
@@ -1382,7 +1737,7 @@ texture = ExtResource( 32 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1401,8 +1756,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall32"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall32"]
+
+navpoly = SubResource( 71 )
+enabled = true
 
 [node name="wall33" type="Sprite" parent="."]
 
@@ -1414,7 +1774,7 @@ texture = ExtResource( 33 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1433,8 +1793,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall33"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall33"]
+
+navpoly = SubResource( 72 )
+enabled = true
 
 [node name="wall34" type="Sprite" parent="."]
 
@@ -1446,7 +1811,7 @@ texture = ExtResource( 34 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1465,8 +1830,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall34"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall34"]
+
+navpoly = SubResource( 73 )
+enabled = true
 
 [node name="wall35" type="Sprite" parent="."]
 
@@ -1478,7 +1848,7 @@ texture = ExtResource( 35 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1497,8 +1867,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall35"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall35"]
+
+navpoly = SubResource( 74 )
+enabled = true
 
 [node name="wall36" type="Sprite" parent="."]
 
@@ -1510,7 +1885,7 @@ texture = ExtResource( 36 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1529,8 +1904,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall36"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall36"]
+
+navpoly = SubResource( 75 )
+enabled = true
 
 [node name="wall37" type="Sprite" parent="."]
 
@@ -1542,7 +1922,7 @@ texture = ExtResource( 37 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1561,8 +1941,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall37"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall37"]
+
+navpoly = SubResource( 76 )
+enabled = true
 
 [node name="wall38" type="Sprite" parent="."]
 
@@ -1574,7 +1959,7 @@ texture = ExtResource( 38 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1593,8 +1978,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall38"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall38"]
+
+navpoly = SubResource( 77 )
+enabled = true
 
 [node name="wall39" type="Sprite" parent="."]
 
@@ -1606,7 +1996,7 @@ texture = ExtResource( 39 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1625,8 +2015,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall39"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall39"]
+
+navpoly = SubResource( 78 )
+enabled = true
 
 [node name="wall40" type="Sprite" parent="."]
 
@@ -1638,7 +2033,7 @@ texture = ExtResource( 40 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1657,8 +2052,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall40"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall40"]
+
+navpoly = SubResource( 79 )
+enabled = true
 
 [node name="wall41" type="Sprite" parent="."]
 
@@ -1670,7 +2070,7 @@ texture = ExtResource( 41 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1689,8 +2089,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall41"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall41"]
+
+navpoly = SubResource( 80 )
+enabled = true
 
 [node name="wall42" type="Sprite" parent="."]
 
@@ -1702,7 +2107,7 @@ texture = ExtResource( 42 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1721,8 +2126,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall42"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall42"]
+
+navpoly = SubResource( 81 )
+enabled = true
 
 [node name="wall43" type="Sprite" parent="."]
 
@@ -1734,7 +2144,7 @@ texture = ExtResource( 43 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1753,8 +2163,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall43"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall43"]
+
+navpoly = SubResource( 82 )
+enabled = true
 
 [node name="wall44" type="Sprite" parent="."]
 
@@ -1766,7 +2181,7 @@ texture = ExtResource( 44 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1785,8 +2200,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall44"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall44"]
+
+navpoly = SubResource( 83 )
+enabled = true
 
 [node name="wall45" type="Sprite" parent="."]
 
@@ -1798,7 +2218,7 @@ texture = ExtResource( 45 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1817,8 +2237,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall45"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall45"]
+
+navpoly = SubResource( 84 )
+enabled = true
 
 [node name="wall46" type="Sprite" parent="."]
 
@@ -1830,7 +2255,7 @@ texture = ExtResource( 46 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1849,8 +2274,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall46"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall46"]
+
+navpoly = SubResource( 85 )
+enabled = true
 
 [node name="wall47" type="Sprite" parent="."]
 
@@ -1862,7 +2292,7 @@ texture = ExtResource( 47 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1881,8 +2311,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall47"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall47"]
+
+navpoly = SubResource( 86 )
+enabled = true
 
 [node name="wall48" type="Sprite" parent="."]
 
@@ -1894,7 +2329,7 @@ texture = ExtResource( 48 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1913,8 +2348,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall48"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall48"]
+
+navpoly = SubResource( 87 )
+enabled = true
 
 [node name="wall49" type="Sprite" parent="."]
 
@@ -1926,7 +2366,7 @@ texture = ExtResource( 49 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1945,8 +2385,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall49"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall49"]
+
+navpoly = SubResource( 88 )
+enabled = true
 
 [node name="wall50" type="Sprite" parent="."]
 
@@ -1958,7 +2403,7 @@ texture = ExtResource( 50 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -1977,8 +2422,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall50"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall50"]
+
+navpoly = SubResource( 89 )
+enabled = true
 
 [node name="wall51" type="Sprite" parent="."]
 
@@ -1990,7 +2440,7 @@ texture = ExtResource( 51 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2009,8 +2459,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall51"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall51"]
+
+navpoly = SubResource( 90 )
+enabled = true
 
 [node name="wall52" type="Sprite" parent="."]
 
@@ -2022,7 +2477,7 @@ texture = ExtResource( 52 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2041,8 +2496,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall52"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall52"]
+
+navpoly = SubResource( 91 )
+enabled = true
 
 [node name="wall53" type="Sprite" parent="."]
 
@@ -2054,7 +2514,7 @@ texture = ExtResource( 53 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2073,8 +2533,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall53"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall53"]
+
+navpoly = SubResource( 92 )
+enabled = true
 
 [node name="wall54" type="Sprite" parent="."]
 
@@ -2086,7 +2551,7 @@ texture = ExtResource( 54 )
 
 editor/display_folded = true
 input/pickable = false
-shapes/0/shape = SubResource( 48 )
+shapes/0/shape = SubResource( 61 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2105,8 +2570,13 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="wall54"]
 
-occluder = SubResource( 49 )
+occluder = SubResource( 62 )
 light_mask = 1
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="wall54"]
+
+navpoly = SubResource( 93 )
+enabled = true
 
 [node name="door1" type="Sprite" parent="."]
 
@@ -2117,7 +2587,7 @@ texture = ExtResource( 55 )
 [node name="StaticBody2D" type="StaticBody2D" parent="door1"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 50 )
+shapes/0/shape = SubResource( 94 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2136,7 +2606,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="door1"]
 
-occluder = SubResource( 51 )
+occluder = SubResource( 95 )
 light_mask = 1
 
 [node name="door2" type="Sprite" parent="."]
@@ -2148,7 +2618,7 @@ texture = ExtResource( 56 )
 [node name="StaticBody2D" type="StaticBody2D" parent="door2"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 52 )
+shapes/0/shape = SubResource( 96 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2167,7 +2637,7 @@ trigger = false
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="door2"]
 
-occluder = SubResource( 53 )
+occluder = SubResource( 97 )
 light_mask = 1
 
 [node name="glas1" type="Sprite" parent="."]
@@ -2179,7 +2649,7 @@ texture = ExtResource( 57 )
 [node name="StaticBody2D" type="StaticBody2D" parent="glas1"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 54 )
+shapes/0/shape = SubResource( 98 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2205,7 +2675,7 @@ texture = ExtResource( 58 )
 [node name="StaticBody2D" type="StaticBody2D" parent="glas2"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 55 )
+shapes/0/shape = SubResource( 99 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2231,7 +2701,7 @@ texture = ExtResource( 59 )
 [node name="StaticBody2D" type="StaticBody2D" parent="glas3"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 56 )
+shapes/0/shape = SubResource( 100 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2257,7 +2727,7 @@ texture = ExtResource( 60 )
 [node name="StaticBody2D" type="StaticBody2D" parent="glas4"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 57 )
+shapes/0/shape = SubResource( 101 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2283,7 +2753,7 @@ texture = ExtResource( 61 )
 [node name="StaticBody2D" type="StaticBody2D" parent="glas5"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 58 )
+shapes/0/shape = SubResource( 102 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2309,7 +2779,7 @@ texture = ExtResource( 62 )
 [node name="StaticBody2D" type="StaticBody2D" parent="glas6"]
 
 input/pickable = false
-shapes/0/shape = SubResource( 52 )
+shapes/0/shape = SubResource( 96 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1

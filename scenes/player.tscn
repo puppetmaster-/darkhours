@@ -115,7 +115,6 @@ texture = ExtResource( 3 )
 editor/display_folded = true
 transform/pos = Vector2( 13, 6 )
 transform/rot = -0.988074
-transform/scale = Vector2( 1, 1 )
 
 [node name="Polygon2D" type="Polygon2D" parent="gfx/arm_left/flashlight"]
 
