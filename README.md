@@ -1,22 +1,24 @@
 # darkhours
 
-TopDown Prototyp Shooter
-(with endless rooms)
+TopDown Prototyp Shooter (with endless rooms)
 
-"It's unfortunately only a prototype. I will add after my vacations enemys and more gameplay elements."
+"It's unfortunately only a prototype. Gameplay elements (enemys, objectives and collectibles) will be added later."
 
-Controls
+## CONTROLS
 [W A S D] - movement
+
 [Left Mouse Button] - shoot
-[Right Mouse Button] - reload
+
 [Mouse] - looking around
 
-GRAPHICS
-All game art assest are from kenney.nl 
+## GRAPHICS
+All game art assest are from kenney.nl
+
 http://kenney.nl/assets/topdown-shooter
+
 License: CC0 1.0 Universal (CC0 1.0)
 
-Font
-was created only for this jam with bitfontmaker
+## FONT
+was created with bitfontmaker
 
-Made with Godot 2.0
+Made with Godot 2.1
