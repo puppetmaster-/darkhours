@@ -27,9 +27,9 @@ focus/stop_mouse = false
 size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
-margin/top = 4.0
-margin/right = 200.0
-margin/bottom = 245.0
+margin/top = 0.0
+margin/right = 233.0
+margin/bottom = 267.0
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
@@ -41,7 +41,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 200.0
+margin/right = 233.0
 margin/bottom = 24.0
 alignment = 1
 
@@ -51,9 +51,9 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 40.0
+margin/left = 57.0
 margin/top = 5.0
-margin/right = 97.0
+margin/right = 114.0
 margin/bottom = 19.0
 text = "Tile Size:"
 percent_visible = 1.0
@@ -66,9 +66,9 @@ focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-margin/left = 101.0
+margin/left = 118.0
 margin/top = 0.0
-margin/right = 159.0
+margin/right = 176.0
 margin/bottom = 24.0
 placeholder/alpha = 0.6
 align = 1
@@ -84,7 +84,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 28.0
-margin/right = 200.0
+margin/right = 233.0
 margin/bottom = 31.0
 
 [node name="add" type="Label" parent="VBoxContainer"]
@@ -96,9 +96,9 @@ size_flags/horizontal = 2
 size_flags/vertical = 0
 margin/left = 0.0
 margin/top = 35.0
-margin/right = 200.0
+margin/right = 233.0
 margin/bottom = 85.0
-text = "select a tile in tileset\nto add or remove"
+text = "select tile(s) in tileset\nto add or remove"
 align = 1
 valign = 2
 percent_visible = 1.0
@@ -113,8 +113,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 89.0
-margin/right = 200.0
-margin/bottom = 241.0
+margin/right = 233.0
+margin/bottom = 267.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer"]
 
@@ -124,8 +124,8 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 7.0
 margin/top = 7.0
-margin/right = 193.0
-margin/bottom = 145.0
+margin/right = 226.0
+margin/bottom = 171.0
 alignment = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer/VBoxContainer"]
@@ -138,7 +138,7 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 0.0
-margin/right = 186.0
+margin/right = 219.0
 margin/bottom = 24.0
 alignment = 1
 
@@ -148,9 +148,9 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 0
-margin/left = 32.0
+margin/left = 48.0
 margin/top = 4.0
-margin/right = 48.0
+margin/right = 64.0
 margin/bottom = 20.0
 texture = ExtResource( 1 )
 stretch_mode = 0
@@ -161,9 +161,9 @@ focus/ignore_mouse = true
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 0
-margin/left = 52.0
+margin/left = 68.0
 margin/top = 5.0
-margin/right = 154.0
+margin/right = 170.0
 margin/bottom = 19.0
 text = "StaticBody with:"
 align = 1
@@ -173,14 +173,14 @@ max_lines_visible = -1
 
 [node name="collisionPolygon" type="Button" parent="VBoxContainer/PanelContainer/VBoxContainer"]
 
-rect/min_size = Vector2( 150, 0 )
+rect/min_size = Vector2( 200, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-margin/left = 18.0
+margin/left = 9.0
 margin/top = 28.0
-margin/right = 168.0
+margin/right = 209.0
 margin/bottom = 50.0
 toggle_mode = false
 enabled_focus_mode = 2
@@ -191,14 +191,14 @@ flat = false
 
 [node name="collisionShape" type="Button" parent="VBoxContainer/PanelContainer/VBoxContainer"]
 
-rect/min_size = Vector2( 150, 0 )
+rect/min_size = Vector2( 200, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-margin/left = 18.0
+margin/left = 9.0
 margin/top = 54.0
-margin/right = 168.0
+margin/right = 209.0
 margin/bottom = 76.0
 toggle_mode = false
 enabled_focus_mode = 2
@@ -216,20 +216,37 @@ size_flags/horizontal = 2
 size_flags/vertical = 2
 margin/left = 0.0
 margin/top = 80.0
-margin/right = 186.0
+margin/right = 219.0
 margin/bottom = 86.0
+
+[node name="CheckGetPolyColli" type="CheckButton" parent="VBoxContainer/PanelContainer/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 90.0
+margin/right = 219.0
+margin/bottom = 112.0
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+text = "Polygon from Collision"
+flat = false
+align = 0
 
 [node name="occluder" type="Button" parent="VBoxContainer/PanelContainer/VBoxContainer"]
 
-rect/min_size = Vector2( 150, 0 )
+rect/min_size = Vector2( 200, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-margin/left = 18.0
-margin/top = 90.0
-margin/right = 168.0
-margin/bottom = 112.0
+margin/left = 9.0
+margin/top = 116.0
+margin/right = 209.0
+margin/bottom = 138.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -239,15 +256,15 @@ flat = false
 
 [node name="navigation" type="Button" parent="VBoxContainer/PanelContainer/VBoxContainer"]
 
-rect/min_size = Vector2( 150, 0 )
+rect/min_size = Vector2( 200, 0 )
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 0
 size_flags/vertical = 2
-margin/left = 18.0
-margin/top = 116.0
-margin/right = 168.0
-margin/bottom = 138.0
+margin/left = 9.0
+margin/top = 142.0
+margin/right = 209.0
+margin/bottom = 164.0
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
