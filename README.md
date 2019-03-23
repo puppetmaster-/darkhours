@@ -2,7 +2,7 @@
 
 TopDown Prototyp Shooter (with endless rooms)
 
-"It's unfortunately only a prototype. Gameplay elements (enemys, objectives and collectibles) will be added later."
+"It is unfortunately only a prototype without gameplay element."
 
 ## CONTROLS
 [W A S D] - movement
